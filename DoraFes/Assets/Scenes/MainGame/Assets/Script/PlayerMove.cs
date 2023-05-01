@@ -1,93 +1,64 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using Unity.Mathematics;
 using UnityEditor.Rendering;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    //à⁄ìÆó 
-    [Header("à⁄ìÆéûÇÃóÕ")]
-    [SerializeField]
-    private float MovingForce = 3;
+    GameObject landmark;
+    LandMarkMove LM;
+    Rigidbody myrig;
+    bool t = false;
 
-    [Header("ãÛíÜÇ…Ç¢ÇÈÇ∆Ç´ÇÃà⁄ìÆêßå¿")]
-    [SerializeField]
-    private float MovingResistance = 0.5f;
-
-    [Header("ÉWÉÉÉìÉvóÕ")]
-    [SerializeField]
-    private float JumpPawer = 10;
-
-    [Header("èdóÕÇ…ó^Ç¶ÇÈóÕÇÃëÂÇ´Ç≥")]
-    [SerializeField]
-    private float GravityAffect = 2;
-
-    public GameObject gCamera;
-    CameraMove CM;
-
-    //PlayerÇÃRigidbody
-    private Rigidbody rig;
-    public bool JumpFlg;
-
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        JumpFlg = true;
-        rig = GetComponent<Rigidbody>();
-        CM = gCamera.GetComponent<CameraMove>();
-        if(CM == null)
+        landmark = GameObject.Find("LandMark");
+        LM = landmark.GetComponent<LandMarkMove>();
+        myrig = GetComponent<Rigidbody>();
+        if(!myrig)
         {
-            Debug.Log("Ç©ÇﬂÇÁÇ»Çµ");
+            Debug.Log("oioio");
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (LM.GetMovePower() >= 0)
         {
-            if(JumpFlg)
-            {
-                rig.velocity = new Vector3(MovingForce, rig.velocity.y, 0.0f);
-            }
-            else
-            {
-                rig.velocity = new Vector3(0.0f, rig.velocity.y, MovingForce * MovingResistance);
-            }
+       // myrig.AddForce(new Vector3(LM.GetMovePower(), myrig.velocity.y, myrig.velocity.z));
+            myrig.velocity = new( LM.GetMovePower(), myrig.velocity.y, myrig.velocity.z);
         }
-        if (Input.GetKey(KeyCode.D))
+        Debug.Log(LM.GetMovePower().ToString());
+        transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + LM.LandMarkSpeed);
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            if (JumpFlg)
-            {
-                rig.velocity = new Vector3(-MovingForce, rig.velocity.y, 0.0f);
-            }
-            else
-            {
-                rig.velocity = new Vector3(0.0f, rig.velocity.y, -(MovingForce * MovingResistance));
-            }
+            //t = true;
+            myrig.AddForce(new Vector3(0.0f,5.0f,0.0f),ForceMode.Impulse);
         }
-
-        transform.position = new Vector3(transform.position.x , transform.position.y, transform.position.z + Time.deltaTime * CM.speed);
-
-        rig.AddForce(Vector3.down * GravityAffect);
-
+        
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if(LM.GetMovePower() == 0)
         {
-            if(JumpFlg)
-            {
-                rig.AddForce(new Vector3(0.0f, JumpPawer, 0.0f), ForceMode.Impulse);
-                JumpFlg = false;
-            }
+            gameObject.layer = 0;
+            myrig.velocity = new Vector3(myrig.velocity.x, myrig.velocity.y,0.0f);
+        }
+        else
+        {
+            gameObject.layer = 3;
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        JumpFlg = true;
+
+        t = false;
     }
+
+
 }
