@@ -26,25 +26,13 @@ public class ObjectActivator : MonoBehaviour
     {        //// アクティブにするオブジェクトを取得
 
 
-        //// カメラが近づいたオブジェクトをアクティブにする
-        //foreach (GameObject obj in objectsToActivate)
-        //{
-
-        //if (Vector3.Distance(transform.position, mainCamera.transform.position) <= triggerDistance)
-        //{
-
-        //    tex.SetActive(true);
-
-
-        //}
+       
         float distanceToCamera = tex.transform.position.z - cameraTransform.position.z;
         if (distanceToCamera <= triggerDistance)
         {
             tex.SetActive(true);
         }
-        //}
-
-        //}
+      
     }
 
   
