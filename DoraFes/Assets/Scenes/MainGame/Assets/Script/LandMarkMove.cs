@@ -8,6 +8,7 @@ public class LandMarkMove : MonoBehaviour
     public float LandMarkSpeed = 5;
     public float PlayerMovePower = 3;
     private float RetuerPlayerMovePower = 0;
+    Rigidbody rig;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +19,14 @@ public class LandMarkMove : MonoBehaviour
         {
             Debug.Log("Child camera can not find");
         }
+
+        rig = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x,transform.position.y, transform.position.z  + LandMarkSpeed);
+        rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, LandMarkSpeed);
 
         if(Input.GetKey(KeyCode.A))
         {
