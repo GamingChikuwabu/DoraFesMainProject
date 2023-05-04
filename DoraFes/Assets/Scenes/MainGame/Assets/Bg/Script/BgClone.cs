@@ -12,9 +12,9 @@ public class BgClone : MonoBehaviour
 
         // 右に自身を複製
         GameObject objRight = Instantiate(gameObject);
-        objRight.transform.position = new(gameObject.transform.localPosition.x + width, 
-            gameObject.transform.localPosition.y, 
-            gameObject.transform.localPosition.z);
+        objRight.transform.position = new(gameObject.transform.position.x + width, 
+            gameObject.transform.position.y, 
+            gameObject.transform.position.z);
         // 無限に増加しないようスクリプトを取り除く
         Destroy(objRight.GetComponent<BgClone>());
         // 親オブジェクトを設定
@@ -22,9 +22,9 @@ public class BgClone : MonoBehaviour
 
         // 左に自身を複製
         GameObject objLeft = Instantiate(gameObject);
-        objLeft.transform.position = new(gameObject.transform.localPosition.x - width, 
-            gameObject.transform.localPosition.y, 
-            gameObject.transform.localPosition.z);
+        objLeft.transform.position = new(gameObject.transform.position.x - width, 
+            gameObject.transform.position.y, 
+            gameObject.transform.position.z);
         Destroy(objLeft.GetComponent<BgClone>());
         objLeft.transform.SetParent(parentObj.transform, true);
     }
