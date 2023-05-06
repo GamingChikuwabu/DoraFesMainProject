@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEditor.Rendering;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerMove : MonoBehaviour
 {
-    //目標にするオブジェクト
-    private GameObject landmark;
     //ランマークの移動量を取得するスクリプト
     private LandMarkMove LM;
     //自分のRigidBody
     private Rigidbody myrig;
     //ジャンプのフラグ
     private bool Isjump = false;
+    //自分がついていくのに目標にするオブジェクトのポジション
+    private GameObject Landmark;
+    //自分がついていくのに目標にするオブジェクトとの距離
+    private Vector3 offset;
+
+    [Header("目標点を追いかけるスピード値が高いとすぐに追いつく")]
+    [SerializeField]
+    private float ChaseSpeed = 3;
 
     [Header("ジャンプ力")]
     [SerializeField]
@@ -26,7 +33,7 @@ public class PlayerMove : MonoBehaviour
     private void Start()
     {
         //目標オブジェクトの取得
-        landmark = GameObject.Find("LandMark");
+        GameObject landmark = GameObject.Find("LandMark");
         //LandMarkMoveスクリプトの取得
         LM = landmark.GetComponent<LandMarkMove>();
         //自分のRigidBodyの取得
@@ -35,23 +42,23 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        //目標オブジェクトの移動量の取得
-        if(Input.anyKeyDown)
-        {
-            myrig.velocity = (new Vector3(LM.GetMovePower(), myrig.velocity.y, myrig.velocity.z));
-        }
-        //前方方向の進み具合を加算する
-        myrig.velocity = new Vector3(myrig.velocity.x, myrig.velocity.y, LM.LandMarkSpeed);
         //ジャンプの処理
-        if(Input.GetKeyDown(KeyCode.Space) && !Isjump)
+        if (Input.GetKeyDown(KeyCode.Space) && !Isjump)
         {
             //上方向へのちからを加える
-            myrig.AddForce(new Vector3(0.0f, jumpPower, 0.0f),ForceMode.Impulse);
+            myrig.AddForce(new Vector3(0.0f, jumpPower, 0.0f), ForceMode.Impulse);
             //Isjumpをtrueにする
             Isjump = true;
         }
         //重力を強めるための処理
         myrig.AddForce(0.0f, -affectGravity, 0.0f);
+
+        //基準点の設定
+        Vector3 temppoint = Landmark.transform.position - offset;
+        //基準点と自分のポジションで移動距離ベクトルを作成
+        Vector3 MoveVec = temppoint - transform.position;
+        //移動成分を合成する
+        myrig.velocity = new(MoveVec.x * ChaseSpeed, myrig.velocity.y, MoveVec.z);
     }
 
 
@@ -59,5 +66,11 @@ public class PlayerMove : MonoBehaviour
     {
         //フラグを直す
         Isjump = false;
+    }
+
+    public void SetLandmark(GameObject _landmark, Vector3 _offset)
+    {
+        Landmark = _landmark;
+        offset = _offset;
     }
 }

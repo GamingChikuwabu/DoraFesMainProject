@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class LandMarkMove : MonoBehaviour
 { 
+    //カメラ用のGameObject
     private GameObject ChildCamera;
+    //目標点の進むスピード
     public float LandMarkSpeed = 5;
+    //プレイヤーの左右移動の力
     public float PlayerMovePower = 3;
+    //移動の減速率
+    public float Decelerationrate = 0.1f;
+
     private float RetuerPlayerMovePower = 0;
+    //このオブジェクトのRigidbody
     Rigidbody rig;
 
     // Start is called before the first frame update
@@ -30,15 +37,15 @@ public class LandMarkMove : MonoBehaviour
 
         if(Input.GetKey(KeyCode.A))
         {
-            RetuerPlayerMovePower = -PlayerMovePower;
+            rig.velocity = new Vector3(-PlayerMovePower, rig.velocity.y, rig.velocity.z);
         }
         else if(Input.GetKey(KeyCode.D))
         {
-            RetuerPlayerMovePower = PlayerMovePower;
+            rig.velocity = new Vector3(PlayerMovePower, rig.velocity.y, rig.velocity.z);
         }
         else
         {
-            RetuerPlayerMovePower = 0;
+            rig.velocity = new Vector3(rig.velocity.x * Decelerationrate, rig.velocity.y, LandMarkSpeed);
         }
     }
 
