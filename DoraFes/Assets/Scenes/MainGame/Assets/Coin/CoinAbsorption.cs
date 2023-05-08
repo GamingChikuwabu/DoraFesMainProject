@@ -5,8 +5,14 @@ using UnityEngine;
 // コインがプレイヤーに吸い込まれるスクリプト
 public class CoinAbsorption : MonoBehaviour
 {
-    [Header("移動先の対象")]
-    [SerializeField] private GameObject Player;
+
+    //カメラのスピードを取得するオブジェクト
+    private GameObject landmark;
+    //ランマークのスピードを取得するスクリプト
+    private LandMarkMove LM;
+
+    // 移動先の対象
+    private GameObject Player;
 
     [Header("吸い込みスピード")]
     [SerializeField] private float speed = 0.0f;
@@ -14,10 +20,24 @@ public class CoinAbsorption : MonoBehaviour
     [Header("吸い込み範囲")]
     [SerializeField] private float range = 0.0f;
 
+    [Header("カメラのスピードに加算する値")]
+    [SerializeField] private float addspeed = 0.0f;
+
     // コインとプレイヤーの距離を格納する変数
     private float distance;
 
     private Vector3 targetPosition;
+
+    private void Start()
+    {
+        //目標オブジェクトの取得
+        landmark = GameObject.Find("LandMark");
+        //LandMarkMoveスクリプトの取得
+        LM = landmark.GetComponent<LandMarkMove>();
+
+        Player = GameObject.FindWithTag("Player");
+       
+    }
 
     void Update()
     {
@@ -30,6 +50,8 @@ public class CoinAbsorption : MonoBehaviour
         // コインとプレイヤーの距離が吸い込み範囲より短かったら
         if (distance < range)
         {
+            speed = Mathf.Max(speed, LM.LandMarkSpeed + addspeed);
+
             // コインの移動先をプレイヤーの位置に設定する
             targetPosition = Player.transform.position;
 
