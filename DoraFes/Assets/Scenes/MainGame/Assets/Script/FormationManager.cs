@@ -8,7 +8,7 @@ public class FormationManager : MonoBehaviour
     private int _numMandoragara = 0;
     //隊列の一番最初のキャラとLandmarkの距離
     
-    readonly public float LandmarkToChar = -3;
+    public float LandmarkToChar = -3;
 
     //マンドラゴラの数の取得プロパティ
     public int NumMandragara
@@ -34,7 +34,6 @@ public class FormationManager : MonoBehaviour
         if (player == null) 
         {
             Debug.Log("Playerが設置されていないかTagがPlayerのObjectがありません");
-
         }
         PlayerMove pm =  player.GetComponent<PlayerMove>();
         //ランドマークを探す
@@ -43,8 +42,10 @@ public class FormationManager : MonoBehaviour
         {
             Debug.Log("LandMarkが設置されていないかTagがLandMarkのObjectがありません");
         }
+
+        LandMarkMove landMarkMove = landmerk.GetComponent<LandMarkMove>();
         
-        pm.SetLandmark(landmerk, new Vector3(0.0f, 0.0f, LandmarkToChar));
+        pm.SetLandmark(landmerk, new Vector3(0.0f, 0.0f, -landMarkMove.LandMarkSpeed + LandmarkToChar));
     }
 
     // Update is called once per frame
