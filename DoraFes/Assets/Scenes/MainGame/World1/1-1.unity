@@ -1956,8 +1956,9 @@ GameObject:
   - component: {fileID: 936752555}
   - component: {fileID: 936752557}
   - component: {fileID: 936752556}
+  - component: {fileID: 936752558}
   m_Layer: 5
-  m_Name: UI_NumMan
+  m_Name: UI_MandNum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2080,6 +2081,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936752554}
   m_CullTransparentMesh: 1
+--- !u!114 &936752558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936752554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb993b0f0e13b94fb4f7f7583c3d490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 936752556}
+  newText: 1
 --- !u!1001 &941604035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3197,7 +3212,7 @@ GameObject:
   - component: {fileID: 1203485214}
   - component: {fileID: 1203485213}
   m_Layer: 5
-  m_Name: UI_Man (1)
+  m_Name: UI_Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5501,12 +5516,12 @@ PrefabInstance:
     - target: {fileID: 7175275093560574394, guid: 537950bf653cc3f44b704648a5cc250a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 29.1
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7175275093560574394, guid: 537950bf653cc3f44b704648a5cc250a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 307.8807
+      value: 307
       objectReference: {fileID: 0}
     - target: {fileID: 7175275093560574394, guid: 537950bf653cc3f44b704648a5cc250a,
         type: 3}
