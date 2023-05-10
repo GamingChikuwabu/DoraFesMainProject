@@ -13,9 +13,22 @@ public class LandMarkMove : MonoBehaviour
     //移動の減速率
     public float Decelerationrate = 0.1f;
 
+    [Header("重力への影響度")]
+    [SerializeField]
+    private float affectGravity = 2.0f;
+
     private float RetuerPlayerMovePower = 0;
     //このオブジェクトのRigidbody
     Rigidbody rig;
+
+    public float jumpPouwer = 15.0f;
+
+    bool _Isjump = false;
+
+    public bool Isjump
+    {
+        get { return _Isjump; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +60,20 @@ public class LandMarkMove : MonoBehaviour
         {
             rig.velocity = new Vector3(rig.velocity.x * Decelerationrate, rig.velocity.y, LandMarkSpeed);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space) && !Isjump)
+        {
+            rig.AddForce(new Vector3(0.0f, jumpPouwer, 0.0f),ForceMode.Impulse);
+            _Isjump = true;
+        }
+
+        rig.AddForce(0.0f, -affectGravity, 0.0f);
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        _Isjump = false;
     }
 
     public float GetMovePower()

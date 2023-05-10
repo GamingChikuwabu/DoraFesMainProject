@@ -11,8 +11,6 @@ public class PlayerMove : MonoBehaviour
     private LandMarkMove LM;
     //自分のRigidBody
     private Rigidbody myrig;
-    //ジャンプのフラグ
-    private bool Isjump = false;
     //自分がついていくのに目標にするオブジェクトのポジション
     private GameObject Landmark;
     //自分がついていくのに目標にするオブジェクトとの距離
@@ -25,10 +23,6 @@ public class PlayerMove : MonoBehaviour
     [Header("ジャンプ力")]
     [SerializeField]
     private float jumpPower = 5.0f;
-
-    [Header("重力への影響度")]
-    [SerializeField]
-    private float affectGravity = 2.0f;
 
     private void Start()
     {
@@ -43,29 +37,20 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         //ジャンプの処理
-        if (Input.GetKeyDown(KeyCode.Space) && !Isjump)
+        if (LM.Isjump)
         {
             //上方向へのちからを加える
-            myrig.AddForce(new Vector3(0.0f, jumpPower, 0.0f), ForceMode.Impulse);
-            //Isjumpをtrueにする
-            Isjump = true;
+           // myrig.AddForce(new Vector3(0.0f, jumpPower, 0.0f), ForceMode.Impulse);
         }
-        //重力を強めるための処理
-        myrig.AddForce(0.0f, -affectGravity, 0.0f);
+       
 
         //基準点の設定
         Vector3 temppoint = Landmark.transform.position - offset;
         //基準点と自分のポジションで移動距離ベクトルを作成
         Vector3 MoveVec = temppoint - transform.position;
         //移動成分を合成する
-        myrig.velocity = new(MoveVec.x * ChaseSpeed, myrig.velocity.y, MoveVec.z);
-    }
+        myrig.velocity = new(MoveVec.x * ChaseSpeed, MoveVec.y * ChaseSpeed, MoveVec.z);
 
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        //フラグを直す
-        Isjump = false;
     }
 
     public void SetLandmark(GameObject _landmark, Vector3 _offset)
