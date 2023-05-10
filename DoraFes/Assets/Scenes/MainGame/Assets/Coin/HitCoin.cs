@@ -5,10 +5,12 @@ using UnityEngine;
 public class HitCoin : MonoBehaviour
 {
     CoinManager coinManager = null;
+    CoinNum coinUI;
 
     private void Start()
     {
         coinManager = GameObject.FindWithTag("LandMark").GetComponent<CoinManager>();
+        coinUI = GameObject.Find("UI_CoinNum").GetComponent<CoinNum>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -16,6 +18,8 @@ public class HitCoin : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             coinManager.isSound = true;
+            coinManager.countCoin++;
+            coinUI.ChangeNumber(coinManager.countCoin);
             Destroy(other.gameObject);
         }
     }

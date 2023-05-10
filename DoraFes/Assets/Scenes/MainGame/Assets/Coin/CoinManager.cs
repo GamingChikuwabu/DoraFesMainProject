@@ -11,6 +11,7 @@ public class CoinManager : MonoBehaviour
     // コインの取得フラグ
     private bool _isSound = false;
     public bool isSound { get { return _isSound; } set { _isSound = value; } }
+    public int countCoin = 0;
 
     void Start()
     {
