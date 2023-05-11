@@ -31,7 +31,8 @@ public class CameraMove : MonoBehaviour
         {
             transform.position = new(transform.position.x, m_transform.position.y + Yoffset, m_transform.position.z - Zoffset);
         }
-         
+        
+
     }
 
 

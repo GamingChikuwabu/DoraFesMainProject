@@ -7,8 +7,10 @@ public class FormationManager : MonoBehaviour
     //現在のマンドラゴラの数
     private int _numMandoragara = 0;
     //隊列の一番最初のキャラとLandmarkの距離
-    
+
     public float LandmarkToChar = -3;
+
+    MandNum mandNum;
 
     //マンドラゴラの数の取得プロパティ
     public int NumMandragara
@@ -20,6 +22,7 @@ public class FormationManager : MonoBehaviour
         set
         {
             _numMandoragara = value;
+            mandNum.ChangeNumber(_numMandoragara);
         }
     }
 
@@ -27,25 +30,7 @@ public class FormationManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //最初のマンドラゴラを増やす
-        NumMandragara++;
-        //最初のプレイヤーを増やす
-        GameObject player =  GameObject.FindGameObjectWithTag("Player");
-        if (player == null) 
-        {
-            Debug.Log("Playerが設置されていないかTagがPlayerのObjectがありません");
-        }
-        PlayerMove pm =  player.GetComponent<PlayerMove>();
-        //ランドマークを探す
-        GameObject landmerk = GameObject.FindGameObjectWithTag("LandMark");
-        if (landmerk == null)
-        {
-            Debug.Log("LandMarkが設置されていないかTagがLandMarkのObjectがありません");
-        }
-
-        LandMarkMove landMarkMove = landmerk.GetComponent<LandMarkMove>();
-        
-        pm.SetLandmark(landmerk, new Vector3(0.0f, 0.0f, -landMarkMove.LandMarkSpeed + LandmarkToChar));
+        mandNum = GameObject.Find("UI_MandNum").GetComponent<MandNum>();
     }
 
     // Update is called once per frame

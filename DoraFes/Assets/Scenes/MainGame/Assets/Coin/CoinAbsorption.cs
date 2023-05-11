@@ -31,11 +31,11 @@ public class CoinAbsorption : MonoBehaviour
     private void Start()
     {
         //目標オブジェクトの取得
-        landmark = GameObject.Find("LandMark");
+        landmark = GameObject.FindGameObjectWithTag("LandMark");
         //LandMarkMoveスクリプトの取得
         LM = landmark.GetComponent<LandMarkMove>();
 
-        Player = GameObject.FindWithTag("Player");
+        Player = GameObject.FindGameObjectWithTag("MainPlayer");
        
     }
 
@@ -63,4 +63,10 @@ public class CoinAbsorption : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
+    
 }

@@ -8,7 +8,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class PlayerMove : MonoBehaviour
 {
     //ランマークの移動量を取得するスクリプト
-    private LandMarkMove LM;
+    private MainPlayerMove LM;
     //自分のRigidBody
     private Rigidbody myrig;
     //自分がついていくのに目標にするオブジェクトのポジション
@@ -27,9 +27,9 @@ public class PlayerMove : MonoBehaviour
     private void Start()
     {
         //目標オブジェクトの取得
-        GameObject landmark = GameObject.Find("LandMark");
+        GameObject landmark = GameObject.FindGameObjectWithTag("MainPlayer");
         //LandMarkMoveスクリプトの取得
-        LM = landmark.GetComponent<LandMarkMove>();
+        LM = landmark.GetComponent<MainPlayerMove>();
         //自分のRigidBodyの取得
         myrig = GetComponent<Rigidbody>();
     }
@@ -40,10 +40,8 @@ public class PlayerMove : MonoBehaviour
         if (LM.Isjump)
         {
             //上方向へのちからを加える
-           // myrig.AddForce(new Vector3(0.0f, jumpPower, 0.0f), ForceMode.Impulse);
+            //myrig.AddForce(new Vector3(0.0f, jumpPower, 0.0f), ForceMode.Impulse);
         }
-       
-
         //基準点の設定
         Vector3 temppoint = Landmark.transform.position - offset;
         //基準点と自分のポジションで移動距離ベクトルを作成
