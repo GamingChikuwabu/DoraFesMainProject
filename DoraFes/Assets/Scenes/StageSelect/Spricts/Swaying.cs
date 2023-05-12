@@ -5,19 +5,23 @@ public class Swaying : MonoBehaviour
     // 選択中であるかどうか
     private bool isSelected = false;
 
-    // 揺れる位置
-    private float movePos;
-
     // 初期位置
     private Vector3 initialPosition;
 
+    
+
+    // 上下移動の速度
+    [Header("移動速度")]
+    [SerializeField] private float speed = 1.0f;
+
+    // 上下移動の幅
+    [Header("可動域")]
+    [SerializeField] private float amplitude = 0.5f;
+
     void Start()
     {
-        // y座標を代入
-        movePos = transform.position.z;
-
         // 初期位置を代入
-        initialPosition = transform.position;   
+        initialPosition = transform.position;
     }
 
     void Update()
@@ -39,16 +43,15 @@ public class Swaying : MonoBehaviour
         // 選択されている場合
         if (isSelected)
         {
-            //上下に揺らす
-            transform.position = new Vector3(transform.position.x, transform.position.y, movePos + Mathf.PingPong(Time.time / 3, 0.5f));
-
+            // sin関数を使って上下に揺らす
+            float newPosition = Mathf.Sin(Time.time * speed) * amplitude + initialPosition.z;
+            transform.position = new Vector3(initialPosition.x, initialPosition.y, newPosition);
         }
         // 選択されていない場合
         else
         {
             // 初期位置に戻す
             transform.position = initialPosition;
-
         }
     }
 }
