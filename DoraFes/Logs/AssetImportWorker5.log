@@ -1,0 +1,497 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ja' Physical Memory: 16205 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/DoraFesMainProject/DoraFes
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+50699
+Successfully changed project path to: C:/DoraFesMainProject/DoraFes
+C:/DoraFesMainProject/DoraFes
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [19356] Host "[IP] 172.17.30.170 [Port] 0 [Flags] 2 [Guid] 1509469801 [EditorId] 1509469801 [Version] 1048832 [Id] WindowsEditor(7,win19ohs10915) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [19356] Host "[IP] 172.17.30.170 [Port] 0 [Flags] 2 [Guid] 1509469801 [EditorId] 1509469801 [Version] 1048832 [Id] WindowsEditor(7,win19ohs10915) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 101.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/DoraFesMainProject/DoraFes/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti with Max-Q Design (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003792 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 91.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.540 seconds
+Domain Reload Profiling:
+	ReloadAssembly (540ms)
+		BeginReloadAssembly (55ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (397ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (92ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (237ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005730 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 93.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.122 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1123ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (931ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (524ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (106ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5027 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (13.3 MB). Loaded Objects now: 5438.
+Memory consumption went from 246.6 MB to 233.3 MB.
+Total: 8.302300 ms (FindLiveObjects: 0.433100 ms CreateObjectMapping: 0.350300 ms MarkObjects: 2.905900 ms  DeleteObjects: 4.611700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 133135.531333 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Brick.fbx
+  artifactKey: Guid(30c89953ee387334da183f6c76fd48d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Brick.fbx using Guid(30c89953ee387334da183f6c76fd48d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e97117ec05e6683c6bf10a589f0c182') in 1.252840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_ConcreteMossCornerOut.fbx
+  artifactKey: Guid(e2ad621800fbfc441a0a069ea807e0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_ConcreteMossCornerOut.fbx using Guid(e2ad621800fbfc441a0a069ea807e0f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6562154fcf36d89f82dcc9456954002e') in 0.031932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_LavaBase.fbx
+  artifactKey: Guid(881f27bc558e64d4983e73ddeb0afcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_LavaBase.fbx using Guid(881f27bc558e64d4983e73ddeb0afcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8d44bfcdf82e667f4b1ddea1af2f30') in 0.032460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockCanyon2.fbx
+  artifactKey: Guid(d9c731e1073c4534fb3536a7c4a16530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockCanyon2.fbx using Guid(d9c731e1073c4534fb3536a7c4a16530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54d1a1a9edc487a2f91f8bc2cd2ad68') in 0.029868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockMoss2.fbx
+  artifactKey: Guid(a65c3afa3a1bc7d4288d11f92e8293c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockMoss2.fbx using Guid(a65c3afa3a1bc7d4288d11f92e8293c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2511a6426fd45602c6a44742d0f367ec') in 0.036653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_Soil.fbx
+  artifactKey: Guid(1d2dcf3cca292da4aadcfafcaf287b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_Soil.fbx using Guid(1d2dcf3cca292da4aadcfafcaf287b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87efa2f5c4d1bd66cec6bc3dfdd72d2e') in 0.033317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/PineTree_A.fbx
+  artifactKey: Guid(c19d51c60b85c95409bf7caa7b00fde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/PineTree_A.fbx using Guid(c19d51c60b85c95409bf7caa7b00fde5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd050310a79f52b26da95d2f5786e6203') in 0.028931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Concrete.fbx
+  artifactKey: Guid(edcaa079410ef6445be20884c5aa7996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Concrete.fbx using Guid(edcaa079410ef6445be20884c5aa7996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b79efde036f71ef8eb30f1226ded28') in 0.031603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_ConcreteMossEdge.fbx
+  artifactKey: Guid(c71da18b976c1b94c819226d09494ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_ConcreteMossEdge.fbx using Guid(c71da18b976c1b94c819226d09494ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bed739201fb2b922a27d3b7820e57b') in 0.029341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_Grass.fbx
+  artifactKey: Guid(8cea630e31397ed4384006599acdecdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_Grass.fbx using Guid(8cea630e31397ed4384006599acdecdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12571bc92ffdf11c19bc75f2b3e1334') in 0.031888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_Clay.fbx
+  artifactKey: Guid(2c383f7356a42da4e9a9533dfb23d831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_Clay.fbx using Guid(2c383f7356a42da4e9a9533dfb23d831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c03b6eab1e95f15bb8b9fb51dcfa43') in 0.035100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Mushroom5.fbx
+  artifactKey: Guid(57e4a40cd1c2b704eb77e0ad3097e7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Mushroom5.fbx using Guid(57e4a40cd1c2b704eb77e0ad3097e7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c9d368db91c65a7176998ac34b7c71') in 0.031735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockCanyon004.fbx
+  artifactKey: Guid(8a01f2fa7e726604ba2bbe59a8ab3e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockCanyon004.fbx using Guid(8a01f2fa7e726604ba2bbe59a8ab3e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4658fe97ce9ae4f60aece62392cb347d') in 0.031874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/OakTree.fbx
+  artifactKey: Guid(14fbdd0c20eae8647b93ad35f802da40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/OakTree.fbx using Guid(14fbdd0c20eae8647b93ad35f802da40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0563db9dcfd0c6272ae75dc722ef68c6') in 0.034436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/PineTree_D.fbx
+  artifactKey: Guid(87f85eee23ebba2468c82e058ad382eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/PineTree_D.fbx using Guid(87f85eee23ebba2468c82e058ad382eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed0ef9037e4d82f07d37616385f78d7e') in 0.031405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_Clay.fbx
+  artifactKey: Guid(26bada306b83c324dbe06de87e83e5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_Clay.fbx using Guid(26bada306b83c324dbe06de87e83e5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a5c43a2ec00e74f48e71fadd91ec59') in 0.028779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockPlainBrown2.fbx
+  artifactKey: Guid(2f32a3b1893886e4caaee2987c67f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockPlainBrown2.fbx using Guid(2f32a3b1893886e4caaee2987c67f4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d93b5e693c403c1c6bf0b57e6593b8e') in 0.030132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_SnowBase.fbx
+  artifactKey: Guid(352d61166fe86e64c8c239704389011f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_SnowBase.fbx using Guid(352d61166fe86e64c8c239704389011f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7668a95b9c7d38fced88a3cfa4ac373') in 0.032783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Brick_Subway.fbx
+  artifactKey: Guid(a626d6d6e3e2eed45a1c2ee0b69d21d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Brick_Subway.fbx using Guid(a626d6d6e3e2eed45a1c2ee0b69d21d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d4b2d3c109a5f386931bcfc5200587') in 0.032826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockPlainGrey3.fbx
+  artifactKey: Guid(424302cb173c49b47af52ab0d5743d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/RockPlainGrey3.fbx using Guid(424302cb173c49b47af52ab0d5743d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4fb271077b63a88ddc05cab68542bfb') in 0.031401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_Water.fbx
+  artifactKey: Guid(7c2b143b31fbe2346b22632861389699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Cap_Water.fbx using Guid(7c2b143b31fbe2346b22632861389699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c14383acf23a0412820b51d9fe67d38') in 0.032004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_Water.fbx
+  artifactKey: Guid(ddf5b982b890d7b4dbcb32c7b2f10ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Meshes/Block_Rounded_Water.fbx using Guid(ddf5b982b890d7b4dbcb32c7b2f10ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d4ecab6c55435bb71599c0e2eb452f') in 0.025666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.702255 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Brick.prefab
+  artifactKey: Guid(3468665f07a45724cb6b40a8b33a8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Brick.prefab using Guid(3468665f07a45724cb6b40a8b33a8415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79fafbf852efa10d59e85ad42f785926') in 0.028741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Brick_Subway.prefab
+  artifactKey: Guid(c9bb74e2d7dfeed4e929ea5543fa507f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Brick_Subway.prefab using Guid(c9bb74e2d7dfeed4e929ea5543fa507f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfa2b8ab9bdb5f57361f22f0592958e') in 0.019059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Concrete.prefab
+  artifactKey: Guid(72b0d84d8d002be4d9144403456c0541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Concrete.prefab using Guid(72b0d84d8d002be4d9144403456c0541) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861f3c0305d9064d45dcc27e928c3a66') in 0.018975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Stones.prefab
+  artifactKey: Guid(e149d3876b7bb26428b02391d4601f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Stones.prefab using Guid(e149d3876b7bb26428b02391d4601f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69500aad47723980c512d245d3629c35') in 0.016136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Rounded_SnowBase.prefab
+  artifactKey: Guid(c612040848ebc0b4ab0232b636e3d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Rounded_SnowBase.prefab using Guid(c612040848ebc0b4ab0232b636e3d353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f962244853c0061672a3841084a70927') in 0.020417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Water.prefab
+  artifactKey: Guid(a68d00f18b7e91a4faef2355a571a32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Water.prefab using Guid(a68d00f18b7e91a4faef2355a571a32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6e39fb35f5f7fef6d02ac73dc34b28') in 0.017760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Mushroom5.prefab
+  artifactKey: Guid(87c5e12bff88d18409f85fb7ccaeb3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Mushroom5.prefab using Guid(87c5e12bff88d18409f85fb7ccaeb3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57a8f0dd720f7fbc994f02425edfe4ec') in 0.019297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/PineTree_A.prefab
+  artifactKey: Guid(5be25102ba01c684793778924982b928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/PineTree_A.prefab using Guid(5be25102ba01c684793778924982b928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7facfc8a84dd3f641dd5b14d74a6491d') in 0.018323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockCanyon1.prefab
+  artifactKey: Guid(395021602475fb949bc33496e5a5bb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockCanyon1.prefab using Guid(395021602475fb949bc33496e5a5bb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0d071e14dc96a280939b588062b4b49') in 0.018095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainBrown2.prefab
+  artifactKey: Guid(1856a7dc29240a9408ef11bdb6f050b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainBrown2.prefab using Guid(1856a7dc29240a9408ef11bdb6f050b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5b4ae9baaf88edc73e9b12ca2d189cf') in 0.016142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockMoss2.prefab
+  artifactKey: Guid(80b52597905d7c840be77abcee4fbfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockMoss2.prefab using Guid(80b52597905d7c840be77abcee4fbfb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae84cae9621189ca70e885018132ccd') in 0.021683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainBrown3.prefab
+  artifactKey: Guid(c482aed371dbcf244ad849d0d8bd450c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainBrown3.prefab using Guid(c482aed371dbcf244ad849d0d8bd450c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2747f63eb48992e5680c2d646df877c0') in 0.021037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainBrown1.prefab
+  artifactKey: Guid(94f9e5b4d978f4f4e86dbe68037085d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainBrown1.prefab using Guid(94f9e5b4d978f4f4e86dbe68037085d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23be7052a59ac1974210f13a95250820') in 0.028986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Concrete.prefab
+  artifactKey: Guid(8246047742c6ed54dafcc7b9c5ef7551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Concrete.prefab using Guid(8246047742c6ed54dafcc7b9c5ef7551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47758d1cdd8309e7c8ee1506651d670f') in 0.029957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey1.prefab
+  artifactKey: Guid(8aa5390f31df8524ab5e28ae2346ba7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey1.prefab using Guid(8aa5390f31df8524ab5e28ae2346ba7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f98f201883aecce86525de3783ca40') in 0.025418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockMoss1.prefab
+  artifactKey: Guid(84cd98c29942c694f8c044df6f7ecc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockMoss1.prefab using Guid(84cd98c29942c694f8c044df6f7ecc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8a331b6563bfa452ed3a5bc9541926') in 0.036084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/SilverBirchTreeMediumB.prefab
+  artifactKey: Guid(c1bd21648bec8f440a039f2c34bdf4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/SilverBirchTreeMediumB.prefab using Guid(c1bd21648bec8f440a039f2c34bdf4d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d382ebb8a3468a245d6be3e94997395') in 0.032499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Mushroom2.prefab
+  artifactKey: Guid(3c57b87dd91db65449a6b66a7bdad5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Mushroom2.prefab using Guid(3c57b87dd91db65449a6b66a7bdad5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a2231872798551044855746e03b0989') in 0.021020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Lava.prefab
+  artifactKey: Guid(2f04c901114ddd645a43441e87ca3ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Lava.prefab using Guid(2f04c901114ddd645a43441e87ca3ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b3d718fe9827fb7d3a29df2cd640c5') in 0.026162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/PineTree_C.prefab
+  artifactKey: Guid(44f3a9e25bbc7cc4dac227e21c95ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/PineTree_C.prefab using Guid(44f3a9e25bbc7cc4dac227e21c95ad5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f91e2d9a22abe1119cc9e5403af7476') in 0.019101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Concrete_Plain.prefab
+  artifactKey: Guid(c4199ab7b397b114298f3918977797b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Concrete_Plain.prefab using Guid(c4199ab7b397b114298f3918977797b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ebb311b68fe4fe0dd867713db06dd9') in 0.018952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Sand.prefab
+  artifactKey: Guid(2a2bfb04f67b1834887bd27067ee18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Sand.prefab using Guid(2a2bfb04f67b1834887bd27067ee18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2ebcbcbcdbb82e4eecf8934e6414e1') in 0.023716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_ConcreteMossCornerIn.prefab
+  artifactKey: Guid(cfa4886881fcde74c8a832dcb083b551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_ConcreteMossCornerIn.prefab using Guid(cfa4886881fcde74c8a832dcb083b551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bdabd0dd96978a40f8cf4d559bf2ee') in 0.031366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey3.prefab
+  artifactKey: Guid(ab143f35dec115740bdcd10ea7a9e32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey3.prefab using Guid(ab143f35dec115740bdcd10ea7a9e32c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e03454903575c0d2fc0935c317dd31') in 0.026723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_ConcreteMoss.prefab
+  artifactKey: Guid(dba1bc79d66870d4c952c8acd1a3c106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_ConcreteMoss.prefab using Guid(dba1bc79d66870d4c952c8acd1a3c106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1eb5d6956a3c39ed7457cc0f8b7b1a1') in 0.024750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.894011 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Autumn_Small.prefab
+  artifactKey: Guid(f811fe422df660545a9f29076e554a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Autumn_Small.prefab using Guid(f811fe422df660545a9f29076e554a51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0149cd1c4daee5bded5054c8702bce') in 0.025993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Spring_Small.prefab
+  artifactKey: Guid(b73cf569485a755408a584e65c222404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Spring_Small.prefab using Guid(b73cf569485a755408a584e65c222404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fdcc0ba002856d18f8f0c586cf1140a') in 0.020596 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Medium_SumAut.prefab
+  artifactKey: Guid(027daa397ee5f524283f5fec780f0a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Medium_SumAut.prefab using Guid(027daa397ee5f524283f5fec780f0a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb05f70d03edbd23d11f3bd56beec4d5') in 0.028830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Winter_Alt.prefab
+  artifactKey: Guid(cbc62331c42b34a48adf2d5682e2561b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Winter_Alt.prefab using Guid(cbc62331c42b34a48adf2d5682e2561b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e9f74bcbda6bc36df10a4397192261b') in 0.045709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Small_SumAut.prefab
+  artifactKey: Guid(f48f9f57056d1b447a2a5941321446f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Small_SumAut.prefab using Guid(f48f9f57056d1b447a2a5941321446f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29480583c4d5d41feced0f5f365b783') in 0.026676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Winter_Small.prefab
+  artifactKey: Guid(0b63a1fb25ce7e5499e1e5d7a76176dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Winter_Small.prefab using Guid(0b63a1fb25ce7e5499e1e5d7a76176dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126e2da8da5a614d8baab5dcd7d29a25') in 0.032830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Medium_Winter.prefab
+  artifactKey: Guid(b3bc9a448b1c59b4d90985e7f69c448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Medium_Winter.prefab using Guid(b3bc9a448b1c59b4d90985e7f69c448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204d0ac3b5ab638c5213205b604290bc') in 0.025119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Summer.prefab
+  artifactKey: Guid(45ceab5d0bc024940bde6395782ecd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Summer.prefab using Guid(45ceab5d0bc024940bde6395782ecd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc96ae79426379bdd85c27a25a9ff05') in 0.024454 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

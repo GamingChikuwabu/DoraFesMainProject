@@ -1,0 +1,503 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ja' Physical Memory: 16205 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker11
+-projectPath
+C:/DoraFesMainProject/DoraFes
+-logFile
+Logs/AssetImportWorker11.log
+-srvPort
+50699
+Successfully changed project path to: C:/DoraFesMainProject/DoraFes
+C:/DoraFesMainProject/DoraFes
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [22344] Host "[IP] 172.17.30.170 [Port] 0 [Flags] 2 [Guid] 1210950084 [EditorId] 1210950084 [Version] 1048832 [Id] WindowsEditor(7,win19ohs10915) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [22344] Host "[IP] 172.17.30.170 [Port] 0 [Flags] 2 [Guid] 1210950084 [EditorId] 1210950084 [Version] 1048832 [Id] WindowsEditor(7,win19ohs10915) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 122.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/DoraFesMainProject/DoraFes/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti with Max-Q Design (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005913 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 102.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.663 seconds
+Domain Reload Profiling:
+	ReloadAssembly (663ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (451ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (127ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (255ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005731 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 100.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.159 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1160ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (957ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (101ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5027 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (13.3 MB). Loaded Objects now: 5438.
+Memory consumption went from 246.6 MB to 233.3 MB.
+Total: 7.064600 ms (FindLiveObjects: 0.409400 ms CreateObjectMapping: 0.360500 ms MarkObjects: 2.164400 ms  DeleteObjects: 4.129600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 135388.300202 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Materials/BlocksAndTrees
+  artifactKey: Guid(267cdf6a3bd587242ad7f31f02939ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Materials/BlocksAndTrees using Guid(267cdf6a3bd587242ad7f31f02939ca6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6929be6813e2bda0aa9a0772135033e9') in 0.013170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 236.936252 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Sand_Plane_Bump_B.prefab
+  artifactKey: Guid(2a63ef644c3f4a94bb91eebf4233e45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Sand_Plane_Bump_B.prefab using Guid(2a63ef644c3f4a94bb91eebf4233e45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbca7e4e070e7e767926b8fb885778af') in 0.256826 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Wood_Plank_D.prefab
+  artifactKey: Guid(0656b2fe8c8ac964895c4974f6470c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Wood_Plank_D.prefab using Guid(0656b2fe8c8ac964895c4974f6470c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f893338064f2c24290687cb0df7f39d0') in 0.028796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.252746 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials
+  artifactKey: Guid(26aa26c637a58b942ac53dd3d595b6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials using Guid(26aa26c637a58b942ac53dd3d595b6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6eecf71145a3f06efa2f4523c6c9e6b') in 0.008033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.030477 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials/LowPolyWater.mat
+  artifactKey: Guid(895a988b69d5f5545be73141bafd93ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials/LowPolyWater.mat using Guid(895a988b69d5f5545be73141bafd93ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7c9a723da1b823a88ac1707a57b48b7') in 0.027828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials/WaterMaterial 1.mat
+  artifactKey: Guid(0fa4ec44aa24a09468d8dc44254367f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials/WaterMaterial 1.mat using Guid(0fa4ec44aa24a09468d8dc44254367f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '305bb69f39f3200199bd01957b726234') in 0.019338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.819996 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials/Atlas1_Material 1.mat
+  artifactKey: Guid(8a2b262cfb743ed439e4961159f1f5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Materials/Atlas1_Material 1.mat using Guid(8a2b262cfb743ed439e4961159f1f5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6c6c80eb063f42bad444dbde5d08562') in 0.022630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.360165 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Barrel_A.prefab
+  artifactKey: Guid(ec92e415bdf9b974e9004b902e9f308d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Barrel_A.prefab using Guid(ec92e415bdf9b974e9004b902e9f308d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6301dbd1dd0f355d2ca958eff703c6') in 0.027197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bin_A.prefab
+  artifactKey: Guid(a828848d66a826148a9d5c39338d5677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bin_A.prefab using Guid(a828848d66a826148a9d5c39338d5677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '023719543e6dad37e582995194d6a919') in 0.027305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bush_Grassy_B.prefab
+  artifactKey: Guid(cc3e96e8f043e164fb83cefe1d79e93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bush_Grassy_B.prefab using Guid(cc3e96e8f043e164fb83cefe1d79e93e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49167052bb8c9271a83dc5f09e993711') in 0.023001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Closed.prefab
+  artifactKey: Guid(fec4e40c38b8f5f4eb302dd6e4833c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Closed.prefab using Guid(fec4e40c38b8f5f4eb302dd6e4833c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4e7bcbb84dcbf328e326f22b87e43a') in 0.022445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Bag.prefab
+  artifactKey: Guid(cb0941e4ea5f7724a83a98e5da9f1850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Bag.prefab using Guid(cb0941e4ea5f7724a83a98e5da9f1850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a1f6b6d5a2f465effe0c5b03df1e6b7') in 0.021028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_A.prefab
+  artifactKey: Guid(be2823893092104458255b46eb89a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_A.prefab using Guid(be2823893092104458255b46eb89a614) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8901a64df854838bc9374afcd2e0f1b7') in 0.021406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Post_A.prefab
+  artifactKey: Guid(7b5d5ecc3b14b11449fbf4fecdf865bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Post_A.prefab using Guid(7b5d5ecc3b14b11449fbf4fecdf865bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61b9cf4dfeeba104e2f2470ef59b362') in 0.020691 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_DarkBlue 1.prefab
+  artifactKey: Guid(4116ca20fbc467e4486ffdd2be1d5be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_DarkBlue 1.prefab using Guid(4116ca20fbc467e4486ffdd2be1d5be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a67c761cda28fc55b3d9defbae2647e') in 0.022173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_RubyRed.prefab
+  artifactKey: Guid(60a485b6c8da55444ad5564f3c235c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_RubyRed.prefab using Guid(60a485b6c8da55444ad5564f3c235c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8864cf9f248a523df6098a411fd6a77d') in 0.028201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Teal.prefab
+  artifactKey: Guid(7348c39d5ca3ff04cb1d490be634490f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Teal.prefab using Guid(7348c39d5ca3ff04cb1d490be634490f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ce38a9767efe2766602e01f9069de2') in 0.027362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coconut.prefab
+  artifactKey: Guid(a1a4d92e94bd0c644b1cb8f0c98c26a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coconut.prefab using Guid(a1a4d92e94bd0c644b1cb8f0c98c26a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '122041171deb173a67c9fccc39863b13') in 0.025658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Cauldron 1.prefab
+  artifactKey: Guid(12be1cfbe0b0f624ab9ff654f406729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Cauldron 1.prefab using Guid(12be1cfbe0b0f624ab9ff654f406729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645ba9c6ab28718c0bf7048d2d7fa57a') in 0.029766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Post_B.prefab
+  artifactKey: Guid(f642831a0d527144781b1053bd00ae99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Post_B.prefab using Guid(f642831a0d527144781b1053bd00ae99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e718d99fba2c96161c550ff9eda76b86') in 0.028384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Open.prefab
+  artifactKey: Guid(9dbf22de1641237478d0d53762fb1aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Open.prefab using Guid(9dbf22de1641237478d0d53762fb1aa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54aa2af1c37c9b4095333511793bb3ae') in 0.021890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Crate_A.prefab
+  artifactKey: Guid(1aef4c0aaa73f7d4f9c0ef7e20fa1ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Crate_A.prefab using Guid(1aef4c0aaa73f7d4f9c0ef7e20fa1ce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245e81240f690963468326503bb50abc') in 0.023091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Lid.prefab
+  artifactKey: Guid(f26817945c9b0444c9e1ca42c7c22bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Lid.prefab using Guid(f26817945c9b0444c9e1ca42c7c22bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9216b7d85ec41475f92da5baeb490ac0') in 0.024553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bush_Grassy_C.prefab
+  artifactKey: Guid(f90332d96af8d7f40a4768c70cb14a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bush_Grassy_C.prefab using Guid(f90332d96af8d7f40a4768c70cb14a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54451e3eeb0abe83bc37ed0364c61a9a') in 0.026345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_D.prefab
+  artifactKey: Guid(1f21166b2f4e34c439eff7f5acb6d203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_D.prefab using Guid(1f21166b2f4e34c439eff7f5acb6d203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8b0867935ab2bd32bc3d8687fdb24d') in 0.025622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Green.prefab
+  artifactKey: Guid(765b8567242255840b66f42209a369aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Green.prefab using Guid(765b8567242255840b66f42209a369aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b32a5bfa03aa2063c6ed0e3e42369d0') in 0.025129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_B.prefab
+  artifactKey: Guid(b03615302e0f5bc4d8910797b58900be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_B.prefab using Guid(b03615302e0f5bc4d8910797b58900be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4884b3e3606a6027d5d0c9a9be4da2') in 0.022821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Firepit_Sticks.prefab
+  artifactKey: Guid(0e0fb115f16d7594c9a93c7d02c4d84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Firepit_Sticks.prefab using Guid(0e0fb115f16d7594c9a93c7d02c4d84d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38d1a77655415f61c067c3e7c1b1c1b') in 0.025164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Silver.prefab
+  artifactKey: Guid(bc132513b0378a641a53deccebc0d4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Silver.prefab using Guid(bc132513b0378a641a53deccebc0d4ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ac4c9ab3bc2a88f925a34c7ac60347') in 0.024309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_DarkBlue.prefab
+  artifactKey: Guid(e40a8d09e9df55246b58ee2ab4d9f261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_DarkBlue.prefab using Guid(e40a8d09e9df55246b58ee2ab4d9f261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a889316248f4ecbd4bfc6a0a87edbc0') in 0.023745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Gold.prefab
+  artifactKey: Guid(7579c8f21d0fcfe4b832b5d55ab7c417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Gold.prefab using Guid(7579c8f21d0fcfe4b832b5d55ab7c417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0369a537b9d0ac5474629a396a2a36b1') in 0.023218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.809444 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Grass_Card_C.prefab
+  artifactKey: Guid(17e0e5a2bcd548e4aa7bc11dd7b959d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Grass_Card_C.prefab using Guid(17e0e5a2bcd548e4aa7bc11dd7b959d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69df575604e1444a80decb2dc4359e57') in 0.025627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Leaf_Ivy_A.prefab
+  artifactKey: Guid(7411ad6728e724641af12a727db7c713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Leaf_Ivy_A.prefab using Guid(7411ad6728e724641af12a727db7c713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510258327d9132df19d553a156678e6c') in 0.025721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Leaf_Style_A.prefab
+  artifactKey: Guid(aaa58261227444445a3016da17dbf5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Leaf_Style_A.prefab using Guid(aaa58261227444445a3016da17dbf5a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea24792c7bafcd5bc4e7147d4e43aa0') in 0.028849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Leaf_Style_E.prefab
+  artifactKey: Guid(5e1a0119d4b8a9147b85158aa33dce72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Leaf_Style_E.prefab using Guid(5e1a0119d4b8a9147b85158aa33dce72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932d1609be8670931d5f15c2dae9b46f') in 0.034905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Park_Bench.prefab
+  artifactKey: Guid(1445c4de61ebcf94d838db51eaa136dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Park_Bench.prefab using Guid(1445c4de61ebcf94d838db51eaa136dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc93420e247bd77bb1ccc27c6d893bc') in 0.034246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Tree_B.prefab
+  artifactKey: Guid(b07f8384b5f7a4647bc66057056b2976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Tree_B.prefab using Guid(b07f8384b5f7a4647bc66057056b2976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88867c7130ac7acede86c2f3a17f3833') in 0.035279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Picnic_Bench.prefab
+  artifactKey: Guid(b4e3142fe2b83384c990c424786e7d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Picnic_Bench.prefab using Guid(b4e3142fe2b83384c990c424786e7d14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ff79dc4b73591845d64a3d838b3b333') in 0.026931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Medium_B.prefab
+  artifactKey: Guid(120f6cb48fd75004dac1968f60ae1282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Medium_B.prefab using Guid(120f6cb48fd75004dac1968f60ae1282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae984ca9128b2efaea51f8db8041fa2') in 0.024028 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Platform_Medium_GrassVariant.prefab
+  artifactKey: Guid(098ae599500a3944392e1db2264b4f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Platform_Medium_GrassVariant.prefab using Guid(098ae599500a3944392e1db2264b4f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36e3045b3a1d0a22202ba78835870b15') in 0.022599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_C.prefab
+  artifactKey: Guid(7ff5400c80f29b741aeb05a1a277b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_C.prefab using Guid(7ff5400c80f29b741aeb05a1a277b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0789e183b030277f0331c8e64870a0c') in 0.027645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_A.prefab
+  artifactKey: Guid(b1ebcb2f6cf42d848ae462c171dbd02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_A.prefab using Guid(b1ebcb2f6cf42d848ae462c171dbd02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2b87580ffc558305c897fec00b7e184') in 0.030268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Boulder_B.prefab
+  artifactKey: Guid(a537cd0cd4b46ce42bc9e0e71c600424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Boulder_B.prefab using Guid(a537cd0cd4b46ce42bc9e0e71c600424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a99635e9288e82e5eeaf4be5f09ea67') in 0.026330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Small_B.prefab
+  artifactKey: Guid(5fddf1925bf916745a9dab05702faae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Small_B.prefab using Guid(5fddf1925bf916745a9dab05702faae0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ec37cc9f9d868ab681dd4d0966d6920') in 0.024167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Sand_Plane_Flat_A.prefab
+  artifactKey: Guid(4d61159bb4b605141a93dde33f259e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Sand_Plane_Flat_A.prefab using Guid(4d61159bb4b605141a93dde33f259e95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bd211822a3fc78aeda273b9eacf05d') in 0.021466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/SandPlane_Large_Bumpy.prefab
+  artifactKey: Guid(ffd616160ac27764082b9fc7067e1e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/SandPlane_Large_Bumpy.prefab using Guid(ffd616160ac27764082b9fc7067e1e3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6d16aca76dd44eea1cc7a4bbe83a2b') in 0.025295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Medium_F.prefab
+  artifactKey: Guid(4c65c362d8007bd49b543e018d6efe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Medium_F.prefab using Guid(4c65c362d8007bd49b543e018d6efe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c103ae0a3f6f4352ce877aa1949a18b') in 0.022468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Stick_B.prefab
+  artifactKey: Guid(bc68b123155a4e74fa6215b60dae1c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Stick_B.prefab using Guid(bc68b123155a4e74fa6215b60dae1c11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0950c15fbf0d02edf36ace3e9d9c0927') in 0.023845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Stone_Squarish_B.prefab
+  artifactKey: Guid(00c1e36206eeded42aa8f564e1e3e6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Stone_Squarish_B.prefab using Guid(00c1e36206eeded42aa8f564e1e3e6b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889a544c061d5c470176a6d5fcd38c1c') in 0.021375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Wood_Beam_B.prefab
+  artifactKey: Guid(8a4a19c8da24169499302c1cb5fe1a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Wood_Beam_B.prefab using Guid(8a4a19c8da24169499302c1cb5fe1a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b98a32a5e3ea5bf2562fbaaf2ad5010') in 0.028100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Medium_A.prefab
+  artifactKey: Guid(71594090eb3d11d4c909235505df6cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Medium_A.prefab using Guid(71594090eb3d11d4c909235505df6cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f86f0d4fa2cec27f81c61175264d2da8') in 0.027975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Cave_Entry_A.prefab
+  artifactKey: Guid(84ec68b94586a9b4697df756d70a1cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Cave_Entry_A.prefab using Guid(84ec68b94586a9b4697df756d70a1cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fafe30d597ddc5598bdd498a8ba04a7') in 0.027292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Sand_To_Grass_Corner.prefab
+  artifactKey: Guid(ce423f5a7ca0cfa4f80221b65b8abd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Sand_To_Grass_Corner.prefab using Guid(ce423f5a7ca0cfa4f80221b65b8abd1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0a17dd4f0b9128e3dd7b7c24eb26a2') in 0.029733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/SandPlane_Large_Flat.prefab
+  artifactKey: Guid(6d64c57a7672b04438dd1b4dcbad1dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/SandPlane_Large_Flat.prefab using Guid(6d64c57a7672b04438dd1b4dcbad1dec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe3a18883ec0ff1bb1483c748df05d6') in 0.029457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Platform_Small_GrassVariant.prefab
+  artifactKey: Guid(f7b43761098f9964882fc65fc91802fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Platform_Small_GrassVariant.prefab using Guid(f7b43761098f9964882fc65fc91802fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9646bd8f53adaeec87d3ba3bea3f2bf3') in 0.023914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.464645 seconds.
+  path: Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Wood_Plank_B.prefab
+  artifactKey: Guid(0b10ef75a9cbce543a0ee2d537b80752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Wood_Plank_B.prefab using Guid(0b10ef75a9cbce543a0ee2d537b80752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128d0a13bb34b102d4664c677433978c') in 0.026325 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
