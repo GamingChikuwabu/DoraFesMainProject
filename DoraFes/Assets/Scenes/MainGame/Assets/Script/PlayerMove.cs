@@ -47,7 +47,7 @@ public class PlayerMove : MonoBehaviour
         //基準点と自分のポジションで移動距離ベクトルを作成
         Vector3 MoveVec = temppoint - transform.position;
         //移動成分を合成する
-        myrig.velocity = new(MoveVec.x * ChaseSpeed, MoveVec.y * ChaseSpeed, MoveVec.z);
+        myrig.velocity = new(MoveVec.x * ChaseSpeed, MoveVec.y * 50, MoveVec.z);
 
     }
 

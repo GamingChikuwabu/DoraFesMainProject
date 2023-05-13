@@ -9,16 +9,21 @@ public class MainPlayerMove : MonoBehaviour
     //移動の減速率
     public float Decelerationrate = 0.1f;
 
-    [Header("重力への影響度")]
+    [Header("疑似重力")]
     [SerializeField]
-    private float affectGravity = 2.0f;
+    private float Gravity = 2.0f;
 
-    private float RetuerPlayerMovePower = 0;
+    [Header("ジャンプ力")]
+    public float jumpPouwer = 45.0f;
+
+    private float stackjumpPouwer;
+
+
     //このオブジェクトのRigidbody
     Rigidbody rig;
     LandMarkMove landMark;
 
-    public float jumpPouwer = 15.0f;
+    
 
     bool _Isjump = false;
 
@@ -52,15 +57,30 @@ public class MainPlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && !Isjump)
         {
-            rig.AddForce(new Vector3(0.0f, jumpPouwer, 0.0f), ForceMode.Impulse);
             _Isjump = true;
+            stackjumpPouwer = jumpPouwer;
         }
 
-         
+        if(_Isjump) 
+        {
+            stackjumpPouwer -= Gravity * Time.deltaTime;
+            rig.velocity = new(rig.velocity.x, stackjumpPouwer, rig.velocity.z);
+
+            Debug.Log(stackjumpPouwer.ToString());
+        }
+
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        //上下方向のブロックに当たっている場合
+        if (Physics.Raycast(transform.position, new(0.0f, 1.0f, 0.0f), 10.0f)|| Physics.Raycast(transform.position, new(0.0f, -1.0f, 0.0f), 10.0f))
+        {
+            stackjumpPouwer = 0;
+        }
+
         _Isjump = false;
+
     }
 }
