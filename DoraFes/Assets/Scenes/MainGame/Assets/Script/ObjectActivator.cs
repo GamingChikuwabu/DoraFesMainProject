@@ -6,13 +6,18 @@ public class ObjectActivator : MonoBehaviour
 {
     // アクティブにするオブジェクトのタグ名
   
-    [SerializeField] GameObject tex;
-    public float triggerDistance = 10f;     // カメラがこの距離以内に近づいたらオブジェクトをアクティブ化する
-    private Transform cameraTransform;      // カメラのTransformコンポーネント
+    [SerializeField] GameObject Block;
+    [SerializeField] GameObject Block2;
+    [SerializeField] GameObject Block3;
+
+    public float triggerDistance = 150f; // カメラがこの距離以内に近づいたらオブジェクトをアクティブ化する
+
+    private Transform cameraTransform; // カメラのTransformコンポーネント
+   
 
     // カメラオブジェクト
     private Camera mainCamera;
-    // Startメソッドでカメラオブジェクトを取得
+  // Startメソッドでカメラオブジェクトを取得
     void Start()
     {
         mainCamera = Camera.main;
@@ -23,12 +28,23 @@ public class ObjectActivator : MonoBehaviour
 
     // アクティブにするオブジェクトを取得する
     void ActivateObjectsIfCameraNear()
-    {
-        // アクティブにするオブジェクトを取得
-        float distanceToCamera = tex.transform.position.z - cameraTransform.position.z;
+    {       
+        float distanceToCamera = Block.transform.position.z - cameraTransform.position.z;
+        float distanceToCamera2 = Block2.transform.position.z - cameraTransform.position.z;
+        float distanceToCamera3 = Block3.transform.position.z - cameraTransform.position.z;
+
         if (distanceToCamera <= triggerDistance)
         {
-            tex.SetActive(true);
+            Block.SetActive(true);
+        }
+
+        if (distanceToCamera2 <= triggerDistance*2)
+        {
+            Block2.SetActive(true);
+        }
+        if (distanceToCamera3 <= triggerDistance * 3)
+        {
+            Block3.SetActive(true);
         }
     }
 
