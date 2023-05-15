@@ -23,7 +23,8 @@ public class MainPlayerMove : MonoBehaviour
     Rigidbody rig;
     LandMarkMove landMark;
 
-    
+    bool Leftmove = true;
+    bool Rightmove = true;
 
     bool _Isjump = false;
 
@@ -42,11 +43,11 @@ public class MainPlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && Leftmove)
         {
             rig.velocity = new Vector3(-PlayerMovePower, rig.velocity.y, landMark.LandMarkSpeed);
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) && Rightmove)
         {
             rig.velocity = new Vector3(PlayerMovePower, rig.velocity.y, landMark.LandMarkSpeed);
         }
@@ -54,6 +55,7 @@ public class MainPlayerMove : MonoBehaviour
         {
             rig.velocity = new Vector3(rig.velocity.x * Decelerationrate, rig.velocity.y, landMark.LandMarkSpeed);
         }
+
 
         if (Input.GetKeyDown(KeyCode.Space) && !Isjump)
         {
@@ -65,11 +67,13 @@ public class MainPlayerMove : MonoBehaviour
         {
             stackjumpPouwer -= Gravity * Time.deltaTime;
             rig.velocity = new(rig.velocity.x, stackjumpPouwer, rig.velocity.z);
-
-            Debug.Log(stackjumpPouwer.ToString());
         }
 
+        Vector3 tempvec = new Vector3(transform.position.x, transform.position.y, landMark.LandMarkToCharPos);
+        Vector3 latevec =  tempvec - transform.position;
+        rig.AddForce(latevec * 300);
 
+        Debug.Log(latevec.ToString());
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -81,6 +85,29 @@ public class MainPlayerMove : MonoBehaviour
         }
 
         _Isjump = false;
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "InvWall")
+        {
+            rig.velocity = new(0.0f, rig.velocity.y, rig.velocity.z);
+            if (Physics.Raycast(transform.position, new(1.0f, 0.0f, 0.0f), 10.0f))
+            {
+                Rightmove = false;
+                Leftmove = true;
+            }
+            else if (Physics.Raycast(transform.position, new(-1.0f, 0.0f, 0.0f), 10.0f))
+            {
+                Rightmove = true;
+                Leftmove = false;
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Rightmove = true;
+        Leftmove = true;
     }
 }

@@ -9,6 +9,10 @@ public class LandMarkMove : MonoBehaviour
     //このオブジェクトのRigidbody
     Rigidbody rig;
 
+    [Header("ランドマークとキャラクターの距離")]
+    [SerializeField]
+    private float _landMarkToCharOffset = 5;
+
     public float jumpPouwer = 15.0f;
 
     bool _Isjump = false;
@@ -16,6 +20,11 @@ public class LandMarkMove : MonoBehaviour
     public bool Isjump
     {
         get { return _Isjump; }
+    }
+
+    public float LandMarkToCharPos
+    {
+        get { return transform.position.z - _landMarkToCharOffset;}
     }
 
     // Start is called before the first frame update
