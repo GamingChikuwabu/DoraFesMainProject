@@ -9,11 +9,11 @@ C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker1
+AssetImportWorker3
 -projectPath
 C:/DoraFesMainProject/DoraFes
 -logFile
-Logs/AssetImportWorker1.log
+Logs/AssetImportWorker3.log
 -srvPort
 55553
 Successfully changed project path to: C:/DoraFesMainProject/DoraFes
@@ -47,11 +47,11 @@ C:/DoraFesMainProject/DoraFes
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [32992] Host "[IP] 10.77.113.14 [Port] 0 [Flags] 2 [Guid] 2294241392 [EditorId] 2294241392 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28632] Host "[IP] 10.77.113.14 [Port] 0 [Flags] 2 [Guid] 4222912922 [EditorId] 4222912922 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [32992] Host "[IP] 10.77.113.14 [Port] 0 [Flags] 2 [Guid] 2294241392 [EditorId] 2294241392 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28632] Host "[IP] 10.77.113.14 [Port] 0 [Flags] 2 [Guid] 4222912922 [EditorId] 4222912922 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 125.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 264.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,85 +67,85 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56572
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006003 seconds.
+Registered in 0.012337 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 284 ms
-Refreshing native plugins compatible for Editor in 123.38 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 359 ms
+Refreshing native plugins compatible for Editor in 134.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.071 seconds
+- Completed reload, in  1.502 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1071ms)
-		BeginReloadAssembly (88ms)
+	ReloadAssembly (1502ms)
+		BeginReloadAssembly (126ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (859ms)
-			LoadAssemblies (86ms)
+		EndReloadAssembly (1145ms)
+			LoadAssemblies (123ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (147ms)
+			SetupTypeCache (237ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (620ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (760ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (364ms)
+				InitializePlatformSupportModulesInManaged (485ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (123ms)
+				RefreshPlugins (135ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (88ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006317 seconds.
+Registered in 0.006614 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 134.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 117.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.619 seconds
+- Completed reload, in  1.417 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1620ms)
-		BeginReloadAssembly (115ms)
+	ReloadAssembly (1418ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (1372ms)
-			LoadAssemblies (85ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1189ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (378ms)
+			SetupTypeCache (297ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (86ms)
-			SetupLoadedEditorAssemblies (766ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (693ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (33ms)
+				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (135ms)
-				BeforeProcessingInitializeOnLoad (156ms)
-				ProcessInitializeOnLoadAttributes (302ms)
-				ProcessInitializeOnLoadMethodAttributes (133ms)
+				RefreshPlugins (118ms)
+				BeforeProcessingInitializeOnLoad (137ms)
+				ProcessInitializeOnLoadAttributes (282ms)
+				ProcessInitializeOnLoadMethodAttributes (124ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -153,13 +153,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 2.58 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5027 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 86 unused Assets / (13.4 MB). Loaded Objects now: 5442.
-Memory consumption went from 314.4 MB to 301.0 MB.
-Total: 16.196400 ms (FindLiveObjects: 0.703500 ms CreateObjectMapping: 0.869000 ms MarkObjects: 4.727700 ms  DeleteObjects: 9.894200 ms)
+Memory consumption went from 314.3 MB to 300.9 MB.
+Total: 13.717700 ms (FindLiveObjects: 0.606500 ms CreateObjectMapping: 0.733600 ms MarkObjects: 3.579700 ms  DeleteObjects: 8.796100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -173,22 +173,10 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 357642.494235 seconds.
-  path: Assets/Scenes/StageSelect/Materials/jungle 3.mat
-  artifactKey: Guid(88777a508a60f1149b8bdcef438ee324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StageSelect/Materials/jungle 3.mat using Guid(88777a508a60f1149b8bdcef438ee324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01757f099bfa417f007236ab1925e4c0') in 0.616378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000091 seconds.
-  path: Assets/Scenes/StageSelect/Materials/forest 6.mat
-  artifactKey: Guid(97c4f3c4788e96243832c252775fd9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StageSelect/Materials/forest 6.mat using Guid(97c4f3c4788e96243832c252775fd9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb58e525449a8c8bb8ce36fecec4fce') in 0.065086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.463755 seconds.
-  path: Assets/Scenes/MainGame/Assets/Map/Materials/MapCip_Ground1.mat
-  artifactKey: Guid(2bdfa999566763143bafff1ece727135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGame/Assets/Map/Materials/MapCip_Ground1.mat using Guid(2bdfa999566763143bafff1ece727135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836821f6d64b0299a21a715995a7c362') in 0.029506 seconds 
+  Time since last request: 357665.676075 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/Materials/MapCip_Ground1.png
+  artifactKey: Guid(ce2d7a7174cf89b4ab6f467d3a381262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/Materials/MapCip_Ground1.png using Guid(ce2d7a7174cf89b4ab6f467d3a381262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a747171bf7d2a51da8ee3622c1139c49') in 0.064008 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
