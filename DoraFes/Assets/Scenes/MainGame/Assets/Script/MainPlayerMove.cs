@@ -5,39 +5,45 @@ using UnityEngine;
 public class MainPlayerMove : MonoBehaviour
 {
     //プレイヤーの左右移動の力
-    public float PlayerMovePower = 3;
-    //移動の減速率
-    public float Decelerationrate = 0.1f;
-
+    [Header("左右移動の処理")]
+    [SerializeField]
+    private float PlayerMovePower = 3;
+    [Header("移動の減衰率")]
+    [SerializeField]
+    public float Decelerationrate = 0.9f;
     [Header("疑似重力")]
     [SerializeField]
     private float Gravity = 2.0f;
-
     [Header("ジャンプ力")]
     public float jumpPouwer = 45.0f;
+    [Header("カメラが動き始める最小値")]
+    public float MoveStartMinVal = 2;
 
     private float stackjumpPouwer;
 
-
+    private float OldYPos;
     //このオブジェクトのRigidbody
     Rigidbody rig;
+    //ランドマークの移動スクリプト
     LandMarkMove landMark;
-
+    //左右移動の制限フラグ
     bool Leftmove = true;
     bool Rightmove = true;
 
+    //ジャンプしているかどうか
     bool _Isjump = false;
-
     public bool Isjump
     {
         get { return _Isjump; }
-    }
+    }    
+
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
         landMark = GameObject.FindGameObjectWithTag("LandMark").GetComponent<LandMarkMove>();
+        landMark.PlayerYPos = transform.position.y;
     }
 
     // Update is called once per frame
@@ -69,11 +75,10 @@ public class MainPlayerMove : MonoBehaviour
             rig.velocity = new(rig.velocity.x, stackjumpPouwer, rig.velocity.z);
         }
 
+        //MainPlayerが遅れた時の処理
         Vector3 tempvec = new Vector3(transform.position.x, transform.position.y, landMark.LandMarkToCharPos);
         Vector3 latevec =  tempvec - transform.position;
         rig.AddForce(latevec * 300);
-
-        Debug.Log(latevec.ToString());
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -84,6 +89,8 @@ public class MainPlayerMove : MonoBehaviour
             stackjumpPouwer = 0;
         }
 
+        landMark.PlayerYPos = transform.position.y;
+        
         _Isjump = false;
     }
 

@@ -12,8 +12,24 @@ public class LandMarkMove : MonoBehaviour
     [Header("ランドマークとキャラクターの距離")]
     [SerializeField]
     private float _landMarkToCharOffset = 5;
+    [Header("カメラの上下の追従スピード最大1")]
+    [SerializeField]
+    private float CameraLeepSpeed = 0.1f;
+
+
+    public Vector3 OldPos;
+
+    private float LeepPoint = 0; 
 
     public float jumpPouwer = 15.0f;
+
+    private float _playerYPos;
+    public float PlayerYPos
+    {
+        set { OldPos = new (0.0f,transform.position.y,0.0f);
+            _playerYPos = value; 
+            LeepPoint = 0; }
+    }
 
     bool _Isjump = false;
 
@@ -37,9 +53,16 @@ public class LandMarkMove : MonoBehaviour
     void Update()
     {
         rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, LandMarkSpeed);
-        if (rig == null)
-        {
-            Debug.Log("non");
-        }
+
+        Vector3 tempVec = new Vector3(0.0f, _playerYPos, 0.0f) - transform.position;
+
+        tempVec.z = 0.0f;
+        tempVec.x = 0.0f;
+
+        LeepPoint += CameraLeepSpeed;
+
+        transform.position = new(transform.position.x, Vector3.Lerp(OldPos, new Vector3(0.0f, _playerYPos, 0.0f), LeepPoint).y, transform.position.z);
     }
+
+
 }
