@@ -82,7 +82,7 @@ public class SideTextureRepeat : MonoBehaviour
             renderer.material.mainTextureScale = new Vector2(repeatScale.x * trueTextureScale, repeatScale.y * trueTextureScale);
             // テクスチャの開始位置を左上に設定する処理
             // 縦方向の繰り返し回数が整数でない場合に、テクスチャが切り取られないようにする
-            renderer.material.mainTextureOffset = new Vector2(0f, 1f - (repeatScale.y * trueTextureScale % 1f));
+            renderer.material.mainTextureOffset = new Vector2(0f, 1f - (repeatScale.y * trueTextureScale % 1f) + 0.005f);
         }
     }
     //[ContextMenu("Test")]
