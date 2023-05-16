@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StageSelect : MonoBehaviour
 {
+    // ロードシーン用のオブジェクトを取ってくる
+    private GameObject LoadSceneObject;
+    private LoadScene LS;
+
     public  enum STAGENAME
     {
         // マップ選択
@@ -79,6 +83,9 @@ public class StageSelect : MonoBehaviour
         // 初めに選ばれているステージ
         stageName = STAGENAME.MAP1;
 
+        //LoadSceneスクリプトの変数を取ってくる
+        LoadSceneObject = GameObject.Find("LoadScene");
+        LS = LoadSceneObject.GetComponent<LoadScene>();
     }
 
     // Update is called once per frame
@@ -189,8 +196,9 @@ public class StageSelect : MonoBehaviour
                     break;
 
                 case STAGENAME.STAGE1_1:
-
-                    SceneManager.LoadScene("1-1");
+                    //ロード画面後に遷移させるシーン名をセット
+                    LS.SetLoadName("1-1");
+                    //SceneManager.LoadScene("1-1");
 
                     break;
 

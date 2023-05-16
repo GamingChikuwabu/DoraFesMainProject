@@ -8,14 +8,11 @@ public class TitleButtonFunction : MonoBehaviour
     // ロードシーン用のオブジェクトを取ってくる
     private GameObject LoadSceneObject;
     private LoadScene LS;
-    private string LSname;
-
     void Start()
     {
         //LoadSceneスクリプトの変数を取ってくる
         LoadSceneObject = GameObject.Find("LoadScene");
         LS = LoadSceneObject.GetComponent<LoadScene>();
-        LSname = LS.NextLoadName;
     }
 
     public void OnNewGameButtonClicked()
@@ -28,9 +25,10 @@ public class TitleButtonFunction : MonoBehaviour
         }
 
         // 最初のステージシーンをロード（1-1と仮定）
-        SceneManager.LoadScene("StageSelect");
+        //SceneManager.LoadScene("StageSelect");
 
-        LSname = "StageSelect";
+        //ロード画面後に遷移させるシーン名をセット
+        LS.SetLoadName("StageSelect");
 
     }
 
