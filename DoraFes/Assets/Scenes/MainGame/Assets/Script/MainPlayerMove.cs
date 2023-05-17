@@ -18,6 +18,9 @@ public class MainPlayerMove : MonoBehaviour
     public float jumpPouwer = 45.0f;
     [Header("カメラが動き始める最小値")]
     public float MoveStartMinVal = 2;
+    [Header("Playerがカメラから遅れた時に追いつくスピード")]
+    [SerializeField]
+    private float latePlayerChaceSpeed = 4;
 
     private float stackjumpPouwer;
 
@@ -69,16 +72,17 @@ public class MainPlayerMove : MonoBehaviour
             stackjumpPouwer = jumpPouwer;
         }
 
-        if(_Isjump) 
+        stackjumpPouwer -= Gravity * Time.deltaTime;
+        if(stackjumpPouwer < -20)
         {
-            stackjumpPouwer -= Gravity * Time.deltaTime;
-            rig.velocity = new(rig.velocity.x, stackjumpPouwer, rig.velocity.z);
+            stackjumpPouwer = -20;
         }
+        rig.velocity = new(rig.velocity.x, stackjumpPouwer, rig.velocity.z);
 
         //MainPlayerが遅れた時の処理
         Vector3 tempvec = new Vector3(transform.position.x, transform.position.y, landMark.LandMarkToCharPos);
         Vector3 latevec =  tempvec - transform.position;
-        rig.AddForce(latevec * 300);
+        rig.AddForce(latevec * latePlayerChaceSpeed);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -92,6 +96,14 @@ public class MainPlayerMove : MonoBehaviour
         landMark.PlayerYPos = transform.position.y;
         
         _Isjump = false;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(!_Isjump)
+        {
+            stackjumpPouwer = 0;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
