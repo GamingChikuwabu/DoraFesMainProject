@@ -13,7 +13,7 @@ public class NowLoading : MonoBehaviour
     //上昇値の上限
     private float upLimit = 20.0f;
     //番号の上限
-    private int numLimit = 10;
+    private int numLimit = 13;
 
     //上昇するオブジェクトの番号
     private static int upNum;

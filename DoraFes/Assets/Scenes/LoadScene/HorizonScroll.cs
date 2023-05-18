@@ -6,7 +6,7 @@ public class HorizonScroll : MonoBehaviour
 {
     //スクロールスピード
     [Header("スクロールスピード")]
-    [SerializeField]private float ScrollSpeed = 1.0f;
+    [SerializeField]private int ScrollSpeed = 1;
 
     //範囲外にいったときに移動する座標
     private Vector3 newPosition;
@@ -29,7 +29,7 @@ public class HorizonScroll : MonoBehaviour
     {
 
         //スクロールさせる
-        transform.Translate(-ScrollSpeed + Time.deltaTime, 0.0f, 0.0f);
+        transform.Translate(-ScrollSpeed * Time.deltaTime, 0.0f, 0.0f);
 
         if(transform.position.x>=2118)
         {
