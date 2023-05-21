@@ -28,7 +28,7 @@ public class TitleButtonFunction : MonoBehaviour
         //SceneManager.LoadScene("StageSelect");
 
         //ロード画面後に遷移させるシーン名をセット
-        LS.SetLoadName("StageSelect");
+        LS.SetLoadName("ResultScene");
 
     }
 
