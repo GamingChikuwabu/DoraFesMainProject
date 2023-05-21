@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class StickNaturalMove : MonoBehaviour
 {
-    [Header("—h‚ê•")]
-    [SerializeField] private Vector3 move;
-
     public float moveSpeed = 1f; // ˆÚ“®‘¬“x
     public float moveDistance = 1f; // ˆÚ“®‹——£
 
