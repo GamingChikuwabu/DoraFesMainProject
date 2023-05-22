@@ -40,9 +40,12 @@ public class MainPlayerMove : MonoBehaviour
 
     private GameObject obj;
 
+    private DethEvent dethEvent;
+
     private void Awake()
     {
         _NewPlayerPosition = transform.position;
+        Physics.gravity = new Vector3(0.0f,-9.8f*2.5f,0.0f);
     }
 
     // Start is called before the first frame update
@@ -50,6 +53,7 @@ public class MainPlayerMove : MonoBehaviour
     {
         rig = GetComponent<Rigidbody>();
         obj = GameObject.Find("LandMarkSphere");
+        dethEvent = GetComponent<DethEvent>();
     }
 
     // Update is called once per frame
@@ -72,41 +76,28 @@ public class MainPlayerMove : MonoBehaviour
         //ジャンプの処理
         if(Input.GetButtonDown("Jump") && _Islanding == true)
         {
-            stackGravity = JumpPower;
+            rig.AddForce(0.0f, JumpPower, 0.0f,ForceMode.Impulse);
             _Islanding = false;
         }
 
-        //重力の処理
-        if (_Islanding == false)
+        if(dethEvent.IsDamage == false)
         {
-            stackGravity -= Time.deltaTime * Gravity;
+            //前に進処理
+            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, Forwardvelocity);
+
+            //遅れた時の処理
+            Vector3 tempvec = new Vector3(0.0f, 0.0f, obj.transform.position.z) - new Vector3(0.0f, 0.0f, transform.position.z);
+            rig.AddForce(tempvec * BackMovePower);
         }
-
-        rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y + stackGravity, rig.velocity.z);
-
-        Debug.Log(_Islanding.ToString());
-
-
-        //前に進処理
-        rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, Forwardvelocity);
-
-        //遅れた時の処理
-        Vector3 tempvec = new Vector3(0.0f,0.0f,obj.transform.position.z) - new Vector3(0.0f, 0.0f, transform.position.z);
-        rig.AddForce(tempvec * BackMovePower);
-
-
     }
 
-    private void FixedUpdate()
+    private void OnCollisionEnter(Collision collision)
     {
-        if(Physics.Raycast(transform.position, new Vector3(0.0f, -1.0f, 0.0f), 1.0f))
+        if(collision.gameObject.tag == "Untagged")
         {
-            if (rig.velocity.y <= 0)
-            {
-                _Islanding = true;
-                _NewPlayerPosition = transform.position;
-                Debug.Log("in");
-            }
+            _NewPlayerPosition = transform.position;
+            _Islanding = true;
+            Debug.Log("in");
         }
     }
 }

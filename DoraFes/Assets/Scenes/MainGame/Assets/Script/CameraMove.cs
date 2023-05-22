@@ -12,6 +12,7 @@ public class CameraMove : MonoBehaviour
     float LerpVal = 1.0f;
     Vector3 oldvec;
     Vector3 startvec;
+    DethEvent dethEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -22,31 +23,37 @@ public class CameraMove : MonoBehaviour
 
         YOffset = transform.position.y - MPM.transform.position.y;
 
-        Debug.Log(YOffset.ToString());
-
         oldvec = MPM.NewPlayerPos;
+
+        dethEvent = MPM.gameObject.GetComponent<DethEvent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //前に進むスピード
-        rig.velocity = new Vector3(0.0f,0.0f,14.0f);
-        if (oldvec.x != MPM.NewPlayerPos.x)
+        if(dethEvent.IsDamage == false)
         {
-            LerpVal = 0.0f;
-            startvec = transform.position;
-            oldvec = MPM.NewPlayerPos;
-        }
+            //前に進むスピード
+            rig.velocity = new Vector3(0.0f, 0.0f, 14.0f);
+            if (oldvec.x != MPM.NewPlayerPos.x)
+            {
+                LerpVal = 0.0f;
+                startvec = transform.position;
+                oldvec = MPM.NewPlayerPos;
+            }
 
-        float temp = Mathf.Lerp(startvec.y,MPM.NewPlayerPos.y + YOffset,LerpVal);
-        LerpVal += 0.01f;
-        if(LerpVal >= 1.0f)
+            float temp = Mathf.Lerp(startvec.y, MPM.NewPlayerPos.y + YOffset, LerpVal);
+            LerpVal += 0.01f;
+            if (LerpVal >= 1.0f)
+            {
+                LerpVal = 1.0f;
+            }
+
+            transform.position = new Vector3(transform.position.x, temp, transform.position.z);
+        }
+        else
         {
-            LerpVal = 1.0f;
+            rig.velocity = new Vector3(0.0f, 0.0f, 0.0f);
         }
-
-        transform.position = new Vector3(transform.position.x, temp, transform.position.z);
-
     }
 }
