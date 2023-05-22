@@ -19,6 +19,9 @@ public class LazerLight : MonoBehaviour
     private Quaternion initialRotation;
     private float initialZAngle;
 
+    //ƒtƒB[ƒo[’†‚©‚ð”»’è‚·‚é•Ï”
+    private bool isFever;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,39 +29,49 @@ public class LazerLight : MonoBehaviour
         // ‰Šú‚Ì‰ñ“]‚ð•ÛŽ‚·‚é
         initialRotation = transform.rotation;
         initialZAngle = GetZAngle(initialRotation);
+
+        isFever = true;
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        //–ˆƒtƒŒ[ƒ€‚²‚Æ‚Ì‰ñ“]—Ê‚ðŒvŽZ
-        float rotationAmount = rotationSpeed * Time.deltaTime;
 
-        // Œ»Ý‚Ì‰ñ“]‚©‚çZŽ²‚ÌŠp“x‚ðŽæ“¾‚µA‰Šú‚ÌŠp“x‚Æ‚Ì·‚ð‹‚ß‚é
-        float currentZAngle = GetZAngle(transform.rotation);
-        float zAngleDifference = GetShortestAngleDifference(initialZAngle, currentZAngle);
+        //ƒtƒB[ƒo[’†‚©‚Ç‚¤‚©‚ðŠi”[‚·‚é
+        //isFever=;
 
-        //ãŒü‚«‰ñ“]‚Ìê‡
-        if (rotateUp)
+        if (isFever)
         {
-            //ƒIƒuƒWƒFƒNƒg‚ð‰ñ“]‚³‚¹‚é
-            transform.Rotate(Vector3.forward, rotationAmount); //zŽ²‰ñ“]
-            //transform.Rotate(Vector3.up, rotationAmount);      yŽ²‰ñ“]
+            //–ˆƒtƒŒ[ƒ€‚²‚Æ‚Ì‰ñ“]—Ê‚ðŒvŽZ
+            float rotationAmount = rotationSpeed * Time.deltaTime;
 
-            //ãŒü‚«‰ñ“]‚ª60“xˆÈã‚É‚È‚Á‚½‚çƒtƒ‰ƒO‚ðØ‚è‘Ö‚¦‚é
-            if (zAngleDifference >= upLimit)
-                rotateUp = false;
-        }
-        //‰ºŒü‚«‰ñ“]‚Ìê‡
-        else
-        {
-            // ƒIƒuƒWƒFƒNƒg‚ð‰ñ“]‚³‚¹‚é
-            transform.Rotate(Vector3.forward, -rotationAmount);
+            // Œ»Ý‚Ì‰ñ“]‚©‚çZŽ²‚ÌŠp“x‚ðŽæ“¾‚µA‰Šú‚ÌŠp“x‚Æ‚Ì·‚ð‹‚ß‚é
+            float currentZAngle = GetZAngle(transform.rotation);
+            float zAngleDifference = GetShortestAngleDifference(initialZAngle, currentZAngle);
 
-            // ‰ºŒü‚«‰ñ“]‚ª60“xˆÈ‰º‚É‚È‚Á‚½‚çƒtƒ‰ƒO‚ðØ‚è‘Ö‚¦‚é
-            if (-zAngleDifference >= -downLimit)
-                rotateUp = true;
+            //ãŒü‚«‰ñ“]‚Ìê‡
+            if (rotateUp)
+            {
+                //ƒIƒuƒWƒFƒNƒg‚ð‰ñ“]‚³‚¹‚é
+                transform.Rotate(Vector3.forward, rotationAmount); //zŽ²‰ñ“]
+                                                                   //transform.Rotate(Vector3.up, rotationAmount);      yŽ²‰ñ“]
+
+                //ãŒü‚«‰ñ“]‚ª60“xˆÈã‚É‚È‚Á‚½‚çƒtƒ‰ƒO‚ðØ‚è‘Ö‚¦‚é
+                if (zAngleDifference >= upLimit)
+                    rotateUp = false;
+            }
+            //‰ºŒü‚«‰ñ“]‚Ìê‡
+            else
+            {
+                // ƒIƒuƒWƒFƒNƒg‚ð‰ñ“]‚³‚¹‚é
+                transform.Rotate(Vector3.forward, -rotationAmount);
+
+                // ‰ºŒü‚«‰ñ“]‚ª60“xˆÈ‰º‚É‚È‚Á‚½‚çƒtƒ‰ƒO‚ðØ‚è‘Ö‚¦‚é
+                if (-zAngleDifference >= -downLimit)
+                    rotateUp = true;
+            }
         }
+        
 
         
     }
