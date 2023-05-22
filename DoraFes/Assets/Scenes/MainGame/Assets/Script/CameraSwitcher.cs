@@ -6,14 +6,46 @@ public class CameraSwitcher : MonoBehaviour
 
     public GameObject mainCamera;
     public GameObject subCamera;
+    public GameObject Target;
     [SerializeField] GameObject Canvas;
-    private void OnTriggerStay(Collider other)
+
+    private GameObject LoadSceneObject;
+    private LoadScene LS;
+    float seconds;
+    float elapsedTime;
+    public float WaitTime = 5f; // 待機する秒数
+    private float startTime; // 開始時間
+    bool goalfg = false;
+
+    void Start()
     {
-        // もし対象のオブジェクトに触れたら
-        //void OnCollisionEnter(Collision collision)
-        //{
-            mainCamera.SetActive(!mainCamera.activeSelf);
-            Canvas.SetActive(false);
+        LoadSceneObject = GameObject.Find("LoadScene");
+        LS = LoadSceneObject.GetComponent<LoadScene>();
+
     }
-   
+    void Update()
+    {
+        seconds += Time.deltaTime;
+     if (seconds >= WaitTime && goalfg==true)
+        {
+            LS.SetLoadName("StageSelect");
+        }
+    }
+    void OnTriggerExit(Collider other)
+        {
+                if (other.gameObject == Target)
+                {
+
+                    mainCamera.SetActive(!mainCamera.activeSelf);
+                    Canvas.SetActive(false);
+            goalfg = true;
+
+                }
+        
+         }
+    
 }
+        
+    
+    
+
