@@ -6,17 +6,21 @@ public class GlobalStatusManager : MonoBehaviour
 {
     [Header("フィーバーゲージ")]
     [SerializeField]
-    private float FeverGauge = 0;
+    private float _FeverGauge = 0;
 
     [Header("フィーバーゲージの上がり具合")]
     [SerializeField]
     private float _FeverGaugeUpSpeed = 1;
 
+    CoinManager manager;
+
+    public float CoinSpeedManager = 0.01f;
 
     public bool IsFever
+
     { 
         get { 
-            if (FeverGauge > 100) 
+            if (_FeverGauge > 100) 
             { 
                 return true; 
             } 
@@ -46,9 +50,14 @@ public class GlobalStatusManager : MonoBehaviour
         }
     }
 
+    public float FeverGauge
+    {
+        get { return _FeverGauge; }
+    }
+
     public void ResetFlg()
     {
-        FeverGauge = 0;
+        _FeverGauge = 0;
     }
 
     private void FeverGaugeUpSpeedSetDefault()
@@ -59,12 +68,14 @@ public class GlobalStatusManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        manager = GameObject.FindGameObjectWithTag("MainPlayer").GetComponent<CoinManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        FeverGauge += _FeverGaugeUpSpeed * Time.deltaTime;
+        _FeverGauge += (_FeverGaugeUpSpeed + (manager.countCoin * CoinSpeedManager)) * Time.deltaTime;
+
+        //Debug.Log((_FeverGaugeUpSpeed + (manager.countCoin * CoinSpeedManager)).ToString());
     }
 }

@@ -50,16 +50,16 @@ public class CoinAbsorption : MonoBehaviour
         // コインとプレイヤーの距離が吸い込み範囲より短かったら
         if (distance < range)
         {
-            speed = Mathf.Max(speed, LM.LandMarkSpeed + addspeed);
+            //speed = Mathf.Max(speed, LM.LandMarkSpeed + addspeed);
 
-            // コインの移動先をプレイヤーの位置に設定する
-            targetPosition = Player.transform.position;
+            //// コインの移動先をプレイヤーの位置に設定する
+            //targetPosition = Player.transform.position;
 
-            // 吸い込まれるスピード
-            float step = speed * Time.deltaTime;
+            //// 吸い込まれるスピード
+            //float step = speed * Time.deltaTime;
 
-            // Vector3.MoveTowards (基準となる開始座標, 到達したい座標, 移動速度)
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
+            //// Vector3.MoveTowards (基準となる開始座標, 到達したい座標, 移動速度)
+            //transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
 
         }
     }

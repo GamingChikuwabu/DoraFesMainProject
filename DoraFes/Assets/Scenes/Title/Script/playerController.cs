@@ -9,10 +9,6 @@ public class playerController : MonoBehaviour
     [SerializeField]
     private float AccelerationForce = 3;
 
-    [Header("最大スピード")]
-    [SerializeField]
-    private float MaxSpeed = 5;
-
     [Header("ジャンプ力")]
     [SerializeField]
     private float JumpPawer = 10;
