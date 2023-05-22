@@ -13,12 +13,19 @@ public class LazerLight : MonoBehaviour
     [Header("‰ñ“]‰ºŒÀ(1`90)")]
     [SerializeField] private float downLimit = 10f;
 
-    private bool rotateUp = true; //ãŒü‚«‚É‰ñ“]‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
+    private bool rotateUp = false; //ãŒü‚«‚É‰ñ“]‚·‚é‚©‚Ç‚¤‚©‚Ìƒtƒ‰ƒO
+
+    //‰Šú‚Ì‰ñ“]‚ğ•Û‚·‚é•Ï”
+    private Quaternion initialRotation;
+    private float initialZAngle;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // ‰Šú‚Ì‰ñ“]‚ğ•Û‚·‚é
+        initialRotation = transform.rotation;
+        initialZAngle = GetZAngle(initialRotation);
     }
 
     // Update is called once per frame
@@ -27,17 +34,19 @@ public class LazerLight : MonoBehaviour
         //–ˆƒtƒŒ[ƒ€‚²‚Æ‚Ì‰ñ“]—Ê‚ğŒvZ
         float rotationAmount = rotationSpeed * Time.deltaTime;
 
+        // Œ»İ‚Ì‰ñ“]‚©‚çZ²‚ÌŠp“x‚ğæ“¾‚µA‰Šú‚ÌŠp“x‚Æ‚Ì·‚ğ‹‚ß‚é
+        float currentZAngle = GetZAngle(transform.rotation);
+        float zAngleDifference = GetShortestAngleDifference(initialZAngle, currentZAngle);
+
         //ãŒü‚«‰ñ“]‚Ìê‡
-        if(rotateUp)
+        if (rotateUp)
         {
             //ƒIƒuƒWƒFƒNƒg‚ğ‰ñ“]‚³‚¹‚é
-            transform.Rotate(Vector3.forward, rotationAmount); //y²‰ñ“]
-            //transform.Rotate(Vector3.up, rotationAmount);      x²‰ñ“]
-
-            
+            transform.Rotate(Vector3.forward, rotationAmount); //z²‰ñ“]
+            //transform.Rotate(Vector3.up, rotationAmount);      y²‰ñ“]
 
             //ãŒü‚«‰ñ“]‚ª60“xˆÈã‚É‚È‚Á‚½‚çƒtƒ‰ƒO‚ğØ‚è‘Ö‚¦‚é
-            if (transform.rotation.eulerAngles.z >= upLimit)
+            if (zAngleDifference >= upLimit)
                 rotateUp = false;
         }
         //‰ºŒü‚«‰ñ“]‚Ìê‡
@@ -47,9 +56,23 @@ public class LazerLight : MonoBehaviour
             transform.Rotate(Vector3.forward, -rotationAmount);
 
             // ‰ºŒü‚«‰ñ“]‚ª60“xˆÈ‰º‚É‚È‚Á‚½‚çƒtƒ‰ƒO‚ğØ‚è‘Ö‚¦‚é
-            if (-transform.rotation.eulerAngles.z >= -downLimit)
+            if (-zAngleDifference >= -downLimit)
                 rotateUp = true;
         }
+
         
+    }
+
+    // ƒNƒH[ƒ^ƒjƒIƒ“‚©‚çZ²‚ÌŠp“x‚ğæ“¾‚·‚éƒwƒ‹ƒp[ŠÖ”
+    private float GetZAngle(Quaternion rotation)
+    {
+        return rotation.eulerAngles.z;
+    }
+
+    // Å’Z‚ÌŠp“x·‚ğŒvZ‚·‚éƒwƒ‹ƒp[ŠÖ”
+    private float GetShortestAngleDifference(float startAngle, float targetAngle)
+    {
+        float angleDifference = Mathf.DeltaAngle(startAngle, targetAngle);
+        return angleDifference;
     }
 }

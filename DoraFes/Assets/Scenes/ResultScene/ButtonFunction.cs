@@ -2,27 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class ButtonPush : MonoBehaviour
+
+public class ButtonFunction : MonoBehaviour
 {
-    [SerializeField] private string targetSceneName; // 遷移先のシーン名
-
     // ロードシーン用のオブジェクトを取ってくる
     private GameObject LoadSceneObject;
     private LoadScene LS;
 
-    private void Start()
+    void Start()
     {
         //LoadSceneスクリプトの変数を取ってくる
         LoadSceneObject = GameObject.Find("LoadScene");
         LS = LoadSceneObject.GetComponent<LoadScene>();
+
     }
 
-    public void OnClick()
+    public void StringArgFunction(string s)
     {
+        //SceneManager.LoadScene(s);
         //ロード画面後に遷移させるシーン名をセット
-        LS.SetLoadName("1-1");
+        LS.SetLoadName(s);
+    }
+    // Start is called before the first frame update
+   
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
-
