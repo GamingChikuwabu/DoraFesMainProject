@@ -5,13 +5,12 @@ using UnityEngine;
 public class SponePlayer : MonoBehaviour
 {
     private FormationManager FM;
-    private LandMarkMove Lm;
     public GameObject Player;
+    public int LineNum  = 3;
 
     private void Start()
     {
         FM = GameObject.FindGameObjectWithTag("MainPlayer").GetComponent<FormationManager>();
-        Lm = GameObject.FindGameObjectWithTag("LandMark").GetComponent<LandMarkMove>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,7 +24,22 @@ public class SponePlayer : MonoBehaviour
 
             FM.NumMandragara++;
 
-            newGameObject.GetComponent<PlayerMove>().SetLandmark(other.gameObject,new Vector3(0.0f,0.0f,FM.LandmarkToChar - Lm.LandMarkSpeed));
+            float temppos =0;
+
+            switch(Random.Range(1,3))
+            {    
+                case 1:
+                    temppos = -1.0f;
+                    break;
+                case 2:
+                    temppos = 0.0f;
+                    break;
+                case 3:
+                    temppos = 1.0f;
+                    break;
+            }
+
+            newGameObject.GetComponent<PlayerMove>().SetLandmark(other.gameObject,new Vector3(temppos, 0.0f,FM.LandmarkToChar));
 
             Destroy(gameObject);
 
