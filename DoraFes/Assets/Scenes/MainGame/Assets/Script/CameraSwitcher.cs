@@ -28,7 +28,7 @@ public class CameraSwitcher : MonoBehaviour
         seconds += Time.deltaTime;
      if (seconds >= WaitTime && goalfg==true)
         {
-            LS.SetLoadName("StageSelect");
+            LS.SetLoadName("ResultScene");
         }
     }
     void OnTriggerExit(Collider other)
