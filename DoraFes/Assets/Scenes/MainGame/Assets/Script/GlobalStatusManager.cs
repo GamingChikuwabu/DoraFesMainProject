@@ -6,7 +6,7 @@ public class GlobalStatusManager : MonoBehaviour
 {
     [Header("フィーバーゲージ")]
     [SerializeField]
-    private float FeverGauge = 0;
+    private float _FeverGauge = 0;
 
     [Header("フィーバーゲージの上がり具合")]
     [SerializeField]
@@ -16,7 +16,7 @@ public class GlobalStatusManager : MonoBehaviour
     public bool IsFever
     { 
         get { 
-            if (FeverGauge > 100) 
+            if (_FeverGauge > 100) 
             { 
                 return true; 
             } 
@@ -48,7 +48,12 @@ public class GlobalStatusManager : MonoBehaviour
 
     public void ResetFlg()
     {
-        FeverGauge = 0;
+        _FeverGauge = 0;
+    }
+
+    public float FeaverGauge
+    {
+        get { return _FeverGauge; }
     }
 
     private void FeverGaugeUpSpeedSetDefault()
@@ -65,6 +70,6 @@ public class GlobalStatusManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        FeverGauge += _FeverGaugeUpSpeed * Time.deltaTime;
+        _FeverGauge += _FeverGaugeUpSpeed * Time.deltaTime;
     }
 }
