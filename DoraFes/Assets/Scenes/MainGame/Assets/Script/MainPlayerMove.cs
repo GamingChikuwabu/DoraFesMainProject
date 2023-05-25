@@ -12,9 +12,6 @@ public class MainPlayerMove : MonoBehaviour
     private float HorizontalAttenuation = 0.9f;
     [Header("ジャンプ力")]
     public float JumpPower = 5.0f;
-    [Header("疑似重力")]
-    [SerializeReference]
-    private float Gravity = 3.0f;
     [Header("前に進スピード")]
     public float Forwardvelocity = 5.0f;
     [Header("遅れた時に元の位置に戻ってくるスピード")]
