@@ -42,6 +42,9 @@ public class LazerLight : MonoBehaviour
 
         if (isFever)
         {
+            //アクティブにする
+
+
             //毎フレームごとの回転量を計算
             float rotationAmount = rotationSpeed * Time.deltaTime;
 
@@ -70,6 +73,10 @@ public class LazerLight : MonoBehaviour
                 if (-zAngleDifference >= -downLimit)
                     rotateUp = true;
             }
+        }
+        else
+        {
+            //非アクティブにする
         }
         
 
