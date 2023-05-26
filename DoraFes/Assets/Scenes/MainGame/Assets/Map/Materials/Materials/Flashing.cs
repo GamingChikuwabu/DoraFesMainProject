@@ -23,36 +23,37 @@ public class Flashing : MonoBehaviour
         SetNextExecutionTime();
     }
 
- 
+
 
     void Update()
     {
-       
+
         //if (Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.Space)|| Input.GetKey(KeyCode.A))
         if (Time.time >= nextExecutionTime)
         {
             renderer.material = targetMaterial;
             SetNextExecutionTime();
         }
-        else{
+        else
+        {
 
             renderer.material = targetMaterial2;
 
 
         }
 
-       
+
 
 
     }
 
- private void SetNextExecutionTime()
-        {
-            // ランダムな実行間隔を生成する
-            float interval = UnityEngine.Random.Range(minInterval, maxInterval);
+    private void SetNextExecutionTime()
+    {
+        // ランダムな実行間隔を生成する
+        float interval = UnityEngine.Random.Range(minInterval, maxInterval);
 
-            // 次の実行時刻を計算する
-            nextExecutionTime = Time.time + interval;
-        }
+        // 次の実行時刻を計算する
+        nextExecutionTime = Time.time + interval;
+    }
 
 }
