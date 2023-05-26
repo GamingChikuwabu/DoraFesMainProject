@@ -21,6 +21,10 @@ public class MovingPanel : MonoBehaviour
     private bool startFlg; //ゲーム開始フラグ
     private bool feverFlg; //フィーバータイムフラグ
     private bool goalFlg;  //ゴールフラグ
+    private bool isPanel; //一度しか表示させない
+
+    [Header("blackPanel")]
+    [SerializeField]private  GameObject uiElement; // もしくは適切なUIコンポーネントの型
 
     // Start is called before the first frame update
     void Start()
@@ -32,30 +36,39 @@ public class MovingPanel : MonoBehaviour
         feverFlg = false;
         goalFlg = false;
 
+        
+
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-        //フィーバータイムフラグの取得
-        //startFlg=
+        if(isPanel==false)
+        {
+            //フィーバータイムフラグの取得
+            //startFlg=
 
-        //ゴールフラグの取得
-        //goalFlg=
+            //ゴールフラグの取得
+            //goalFlg=
+        }
+
 
         //いずれかのフラグがtrueなら
-        if(startFlg)
+        if (startFlg)
         {
             if(myNumber ==1)
             {
                 PanelMovement();
+                uiElement.SetActive(true);
             }
+           
         }
         else if (feverFlg)
         {
             if(myNumber == 2)
             {
                 PanelMovement();
+                uiElement.SetActive(true);
             }
         }
         else if (goalFlg)
@@ -63,7 +76,12 @@ public class MovingPanel : MonoBehaviour
             if (myNumber == 3)
             {
                 PanelMovement();
+                uiElement.SetActive(true);
             }
+        }
+        else
+        {
+            uiElement.SetActive(false);
         }
         
     }
@@ -80,7 +98,13 @@ public class MovingPanel : MonoBehaviour
         if(initialPosition.x - panelRectTransform.anchoredPosition.x > 3300)
         {
             panelRectTransform.anchoredPosition = initialPosition;
-            startFlg = false;
+            isPanel = true;
+
+            if(myNumber==1)
+            {
+                startFlg = false;
+
+            }
         }
     }
 }
