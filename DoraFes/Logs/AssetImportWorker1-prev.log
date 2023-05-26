@@ -15,7 +15,7 @@ C:/DoraFesMainProject/DoraFes
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-56692
+55318
 Successfully changed project path to: C:/DoraFesMainProject/DoraFes
 C:/DoraFesMainProject/DoraFes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/DoraFesMainProject/DoraFes
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19184] Host "[IP] 192.168.179.45 [Port] 0 [Flags] 2 [Guid] 3836285732 [EditorId] 3836285732 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [29020] Host "[IP] 192.168.179.45 [Port] 0 [Flags] 2 [Guid] 3746596231 [EditorId] 3746596231 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19184] Host "[IP] 192.168.179.45 [Port] 0 [Flags] 2 [Guid] 3836285732 [EditorId] 3836285732 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [29020] Host "[IP] 192.168.179.45 [Port] 0 [Flags] 2 [Guid] 3746596231 [EditorId] 3746596231 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 110.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 112.97 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,45 +67,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006439 seconds.
+Registered in 0.006143 seconds.
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 253 ms
-Refreshing native plugins compatible for Editor in 101.47 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 232 ms
+Refreshing native plugins compatible for Editor in 109.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.898 seconds
+- Completed reload, in  0.883 seconds
 Domain Reload Profiling:
-	ReloadAssembly (899ms)
-		BeginReloadAssembly (67ms)
+	ReloadAssembly (884ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (728ms)
-			LoadAssemblies (65ms)
+		EndReloadAssembly (715ms)
+			LoadAssemblies (62ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (114ms)
+			SetupTypeCache (113ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (540ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (529ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (322ms)
+				InitializePlatformSupportModulesInManaged (304ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
+				RefreshPlugins (110ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (78ms)
+				ProcessInitializeOnLoadAttributes (77ms)
 				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -113,73 +113,53 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005586 seconds.
+Registered in 0.007878 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 126.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 110.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.IO.IOException: Sharing violation on path C:\DoraFesMainProject\DoraFes\Assets\lilToon\Editor\CurrentRP.txt
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <1f66344f2f89470293d8b67d71308c07>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <1f66344f2f89470293d8b67d71308c07>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <1f66344f2f89470293d8b67d71308c07>:0 
-  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append) [0x00008] in <1f66344f2f89470293d8b67d71308c07>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool)
-  at lilToon.lilStartup.lilStartupMethod () [0x0009b] in C:\DoraFesMainProject\DoraFes\Assets\lilToon\Editor\lilStartup.cs:81 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <1f66344f2f89470293d8b67d71308c07>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <1f66344f2f89470293d8b67d71308c07>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <1f66344f2f89470293d8b67d71308c07>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <42a64fd733d9417da1ea3a757ad9a96d>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.381 seconds
+- Completed reload, in  1.355 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1382ms)
-		BeginReloadAssembly (101ms)
+	ReloadAssembly (1356ms)
+		BeginReloadAssembly (102ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1171ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1138ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (301ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (680ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (677ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (126ms)
+				RefreshPlugins (110ms)
 				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (262ms)
-				ProcessInitializeOnLoadMethodAttributes (130ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (116ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5037 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 86 unused Assets / (13.4 MB). Loaded Objects now: 5459.
-Memory consumption went from 316.8 MB to 303.4 MB.
-Total: 12.807300 ms (FindLiveObjects: 0.736600 ms CreateObjectMapping: 0.750700 ms MarkObjects: 3.980300 ms  DeleteObjects: 7.337100 ms)
+Unloading 5036 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (13.5 MB). Loaded Objects now: 5458.
+Memory consumption went from 316.2 MB to 302.6 MB.
+Total: 10.216000 ms (FindLiveObjects: 0.637900 ms CreateObjectMapping: 0.700300 ms MarkObjects: 3.252000 ms  DeleteObjects: 5.624400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -193,10 +173,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 231814.312900 seconds.
-  path: Assets/Scenes/MainGame/Assets/Map/Materials/8b7107f8ed3212bb.png
-  artifactKey: Guid(b2f0d95bf9eb0ab48a5ad2faa4d70a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainGame/Assets/Map/Materials/8b7107f8ed3212bb.png using Guid(b2f0d95bf9eb0ab48a5ad2faa4d70a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81287193a756768c24300d3525dddb07') in 0.088649 seconds 
+  Time since last request: 282185.185381 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/Materials/Materials/Map_Goal.mat
+  artifactKey: Guid(6689e839bf2e8a145be17381fb8a68b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/Materials/Materials/Map_Goal.mat using Guid(6689e839bf2e8a145be17381fb8a68b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0f48372e1f9ed0a80402b8cfc7c332') in 0.378430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/Materials/Materials/Map_Goal2.mat
+  artifactKey: Guid(ce452166f20933846a3936674ecd1e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/Materials/Materials/Map_Goal2.mat using Guid(ce452166f20933846a3936674ecd1e2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f8a84a1090151060ed8d7fad73a676') in 0.051475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.680897 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/Materials/45af67ac104f23b2.png
+  artifactKey: Guid(8499545d409aa204b99ab8885c8831c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/Materials/45af67ac104f23b2.png using Guid(8499545d409aa204b99ab8885c8831c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1185f43bf35c6f1c7f3bf747da27a2') in 0.025427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.038384 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/block1_jungle.prefab
+  artifactKey: Guid(0cb2dfd18fe37bd42bbaa6625f96da59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/block1_jungle.prefab using Guid(0cb2dfd18fe37bd42bbaa6625f96da59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c11b5b3c39e072d292d3adcc7f3f4e2') in 0.122403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/MapBox(1) (9) 1.prefab
+  artifactKey: Guid(5c7c786db7cf2e5428d4200e7f8c11fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/MapBox(1) (9) 1.prefab using Guid(5c7c786db7cf2e5428d4200e7f8c11fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391b4d27895d1991f6e2d516e017ff08') in 0.023793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/MapBox(1) (9).prefab
+  artifactKey: Guid(2e5c40253154a44459deb23bc1b19bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/MapBox(1) (9).prefab using Guid(2e5c40253154a44459deb23bc1b19bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5db91bac4b2131634089129d046fe30') in 0.025294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/MapBox(1) (1).prefab
+  artifactKey: Guid(d8272c5390bf61b4f816745aa667765a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/MapBox(1) (1).prefab using Guid(d8272c5390bf61b4f816745aa667765a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3ff0686a4fcf7872f9421308d3aa7ee') in 0.028265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/block2_sand.prefab
+  artifactKey: Guid(ecf24fa365751b64c9a56822a9e7e306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/block2_sand.prefab using Guid(ecf24fa365751b64c9a56822a9e7e306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc8cb3c3bddf7edf3b68805fe36b90b') in 0.066945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/block2.prefab
+  artifactKey: Guid(fbd51ef9c693ad943a144343edb6a30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/block2.prefab using Guid(fbd51ef9c693ad943a144343edb6a30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6901a4a99b8a1c61fb8c8b3e32a9860a') in 0.071698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/GameBox(1).prefab
+  artifactKey: Guid(537950bf653cc3f44b704648a5cc250a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/GameBox(1).prefab using Guid(537950bf653cc3f44b704648a5cc250a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64bcfc765c35d54c61a4d15cff220df9') in 0.020241 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/MapBox(1) (10).prefab
+  artifactKey: Guid(15e2f21cbd397e14e9d33295709edcf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/MapBox(1) (10).prefab using Guid(15e2f21cbd397e14e9d33295709edcf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd249085916f8e60f3bb9e6be63976ba5') in 0.022018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/Assets/Map/MapBox(1) (10) 1.prefab
+  artifactKey: Guid(7d2dcab2fe71a9e4ba09f68bfa19d6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/Assets/Map/MapBox(1) (10) 1.prefab using Guid(7d2dcab2fe71a9e4ba09f68bfa19d6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609b58214a800ada55b86d6a7379f10f') in 0.020374 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
