@@ -9,7 +9,8 @@ public class ObjectActivator : MonoBehaviour
     [SerializeField] GameObject Block;
     [SerializeField] GameObject Block2;
     [SerializeField] GameObject Block3;
-
+    [SerializeField] GameObject Block4;
+    [SerializeField] GameObject Block5;
     public float triggerDistance = 150f; // カメラがこの距離以内に近づいたらオブジェクトをアクティブ化する
 
     private Transform cameraTransform; // カメラのTransformコンポーネント
@@ -32,7 +33,8 @@ public class ObjectActivator : MonoBehaviour
         float distanceToCamera = Block.transform.position.z - cameraTransform.position.z;
         float distanceToCamera2 = Block2.transform.position.z - cameraTransform.position.z;
         float distanceToCamera3 = Block3.transform.position.z - cameraTransform.position.z;
-
+        float distanceToCamera4 = Block4.transform.position.z - cameraTransform.position.z;
+        float distanceToCamera5 = Block5.transform.position.z - cameraTransform.position.z;
         if (distanceToCamera <= triggerDistance)
         {
             Block.SetActive(true);
@@ -45,6 +47,14 @@ public class ObjectActivator : MonoBehaviour
         if (distanceToCamera3 <= triggerDistance * 3)
         {
             Block3.SetActive(true);
+        }
+        if (distanceToCamera4 <= triggerDistance * 4)
+        {
+            Block4.SetActive(true);
+        }
+        if (distanceToCamera5 <= triggerDistance * 5)
+        {
+            Block5.SetActive(true);
         }
     }
 
