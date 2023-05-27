@@ -22,6 +22,10 @@ public class LazerLight : MonoBehaviour
     //フィーバー中かを判定する変数
     private bool isFever;
 
+    //プレイヤーのGlobalStatusManagerスクリプトのisFeverを取得する変数
+    private GameObject PlayerObject;
+    private GlobalStatusManager GSM;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +34,11 @@ public class LazerLight : MonoBehaviour
         initialRotation = transform.rotation;
         initialZAngle = GetZAngle(initialRotation);
 
-        isFever = true;
+        //Playerのスクリプトを取得する
+        PlayerObject = GameObject.Find("Player");
+        GSM = PlayerObject.GetComponent<GlobalStatusManager>();
+
+        isFever = false;
     }
 
     // Update is called once per frame
@@ -38,7 +46,7 @@ public class LazerLight : MonoBehaviour
     {
 
         //フィーバー中かどうかを格納する
-        //isFever=;
+        isFever = GSM.IsFever;
 
         if (isFever)
         {
@@ -80,8 +88,6 @@ public class LazerLight : MonoBehaviour
             //非アクティブにする
             gameObject.SetActive(false);
         }
-        
-
         
     }
 

@@ -20,11 +20,16 @@ public class MovingPanel : MonoBehaviour
     //パネルの移動開始フラグ
     private bool startFlg; //ゲーム開始フラグ
     private bool feverFlg; //フィーバータイムフラグ
+    private bool isFever;
     private bool goalFlg;  //ゴールフラグ
     private bool isPanel; //一度しか表示させない
 
     [Header("blackPanel")]
     [SerializeField]private  GameObject uiElement; // もしくは適切なUIコンポーネントの型
+
+    //プレイヤーのGlobalStatusManagerスクリプトのisFeverを取得する変数
+    private GameObject PlayerObject;
+    private GlobalStatusManager GSM;
 
     // Start is called before the first frame update
     void Start()
@@ -36,20 +41,30 @@ public class MovingPanel : MonoBehaviour
         feverFlg = false;
         goalFlg = false;
 
-        
+        //Playerのスクリプトを取得する
+        PlayerObject = GameObject.Find("Player");
+        GSM = PlayerObject.GetComponent<GlobalStatusManager>();
 
     }
 
     // Update is called once per frame
     private void FixedUpdate()
     {
+
+        isFever = GSM.IsFever;
+
         if(isPanel==false)
         {
             //フィーバータイムフラグの取得
-            //startFlg=
+            feverFlg = GSM.IsFever;
 
             //ゴールフラグの取得
             //goalFlg=
+        }
+
+        if(isFever == false)
+        {
+            isPanel = false;
         }
 
 
