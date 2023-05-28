@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GlobalStatusManager : MonoBehaviour
 {
+    [SerializeField] GameObject efect;
     [Header("フィーバーゲージ")]
     [SerializeField]
     private float _FeverGauge = 0;
@@ -17,11 +18,13 @@ public class GlobalStatusManager : MonoBehaviour
     { 
         get { 
             if (_FeverGauge > 100) 
-            { 
+            {
+                efect.SetActive(true);
                 return true; 
             } 
             else 
             {
+                efect.SetActive(false);
                 return false; 
             } 
         }
