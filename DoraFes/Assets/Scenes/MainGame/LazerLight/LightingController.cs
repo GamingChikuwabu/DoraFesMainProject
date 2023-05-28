@@ -41,7 +41,7 @@ public class LightingController : MonoBehaviour
         //フィーバー中かどうかを取得する
         isFever = GSM.IsFever;
 
-        if(isFever)
+        if(isFever == true)
         {
             // RenderSettings の環境色を設定する
             RenderSettings.ambientSkyColor = feverSkykyColor;

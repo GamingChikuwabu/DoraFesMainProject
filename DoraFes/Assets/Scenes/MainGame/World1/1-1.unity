@@ -988,6 +988,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be355e75d468cf41876684b8cb01df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFever: 0
+  PlayerObject: {fileID: 0}
+  GSM: {fileID: 0}
 --- !u!1 &52045530 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 207037433331507867, guid: ab1ff11024da21b4c8813ec7fd00a1f6,
@@ -3239,6 +3242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be355e75d468cf41876684b8cb01df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFever: 0
+  PlayerObject: {fileID: 0}
+  GSM: {fileID: 0}
 --- !u!1001 &247483357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5705,6 +5711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 797361492}
+  - component: {fileID: 797361493}
   m_Layer: 0
   m_Name: lightManager
   m_TagString: Untagged
@@ -5730,6 +5737,18 @@ Transform:
   m_Father: {fileID: 1332494014}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &797361493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797361491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb161c5bdf096d4191cb7be51d3ec25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &811662147 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f690fa14bf2f08347bc6e861f18a9103,
@@ -5901,7 +5920,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1924220
+  m_Name: pb_Mesh92352
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6560,6 +6579,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2be355e75d468cf41876684b8cb01df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFever: 0
+  PlayerObject: {fileID: 0}
+  GSM: {fileID: 0}
 --- !u!1 &883976849
 GameObject:
   m_ObjectHideFlags: 0
@@ -7598,6 +7620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 956097801}
+  - component: {fileID: 956097802}
   m_Layer: 0
   m_Name: lazerlightManager
   m_TagString: Untagged
@@ -7625,8 +7648,20 @@ Transform:
   - {fileID: 129102733}
   - {fileID: 1135722895}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &956097802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956097800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcb161c5bdf096d4191cb7be51d3ec25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &986708376
 GameObject:
   m_ObjectHideFlags: 0
@@ -9000,7 +9035,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1924340
+  m_Name: pb_Mesh92472
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10273,7 +10308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87731fab73747e9479db325f72050079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _FeverGauge: 0
+  _FeverGauge: 100
   _FeverGaugeUpSpeed: 10
 --- !u!1 &1272710774
 GameObject:
@@ -10957,7 +10992,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1925214
+  m_Name: pb_Mesh93350
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12231,7 +12266,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1925232
+  m_Name: pb_Mesh93368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12395,7 +12430,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1924394
+  m_Name: pb_Mesh92526
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13030,7 +13065,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1635995705
 GameObject:
@@ -13530,7 +13565,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1925160
+  m_Name: pb_Mesh93296
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13694,7 +13729,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1924692
+  m_Name: pb_Mesh92824
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16686,7 +16721,7 @@ GameObject:
   - component: {fileID: 1939041500}
   - component: {fileID: 1939041499}
   - component: {fileID: 1939041498}
-  - component: {fileID: 1939041496}
+  - component: {fileID: 1939041501}
   m_Layer: 0
   m_Name: lazerlight
   m_TagString: Untagged
@@ -16694,21 +16729,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1939041496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1939041495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb9afc91cdf9fc449bcbd39cb2f26c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationSpeed: 20
-  upLimit: 60
-  downLimit: 10
 --- !u!23 &1939041498
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16776,6 +16796,21 @@ Transform:
   m_Father: {fileID: 956097801}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1939041501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939041495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9afc91cdf9fc449bcbd39cb2f26c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 20
+  upLimit: 60
+  downLimit: 10
 --- !u!1 &1959490947
 GameObject:
   m_ObjectHideFlags: 0
