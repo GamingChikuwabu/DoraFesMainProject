@@ -37,7 +37,7 @@ public class MovingPanel : MonoBehaviour
         panelRectTransform = GetComponent<RectTransform>();
         initialPosition = panelRectTransform.anchoredPosition;
 
-        startFlg = true;
+        startFlg = false;
         feverFlg = false;
         goalFlg = false;
 
