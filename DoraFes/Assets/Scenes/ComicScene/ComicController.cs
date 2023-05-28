@@ -11,7 +11,7 @@ public class ComicController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        image.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
