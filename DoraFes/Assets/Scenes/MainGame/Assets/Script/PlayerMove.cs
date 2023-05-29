@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         //基準点の設定
-        Vector3 temppoint = Landmark.transform.position - new Vector3(offset.x,offset.y, offset.z - mpm.Forwardvelocity);
+        Vector3 temppoint = Landmark.transform.position - new Vector3(offset.x,offset.y, offset.z - mpm.Fowardvelocity);
         //基準点と自分のポジションで移動距離ベクトルを作成
         Vector3 MoveVec = temppoint - transform.position;
         //移動成分を合成する

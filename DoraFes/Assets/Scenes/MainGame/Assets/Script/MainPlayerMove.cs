@@ -13,16 +13,25 @@ public class MainPlayerMove : MonoBehaviour
     [Header("ジャンプ力")]
     public float JumpPower = 5.0f;
     [Header("前に進スピード")]
-    public float Forwardvelocity = 5.0f;
+    [SerializeReference]
+    private float _Forwardvelocity = 5.0f;
     [Header("遅れた時に元の位置に戻ってくるスピード")]
     [SerializeReference]
     private float BackMovePower = 20.0f;
+    [Header("コインをとった時に上がるスピード")]
+    [SerializeReference]
+    private float CoinMagnification = 0.1f;
 
     private Vector3 _NewPlayerPosition;
 
     public Vector3 NewPlayerPos
     {
         get { return _NewPlayerPosition; }
+    }
+
+    public float Fowardvelocity
+    {
+        get { return _Forwardvelocity + coinMane.countCoin * CoinMagnification; }
     }
 
     //疑似重力を実装するための変数
@@ -35,21 +44,21 @@ public class MainPlayerMove : MonoBehaviour
 
     private Rigidbody rig;
 
-    private GameObject obj;
+    private CoinManager coinMane;
 
     private DethEvent dethEvent;
 
     private void Awake()
     {
         _NewPlayerPosition = transform.position;
-        Physics.gravity = new Vector3(0.0f,-9.8f*2.5f,0.0f);
+        Physics.gravity = new Vector3(0.0f,-9.8f * 2.5f,0.0f);
     }
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        obj = GameObject.Find("LandMarkSphere");
+        coinMane = GameObject.Find("LandMarkSphere").GetComponent<CoinManager>();
         dethEvent = GetComponent<DethEvent>();
     }
 
@@ -80,12 +89,13 @@ public class MainPlayerMove : MonoBehaviour
         if(dethEvent.IsDamage == false)
         {
             //前に進処理
-            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, Forwardvelocity);
+            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, _Forwardvelocity + coinMane.countCoin * CoinMagnification);
 
             //遅れた時の処理
-            Vector3 tempvec = new Vector3(0.0f, 0.0f, obj.transform.position.z) - new Vector3(0.0f, 0.0f, transform.position.z);
+            Vector3 tempvec = new Vector3(0.0f, 0.0f, coinMane.transform.position.z) - new Vector3(0.0f, 0.0f, transform.position.z);
             rig.AddForce(tempvec * BackMovePower);
         }
+
     }
 
     private void OnCollisionEnter(Collision collision)

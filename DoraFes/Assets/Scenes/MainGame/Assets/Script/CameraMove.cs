@@ -34,7 +34,7 @@ public class CameraMove : MonoBehaviour
         if(dethEvent.IsDamage == false)
         {
             //前に進むスピード
-            rig.velocity = new Vector3(0.0f, 0.0f, 14.0f);
+            rig.velocity = new Vector3(0.0f, 0.0f, MPM.Fowardvelocity);
             if (oldvec.x != MPM.NewPlayerPos.x)
             {
                 LerpVal = 0.0f;

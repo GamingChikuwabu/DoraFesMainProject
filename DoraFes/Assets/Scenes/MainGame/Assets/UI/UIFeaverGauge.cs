@@ -5,26 +5,39 @@ using UnityEngine.UI;
 
 public class UIFeaverGauge : MonoBehaviour
 {
-    public Color color;
-    GameObject[] obj;
+    Image[] images;
     GlobalStatusManager Gsm;
     int arraynum;
 
     // Start is called before the first frame update
     void Start()
     {
-        obj = GameObject.FindGameObjectsWithTag("Gauge");
+        images = GetComponentsInChildren<Image>();
+        foreach (Image image in images)
+        {
+            image.enabled = false;
+        }
         Gsm = GameObject.FindGameObjectWithTag("MainPlayer").GetComponent<GlobalStatusManager>();
     }
 
+
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        if(Gsm.FeaverGauge / 5 == 0)
+        int temp = (int)(Gsm.FeaverGauge / 10.0f);
+        
+        if(temp <= 10)
         {
-            arraynum++;
-            Debug.Log("a");
-            obj[arraynum].GetComponent<Image>().color = color;
+            images[temp].enabled = true;
+            Debug.Log(temp.ToString());
+        }
+    }
+
+    public void GaugeReset()
+    {
+        foreach (Image image in images)
+        {
+            image.enabled = false;
         }
     }
 }

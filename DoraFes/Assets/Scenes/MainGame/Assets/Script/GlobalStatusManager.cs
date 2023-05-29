@@ -13,6 +13,18 @@ public class GlobalStatusManager : MonoBehaviour
     [SerializeField]
     private float _FeverGaugeUpSpeed = 1;
 
+    [Header("フィーバーの長さ")]
+    [SerializeField]
+    private float FeaverTimeLange = 10;
+
+    [Header("コイン一枚のゲージの上がり幅")]
+    [SerializeField]
+    private float GaugeSpeedUp2Coin = 1.0f;
+
+    CoinManager Cm;
+    UIFeaverGauge UIGuage;
+
+    float stack = 0;
 
     public bool IsFever
     { 
@@ -56,23 +68,32 @@ public class GlobalStatusManager : MonoBehaviour
 
     public float FeaverGauge
     {
-        get { return _FeverGauge; }
-    }
-
-    private void FeverGaugeUpSpeedSetDefault()
-    {
-        FeverGaugeUpSpeed = 1;
+        get { return _FeverGauge;}
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cm = GameObject.FindGameObjectWithTag("LandMark").GetComponent<CoinManager>();
+        UIGuage = GameObject.Find("GaugeFrame").GetComponent<UIFeaverGauge>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        _FeverGauge += _FeverGaugeUpSpeed * Time.deltaTime;
+        if(_FeverGauge >= 100)
+        {
+            stack += Time.deltaTime;
+            if(stack >= FeaverTimeLange)
+            {
+                stack = 0;
+                _FeverGauge = 0;
+                UIGuage.GaugeReset();
+            }
+        }
+        else
+        {
+            _FeverGauge += _FeverGaugeUpSpeed * Time.deltaTime + (Cm.countCoin * GaugeSpeedUp2Coin) * Time.deltaTime;
+        }
     }
 }
