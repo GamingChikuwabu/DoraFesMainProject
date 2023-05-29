@@ -156,6 +156,9 @@ public class SelectWorld : MonoBehaviour
             if (t == 1) stMode = ST_MODE.STAGESELECT;
         }
         else if (stMode == ST_MODE.STAGESELECT)
+        {
+
+        }
 
         
 
