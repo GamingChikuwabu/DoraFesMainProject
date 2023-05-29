@@ -8,15 +8,26 @@ public class MovementComic : MonoBehaviour
 
     [SerializeField] private GameObject nextComic;
 
-    [Header("スピード")]
-    [SerializeField] private float speed = 1500.0f;
+    private float speed = 2000.0f;
 
     [Header("frameは外す")]
     [SerializeField] private bool needMove = true;
 
+    //ボタンフラグ
+    private bool isPush;
+
+    //サウンド
+    public AudioClip sound1;
+    AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
+        isPush = false;
+        //Componentを取得
+        audioSource = GetComponent<AudioSource>();
+
+        //移動座標を入れる
         targetPosion = new Vector3(transform.position.x, transform.position.y, 959);
 
         if (needMove)
@@ -28,18 +39,16 @@ public class MovementComic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(needMove == false)
-        //{
-        //    if (Input.GetButtonDown("Comic"))
-        //    {
-        //        Active();
-        //    }
-        //}
-
-        if (Input.GetButtonDown("Comic"))
+        if(isPush==false)
         {
-            Active();
+            if (Input.GetButtonDown("Comic"))
+            {
+                audioSource.PlayOneShot(sound1);
+                Active();
+                isPush = true;
+            }
         }
+       
     }
 
     private void FixedUpdate()
@@ -49,11 +58,6 @@ public class MovementComic : MonoBehaviour
             float step = speed * Time.deltaTime;
 
             transform.position = Vector3.MoveTowards(transform.position, targetPosion, step);
-
-            if (transform.position == targetPosion)
-            {
-                needMove = false;
-            }
         }
 
     }
@@ -63,10 +67,5 @@ public class MovementComic : MonoBehaviour
         nextComic.SetActive(true);
     }
 
-    //private void ComicMove()
-    //{
-    //    float step = speed * Time.deltaTime;
-
-    //    transform.position = Vector3.MoveTowards(transform.position, targetPosion, step);
-    //}
+    
 }
