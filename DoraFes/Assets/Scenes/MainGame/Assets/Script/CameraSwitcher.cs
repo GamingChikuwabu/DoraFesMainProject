@@ -28,21 +28,21 @@ public class CameraSwitcher : MonoBehaviour
         seconds += Time.deltaTime;
      if (seconds >= WaitTime && goalfg==true)
         {
-            LS.SetLoadName("StageSelect");
+            LS.SetLoadName("ResultScene");
         }
     }
     void OnTriggerExit(Collider other)
-        {
-                if (other.gameObject == Target)
-                {
+    {
+         if (other.gameObject == Target)
+            {
 
-                    mainCamera.SetActive(!mainCamera.activeSelf);
-                    Canvas.SetActive(false);
-            goalfg = true;
+             mainCamera.SetActive(!mainCamera.activeSelf);
+             Canvas.SetActive(false);
+             goalfg = true;
 
-                }
-        
          }
+    
+     }
     
 }
         

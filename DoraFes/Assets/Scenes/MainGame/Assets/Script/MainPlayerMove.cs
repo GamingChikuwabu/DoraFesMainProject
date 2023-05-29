@@ -4,117 +4,97 @@ using UnityEngine;
 
 public class MainPlayerMove : MonoBehaviour
 {
-    //プレイヤーの左右移動の力
-    [Header("左右移動の処理")]
-    [SerializeField]
-    private float PlayerMovePower = 3;
-    [Header("移動の減衰率")]
-    [SerializeField]
-    public float Decelerationrate = 0.9f;
-    [Header("疑似重力")]
-    [SerializeField]
-    private float Gravity = 2.0f;
+    [Header("横移動の力")]
+    [SerializeReference]
+    private float PlayerHorizontalPower;
+    [Header("横の減衰率")]
+    [SerializeReference]
+    private float HorizontalAttenuation = 0.9f;
     [Header("ジャンプ力")]
-    public float jumpPouwer = 45.0f;
-    [Header("カメラが動き始める最小値")]
-    public float MoveStartMinVal = 2;
+    public float JumpPower = 5.0f;
+    [Header("前に進スピード")]
+    public float Forwardvelocity = 5.0f;
+    [Header("遅れた時に元の位置に戻ってくるスピード")]
+    [SerializeReference]
+    private float BackMovePower = 20.0f;
 
-    private float stackjumpPouwer;
+    private Vector3 _NewPlayerPosition;
 
-    private float OldYPos;
-    //このオブジェクトのRigidbody
-    Rigidbody rig;
-    //ランドマークの移動スクリプト
-    LandMarkMove landMark;
-    //左右移動の制限フラグ
-    bool Leftmove = true;
-    bool Rightmove = true;
-
-    //ジャンプしているかどうか
-    bool _Isjump = false;
-    public bool Isjump
+    public Vector3 NewPlayerPos
     {
-        get { return _Isjump; }
-    }    
+        get { return _NewPlayerPosition; }
+    }
 
+    //疑似重力を実装するための変数
+    private float stackGravity;
+
+    //地面と接触しているか
+    private bool _Islanding = true;
+
+    public bool Islanding => _Islanding;
+
+    private Rigidbody rig;
+
+    private GameObject obj;
+
+    private DethEvent dethEvent;
+
+    private void Awake()
+    {
+        _NewPlayerPosition = transform.position;
+        Physics.gravity = new Vector3(0.0f,-9.8f*2.5f,0.0f);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        landMark = GameObject.FindGameObjectWithTag("LandMark").GetComponent<LandMarkMove>();
-        landMark.PlayerYPos = transform.position.y;
+        obj = GameObject.Find("LandMarkSphere");
+        dethEvent = GetComponent<DethEvent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) && Leftmove)
+        //横移動の処理
+        if(Input.GetAxis("Horizontal") < 0)
         {
-            rig.velocity = new Vector3(-PlayerMovePower, rig.velocity.y, landMark.LandMarkSpeed);
+            rig.velocity = new Vector3(-PlayerHorizontalPower, rig.velocity.y, rig.velocity.z);
         }
-        else if (Input.GetKey(KeyCode.D) && Rightmove)
+        else if(Input.GetAxis("Horizontal") > 0)
         {
-            rig.velocity = new Vector3(PlayerMovePower, rig.velocity.y, landMark.LandMarkSpeed);
+            rig.velocity = new Vector3(PlayerHorizontalPower, rig.velocity.y, rig.velocity.z);
         }
         else
         {
-            rig.velocity = new Vector3(rig.velocity.x * Decelerationrate, rig.velocity.y, landMark.LandMarkSpeed);
+            rig.velocity = new Vector3(rig.velocity.x * HorizontalAttenuation, rig.velocity.y, rig.velocity.z);
         }
 
-
-        if (Input.GetKeyDown(KeyCode.Space) && !Isjump)
+        //ジャンプの処理
+        if(Input.GetButtonDown("Jump") && _Islanding == true)
         {
-            _Isjump = true;
-            stackjumpPouwer = jumpPouwer;
+            rig.AddForce(0.0f, JumpPower, 0.0f,ForceMode.Impulse);
+            _Islanding = false;
         }
 
-        if(_Isjump) 
+        if(dethEvent.IsDamage == false)
         {
-            stackjumpPouwer -= Gravity * Time.deltaTime;
-            rig.velocity = new(rig.velocity.x, stackjumpPouwer, rig.velocity.z);
-        }
+            //前に進処理
+            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, Forwardvelocity);
 
-        //MainPlayerが遅れた時の処理
-        Vector3 tempvec = new Vector3(transform.position.x, transform.position.y, landMark.LandMarkToCharPos);
-        Vector3 latevec =  tempvec - transform.position;
-        rig.AddForce(latevec * 300);
+            //遅れた時の処理
+            Vector3 tempvec = new Vector3(0.0f, 0.0f, obj.transform.position.z) - new Vector3(0.0f, 0.0f, transform.position.z);
+            rig.AddForce(tempvec * BackMovePower);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        //上下方向のブロックに当たっている場合
-        if (Physics.Raycast(transform.position, new(0.0f, 1.0f, 0.0f), 10.0f)|| Physics.Raycast(transform.position, new(0.0f, -1.0f, 0.0f), 10.0f))
+        if(collision.gameObject.tag == "Untagged")
         {
-            stackjumpPouwer = 0;
+            _NewPlayerPosition = transform.position;
+            _Islanding = true;
+            Debug.Log("in");
         }
-
-        landMark.PlayerYPos = transform.position.y;
-        
-        _Isjump = false;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "InvWall")
-        {
-            rig.velocity = new(0.0f, rig.velocity.y, rig.velocity.z);
-            if (Physics.Raycast(transform.position, new(1.0f, 0.0f, 0.0f), 10.0f))
-            {
-                Rightmove = false;
-                Leftmove = true;
-            }
-            else if (Physics.Raycast(transform.position, new(-1.0f, 0.0f, 0.0f), 10.0f))
-            {
-                Rightmove = true;
-                Leftmove = false;
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        Rightmove = true;
-        Leftmove = true;
     }
 }

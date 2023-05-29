@@ -34,7 +34,7 @@ public class TitleButtonFunction : MonoBehaviour
 
         // Load the scene after the animation
         //StartCoroutine(LoadSceneAfterDelay("1-1", animationDuration));
-        LS.SetLoadName("1-1");
+        LS.SetLoadName("StageSelect");
     }
 
     public void OnContinueButtonClicked()

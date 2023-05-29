@@ -6,34 +6,54 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    [Header("カメラとLandMarkとの距離Z")]
-    public float Zoffset = 10.0f;
-    [Header("カメラとLandMarkとの距離Y")]
-    public float Yoffset = 5.0f;
-    [Header("Z方向への追従フラグ")]
-    public bool Xfollow = true;
+    private float YOffset;
+    Rigidbody rig;
+    MainPlayerMove MPM;
+    float LerpVal = 1.0f;
+    Vector3 oldvec;
+    Vector3 startvec;
+    DethEvent dethEvent;
 
-    private Transform m_transform;
     // Start is called before the first frame update
     void Start()
     {
-        m_transform = GameObject.FindGameObjectWithTag("LandMark").transform;    
+        rig = GetComponent<Rigidbody>();
+
+        MPM = GameObject.FindGameObjectWithTag("MainPlayer").GetComponent<MainPlayerMove>();
+
+        YOffset = transform.position.y - MPM.transform.position.y;
+
+        oldvec = MPM.NewPlayerPos;
+
+        dethEvent = MPM.gameObject.GetComponent<DethEvent>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Xfollow)
+        if(dethEvent.IsDamage == false)
         {
-            transform.position = new(m_transform.position.x, m_transform.position.y + Yoffset, m_transform.position.z - Zoffset);
+            //前に進むスピード
+            rig.velocity = new Vector3(0.0f, 0.0f, 14.0f);
+            if (oldvec.x != MPM.NewPlayerPos.x)
+            {
+                LerpVal = 0.0f;
+                startvec = transform.position;
+                oldvec = MPM.NewPlayerPos;
+            }
+
+            float temp = Mathf.Lerp(startvec.y, MPM.NewPlayerPos.y + YOffset, LerpVal);
+            LerpVal += 0.01f;
+            if (LerpVal >= 1.0f)
+            {
+                LerpVal = 1.0f;
+            }
+
+            transform.position = new Vector3(transform.position.x, temp, transform.position.z);
         }
         else
         {
-            transform.position = new(transform.position.x, m_transform.position.y + Yoffset, m_transform.position.z - Zoffset);
+            rig.velocity = new Vector3(0.0f, 0.0f, 0.0f);
         }
-        
-
     }
-
-
 }

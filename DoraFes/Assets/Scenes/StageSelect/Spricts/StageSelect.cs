@@ -196,19 +196,19 @@ public class StageSelect : MonoBehaviour
 
                 case STAGENAME.STAGE1_2:
 
-                   
+                    SceneManager.LoadScene("1-2");
 
                     break;
 
                 case STAGENAME.STAGE1_3:
+                    SceneManager.LoadScene("1-3");
 
-                   
 
                     break;
 
                 case STAGENAME.STAGE1_4:
 
-                   
+                    SceneManager.LoadScene("1-4");
 
                     break;
 
@@ -232,7 +232,7 @@ public class StageSelect : MonoBehaviour
 
                 case STAGENAME.STAGE2_1:
 
-                   
+                    SceneManager.LoadScene("2-1");
 
                     break;
 
@@ -274,7 +274,7 @@ public class StageSelect : MonoBehaviour
 
                 case STAGENAME.STAGE3_1:
 
-                   
+                    SceneManager.LoadScene("3-1");
                     break;
 
                 case STAGENAME.STAGE3_2:
@@ -314,8 +314,8 @@ public class StageSelect : MonoBehaviour
                     break;
 
                 case STAGENAME.STAGE4_1:
+                    SceneManager.LoadScene("4-1");
 
-                  
 
                     break;
 
@@ -357,7 +357,7 @@ public class StageSelect : MonoBehaviour
 
                 case STAGENAME.STAGE5_1:
 
-                    
+                    SceneManager.LoadScene("5-1");
 
                     break;
 
