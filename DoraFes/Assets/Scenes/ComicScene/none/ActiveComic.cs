@@ -7,7 +7,7 @@ public class ActiveComic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SetChildrenActive(false); // 子オブジェクトをすべてアクティブにする
+        SetChildrenActive(false); // 子オブジェクトをすべて非アクティブにする
     }
 
     // Update is called once per frame
