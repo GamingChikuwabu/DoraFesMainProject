@@ -15,7 +15,7 @@ public class CameraSwitcher : MonoBehaviour
     float elapsedTime;
     public float WaitTime = 5f; // ‘Ò‹@‚·‚é•b”
     private float startTime; // ŠJŽnŽžŠÔ
-    bool goalfg = false;
+    public bool goalfg = false;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class CameraSwitcher : MonoBehaviour
         seconds += Time.deltaTime;
      if (seconds >= WaitTime && goalfg==true)
         {
-            LS.SetLoadName("ResultScene");
+            LS.SetLoadName("StageSelect");
         }
     }
     void OnTriggerExit(Collider other)

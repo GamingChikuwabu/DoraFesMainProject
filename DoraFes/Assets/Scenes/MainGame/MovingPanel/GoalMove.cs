@@ -19,6 +19,10 @@ public class GoalMove : MonoBehaviour
     private bool isPanel;
     private bool isGoal;
 
+    //ゴールフラグ取得
+    private GameObject GoalObject;
+    private CameraSwitcher CS;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,19 +33,27 @@ public class GoalMove : MonoBehaviour
 
         isPanel = false;
         isGoal = false;
+
+        //ゴールフラグ取得
+        GoalObject = GameObject.Find("goal");
+        CS = GoalObject.GetComponent<CameraSwitcher>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        //ゴールフラグ取得
+        isGoal = CS.goalfg;
 
-        //isGoal=
-
-        if (isGoal)
+        if(isPanel == false)
         {
-            uiElement.SetActive(true);
-            PanelMovement();
+            if (isGoal)
+            {
+                uiElement.SetActive(true);
+                PanelMovement();
+            }
         }
+        
     }
 
     private void PanelMovement()

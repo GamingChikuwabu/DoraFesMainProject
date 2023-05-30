@@ -40,10 +40,9 @@ public class ComicNextScene : MonoBehaviour
             if (Input.GetButtonDown("Comic"))
             {
                 //ロード画面後に遷移させるシーン名をセット
-                //LS.SetLoadName(nextScene);
+                LS.SetLoadName(nextScene);
             }
         }
-        
     }
 
     private void FixedUpdate()
