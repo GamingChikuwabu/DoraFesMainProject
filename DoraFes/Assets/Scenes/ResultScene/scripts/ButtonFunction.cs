@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class ButtonFunction : MonoBehaviour
 {
-    // ロードシーン用のオブジェクトを取ってくる
+    // ロードシーン用のオブジェクトを取ってくる変数
     private GameObject LoadSceneObject;
     private LoadScene LS;
+
+    //リトライするシーン名を取ってくる変数
+    private GameObject RetrySceneObject;
+    private SetNowScene SNS;
 
     void Start()
     {
@@ -16,6 +19,9 @@ public class ButtonFunction : MonoBehaviour
         LoadSceneObject = GameObject.Find("LoadScene");
         LS = LoadSceneObject.GetComponent<LoadScene>();
 
+        //リトライするシーン名を取ってくる
+        RetrySceneObject = GameObject.Find("RetryScene");
+        SNS = RetrySceneObject.GetComponent<SetNowScene>();
     }
 
     public void StringArgFunction(string s)
@@ -24,12 +30,11 @@ public class ButtonFunction : MonoBehaviour
         //ロード画面後に遷移させるシーン名をセット
         LS.SetLoadName(s);
     }
-    // Start is called before the first frame update
-   
 
-    // Update is called once per frame
-    void Update()
+    public void StringRetryScene()
     {
-        
+        string s = SNS.nowSceneName;
+        LS.SetLoadName(s);
     }
+   
 }

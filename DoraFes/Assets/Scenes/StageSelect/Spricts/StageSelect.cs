@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StageSelect : MonoBehaviour
 {
+
     public  enum STAGENAME
     {
         // マップ選択

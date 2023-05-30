@@ -61,5 +61,5 @@ public class LoadScene : MonoBehaviour
     {
         NextLoadName = a;
     }
-    
+
 }

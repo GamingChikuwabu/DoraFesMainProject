@@ -25,16 +25,20 @@ public class CameraSwitcher : MonoBehaviour
     }
     void Update()
     {
-        seconds += Time.deltaTime;
-     if (seconds >= WaitTime && goalfg==true)
+        if (goalfg)
         {
-            LS.SetLoadName("StageSelect");
+            seconds += Time.deltaTime;
+            if (seconds >= WaitTime)
+            {
+                LS.SetLoadName("StageSelect");
+            }
         }
     }
+
     void OnTriggerExit(Collider other)
     {
          if (other.gameObject == Target)
-            {
+         {
 
              mainCamera.SetActive(!mainCamera.activeSelf);
              Canvas.SetActive(false);
@@ -42,7 +46,7 @@ public class CameraSwitcher : MonoBehaviour
 
          }
     
-     }
+    }
     
 }
         
