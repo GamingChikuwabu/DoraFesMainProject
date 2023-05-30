@@ -24,6 +24,8 @@ public class SelectWorld : MonoBehaviour
     [SerializeField] GameObject[] objCheck;
     [Header("マップを渡す")]
     [SerializeField] GameObject[] objMAP;
+    [Header("ステージアイコンを渡す")]
+    [SerializeField] GameObject[] objStage;
     [Header("セーブデータを渡す")]
     public SaveData saveData;
 
@@ -78,19 +80,40 @@ public class SelectWorld : MonoBehaviour
         string　sClearData = saveData.GetString();
 
         // NULLの場合
-        if (sClearData == null) nClearDataW = 1;
+        if (sClearData == "")
+        {
+            nClearDataW = 1;
+            nClearDataS = 0;
+        }
         else
         {
             // ワールド数を取得
             nClearDataW = int.Parse(sClearData.Substring(0, 1));
             // ステージ数を取得
-            int nClearDataS = int.Parse(sClearData.Substring(2, 1));
+            nClearDataS = int.Parse(sClearData.Substring(2, 1));
             // 2-5の場合
-            if (nClearDataS == 5) nClearDataW++;
+            if (nClearDataS == 5)
+            {
+                nClearDataW++;
+                nClearDataS = 0;
+            }
         }
 
-        nClearDataW--;
-        nClearDataS--;
+        nClearDataS++;
+
+        // ワールド数分回す
+        for (int i = 0; i < 5; i++)
+        {
+            // ステージ数分回す
+            for (int j = 0; j < 5; j++)
+            {
+                if ((nClearDataW - 1) * 5 + nClearDataS - 1 < i * 5 + j)
+                {
+                    Material material = objStage[i * 5 + j].GetComponent<Renderer>().material;
+                    material.DisableKeyword("_EMISSION"); // 放射を無効化
+                }
+            }
+        }
     }
 
     private void Awake()
@@ -138,8 +161,11 @@ public class SelectWorld : MonoBehaviour
                     // チェックマークをすべて消す
                     for (int i = 0; i < objCheck.Length; i++) objCheck[i].SetActive(false);
                     objWorldMap.SetActive(false);   // ワールドマップを消す
+
                     // 選択ワールドをアクティブ化
                     objMAP[nowSelectWorld].SetActive(true);
+
+                    for (int i = 0; i < 5; i++) objStage[nowSelectWorld * 5 + i].SetActive(true);
                 }
             }
             else if (fade == FADE.OUT)
@@ -185,7 +211,7 @@ public class SelectWorld : MonoBehaviour
             // ワールド選択で端っこに行った場合
             if (nowSelectWorld > 4) nowSelectWorld = 0;
             // 選択できないワールドに移動しようとしているなら
-            if (nClearDataW < nowSelectWorld) nowSelectWorld -= 1;
+            if (nClearDataW < nowSelectWorld + 1) nowSelectWorld -= 1;
             else audioSource.PlayOneShot(seClip);
         }
         // マイナス方向に入力された
@@ -195,7 +221,7 @@ public class SelectWorld : MonoBehaviour
             // ワールド選択で端っこに行った場合
             if (nowSelectWorld < 0) nowSelectWorld = 4;
             // 選択できないワールドに移動しようとしているなら
-            if (nClearDataW < nowSelectWorld) nowSelectWorld = 0;
+            if (nClearDataW < nowSelectWorld + 1) nowSelectWorld = 0;
             else audioSource.PlayOneShot(seClip);
         }
         else if (stInput.isBottom == IsInputBottom.A)
