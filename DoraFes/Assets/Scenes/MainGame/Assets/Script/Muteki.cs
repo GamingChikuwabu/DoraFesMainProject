@@ -5,10 +5,14 @@ using UnityEngine;
 public class Muteki : MonoBehaviour
 {
     GlobalStatusManager gm;
+    public AudioClip DethSE;
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("MainPlayer").GetComponent<GlobalStatusManager>();
+        gm = GetComponent<GlobalStatusManager>();
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class Muteki : MonoBehaviour
     {
         if (gm.IsFever && other.gameObject.CompareTag("enemy"))
         {
+            source.PlayOneShot(DethSE);
             if (transform.position.x < other.transform.position.x)
             {
                 other.GetComponent<Rigidbody>().AddForce(10.0f, 20.0f, 10.0f, ForceMode.Impulse);

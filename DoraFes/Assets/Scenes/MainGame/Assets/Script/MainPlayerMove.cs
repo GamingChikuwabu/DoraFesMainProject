@@ -58,7 +58,7 @@ public class MainPlayerMove : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-        coinMane = GameObject.Find("LandMarkSphere").GetComponent<CoinManager>();
+        coinMane = GetComponent<CoinManager>();
         dethEvent = GetComponent<DethEvent>();
     }
 

@@ -9,7 +9,7 @@ public class HitCoin : MonoBehaviour
 
     private void Start()
     {
-        coinManager = GameObject.FindWithTag("LandMark").GetComponent<CoinManager>();
+        coinManager = GameObject.FindWithTag("MainPlayer").GetComponent<CoinManager>();
         coinUI = GameObject.Find("UI_CoinNum").GetComponent<CoinNum>();
     }
 
