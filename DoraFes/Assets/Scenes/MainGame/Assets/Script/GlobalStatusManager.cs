@@ -23,8 +23,10 @@ public class GlobalStatusManager : MonoBehaviour
 
     CoinManager Cm;
     UIFeaverGauge UIGuage;
+    BGMManager BgmManager;
 
     float stack = 0;
+    bool feaver = false;
 
     public bool IsFever
     { 
@@ -74,8 +76,9 @@ public class GlobalStatusManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cm = GameObject.FindGameObjectWithTag("LandMark").GetComponent<CoinManager>();
+        Cm = GetComponent<CoinManager>();
         UIGuage = GameObject.Find("GaugeFrame").GetComponent<UIFeaverGauge>();
+        BgmManager = GetComponent<BGMManager>();
     }
 
     // Update is called once per frame
@@ -83,9 +86,16 @@ public class GlobalStatusManager : MonoBehaviour
     {
         if(_FeverGauge >= 100)
         {
+            if(!feaver)
+            {
+                BgmManager.SetBGM(BGMManager.Bgm.Fever);
+                feaver = true;
+            }
             stack += Time.deltaTime;
             if(stack >= FeaverTimeLange)
             {
+                feaver = false;
+                BgmManager.SetBGM(BGMManager.Bgm.Normal);
                 stack = 0;
                 _FeverGauge = 0;
                 UIGuage.GaugeReset();
