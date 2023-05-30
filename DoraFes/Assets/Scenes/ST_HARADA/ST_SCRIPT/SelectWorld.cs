@@ -123,7 +123,6 @@ public class SelectWorld : MonoBehaviour
                 Mathf.Lerp(startAngle.y, endAngle.y, t),
                 Mathf.Lerp(startAngle.z, endAngle.z, t));
 
-
             if (fade == FADE.IN)
             {
                 Color color = fadeUI.color;
