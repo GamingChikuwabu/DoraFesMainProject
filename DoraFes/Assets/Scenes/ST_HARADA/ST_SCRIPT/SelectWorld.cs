@@ -83,23 +83,23 @@ public class SelectWorld : MonoBehaviour
     FADE fade = FADE.IN;
 
     // Iconの初期座標を格納
-    Vector3[] iconPos = new Vector3[5 * 4]; // ココだけ変更（ステージ数の変更の場合）
+    Vector3[] iconPos = new Vector3[5 * 2]; // ココだけ変更（ステージ数の変更の場合）
     [Header("アイコン関連")]
     public float moveSpeed = 0.5f;
     public float movePow = 2;
-    int stageNum = 3;        // ステージ数;
+    int stageNum = 2;        // ステージ数;
 
     void Start()
     {
         // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
         // まさよし
         // LoadSceneスクリプトの変数を取ってくる
-        //LoadSceneObject = GameObject.Find("LoadScene");
-        //LS = LoadSceneObject.GetComponent<LoadScene>();
+        LoadSceneObject = GameObject.Find("LoadScene");
+        LS = LoadSceneObject.GetComponent<LoadScene>();
 
-        ////// リトライするシーン名を取ってくる
-        //RetrySceneObject = GameObject.Find("RetryScene");
-        //SNS = RetrySceneObject.GetComponent<SetSceneName>();
+        //// リトライするシーン名を取ってくる
+        RetrySceneObject = GameObject.Find("RetryScene");
+        SNS = RetrySceneObject.GetComponent<SetSceneName>();
         // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
 
 
@@ -110,7 +110,7 @@ public class SelectWorld : MonoBehaviour
         stickMove = gameObject.GetComponent<StickNaturalMove>();
 
         // stringデータを受け取る
-        string sClearData ="5-2" /*saveData.GetString()*/;
+        string sClearData ="5-1" /*saveData.GetString()*/;
 
         // NULLの場合
         if (sClearData == "")
@@ -180,9 +180,8 @@ public class SelectWorld : MonoBehaviour
             {
                 // ココに入れる
                 string stage = nowSelectWorld + "-" + nowSelectStage;
-                Debug.Log(stage);
                 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
-                // まさよし
+                //// まさよし
                 LS.SetLoadName(stage);
                 SNS.SetRetrySceneName(stage);
                 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
