@@ -8,7 +8,7 @@ public class GoalScript : MonoBehaviour
     //Playerタグが接触するとセーブ
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("MainPlayer"))
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
             saveData.SaveProgress(currentSceneName);
