@@ -21,6 +21,11 @@ public class DethEvent : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("enemy") && GS.IsFever == false)

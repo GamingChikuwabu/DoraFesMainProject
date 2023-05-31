@@ -631,8 +631,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29f0b267ea91df45bde11dddfe2f4f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  rotateSpeed: 500
+  speed: 3
+  rotateSpeed: 10
 --- !u!135 &1143140490203089942
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -644,8 +644,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.01
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.01056935
+  m_Center: {x: -0.00056934677, y: 1.3669438e-12, z: -3.1707454e-12}
 --- !u!54 &9089550374854368060
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 6495624157485709508}
   m_Layer: 0
   m_Name: group1
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
