@@ -21,6 +21,26 @@ public class Muteki : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (gm.IsFever && collision.gameObject.CompareTag("enemy"))
+        {
+            collision.rigidbody.velocity = Vector3.zero;
+            source.PlayOneShot(DethSE);
+            if (transform.position.x < collision.transform.position.x)
+            {
+                collision.rigidbody.AddForce(10.0f, 20.0f, 10.0f, ForceMode.Impulse);
+                collision.rigidbody.angularVelocity = new Vector3(0.0f, 0.0f, 13.0f);
+            }
+            else
+            {
+                collision.rigidbody.AddForce(-10.0f, 20.0f, 10.0f, ForceMode.Impulse);
+                collision.rigidbody.angularVelocity = new Vector3(0.0f, 0.0f, 13.0f);
+            }
+
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (gm.IsFever && other.gameObject.CompareTag("enemy"))

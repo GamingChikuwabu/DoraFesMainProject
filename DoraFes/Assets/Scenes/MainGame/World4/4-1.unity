@@ -4556,9 +4556,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e09be9980e68640bf7caad6f6a4011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  myNumber: 2
-  uiElement: {fileID: 398039301}
 --- !u!114 &375251070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8566,6 +8563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &698290544
 Animator:
   serializedVersion: 5
@@ -10007,6 +10005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &820022936
 Animator:
   serializedVersion: 5
@@ -13447,6 +13446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &1183200542
 Animator:
   serializedVersion: 5
@@ -13815,6 +13815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &1203329922
 Animator:
   serializedVersion: 5
@@ -14640,6 +14641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &1281331607
 Animator:
   serializedVersion: 5
@@ -16998,6 +17000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &1510648279
 Animator:
   serializedVersion: 5
@@ -18279,6 +18282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 3096716026326514537, guid: 5938d6612b82aea4ea1279921e3cee21, type: 3}
   LineNum: 3
+  clip: {fileID: 0}
 --- !u!95 &1656789037
 Animator:
   serializedVersion: 5
@@ -18818,9 +18822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e09be9980e68640bf7caad6f6a4011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  myNumber: 3
-  uiElement: {fileID: 398039301}
 --- !u!114 &1746990382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20478,8 +20479,9 @@ MonoBehaviour:
   PlayerHorizontalPower: 5
   HorizontalAttenuation: 0.9
   JumpPower: 13
-  Forwardvelocity: 14
+  _Forwardvelocity: 5
   BackMovePower: 20
+  CoinMagnification: 0.1
 --- !u!114 &1810633755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20508,6 +20510,8 @@ MonoBehaviour:
   efect: {fileID: 0}
   _FeverGauge: 0
   _FeverGaugeUpSpeed: 10
+  FeaverTimeLange: 10
+  GaugeSpeedUp2Coin: 1
 --- !u!95 &1810633757
 Animator:
   serializedVersion: 5
@@ -20557,6 +20561,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1810633760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810633750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61df8555f3bfb646af921c6a079b8b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DethSE: {fileID: 0}
 --- !u!1 &1836973552
 GameObject:
   m_ObjectHideFlags: 0
@@ -21407,9 +21424,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e09be9980e68640bf7caad6f6a4011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  myNumber: 1
-  uiElement: {fileID: 398039301}
 --- !u!114 &1938918694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23540,7 +23554,7 @@ PrefabInstance:
     - target: {fileID: 4111704235871038363, guid: 7ab81b6aef523e94d95fb61d853e6add,
         type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4111704235871038363, guid: 7ab81b6aef523e94d95fb61d853e6add,
         type: 3}
