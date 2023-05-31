@@ -2,6 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StageSelect : MonoBehaviour
 {
+    //リトライするシーン名を取ってくる
+    private GameObject RetrySceneObject;
+    private SetSceneName SNS;
+
     public  enum STAGENAME
     {
         // マップ選択
@@ -79,6 +83,9 @@ public class StageSelect : MonoBehaviour
         // 初めに選ばれているステージ
         stageName = STAGENAME.MAP1;
 
+        //リトライするシーン名を取ってくる
+        RetrySceneObject = GameObject.Find("RetryScene");
+        SNS = RetrySceneObject.GetComponent<SetSceneName>();
     }
 
     // Update is called once per frame
@@ -191,6 +198,8 @@ public class StageSelect : MonoBehaviour
                 case STAGENAME.STAGE1_1:
 
                     SceneManager.LoadScene("1-1");
+
+                    SNS.SetRetrySceneName("1-1");
 
                     break;
 
