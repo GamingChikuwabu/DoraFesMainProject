@@ -21,6 +21,10 @@ public class MainPlayerMove : MonoBehaviour
     [Header("コインをとった時に上がるスピード")]
     [SerializeReference]
     private float CoinMagnification = 0.1f;
+    [Header("最大スピード")]
+    [SerializeReference]
+    private float MaxSpeed = 30.0f;
+
 
     private Vector3 _NewPlayerPosition;
 
@@ -96,8 +100,12 @@ public class MainPlayerMove : MonoBehaviour
         if(dethEvent.IsDamage == false)
         {
             //前に進処理
-            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, _Forwardvelocity + coinMane.countCoin * CoinMagnification);
-
+            float temppawer = _Forwardvelocity + coinMane.countCoin * CoinMagnification;
+            if (temppawer > MaxSpeed)
+            {
+                temppawer = MaxSpeed;
+            }
+            rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, temppawer);
             //遅れた時の処理
             Vector3 tempvec = new Vector3(0.0f, 0.0f, coinMane.transform.position.z) - new Vector3(0.0f, 0.0f, transform.position.z);
             rig.AddForce(tempvec * BackMovePower);
