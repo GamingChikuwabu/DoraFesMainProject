@@ -35,7 +35,7 @@ public class GoalMove : MonoBehaviour
         isGoal = false;
 
         //ƒS[ƒ‹ƒtƒ‰ƒOæ“¾
-        GoalObject = GameObject.Find("goal");
+        GoalObject = GameObject.FindGameObjectWithTag("goal");
         CS = GoalObject.GetComponent<CameraSwitcher>();
     }
 
