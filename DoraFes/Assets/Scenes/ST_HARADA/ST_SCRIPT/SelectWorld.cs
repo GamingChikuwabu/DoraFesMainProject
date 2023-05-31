@@ -180,6 +180,32 @@ public class SelectWorld : MonoBehaviour
             {
                 // ƒRƒR‚É“ü‚ê‚é
                 string stage = nowSelectWorld + "-" + nowSelectStage;
+
+                if(stage == "1-1")
+                {
+                    stage = "Comic1";
+                }
+
+                if (stage == "1-2")
+                {
+                    stage = "Comic2";
+                }
+
+                if (stage == "1-3")
+                {
+                    stage = "Comic3";
+                }
+
+                if (stage == "1-4")
+                {
+                    stage = "Comic4";
+                }
+
+                if (stage == "1-5")
+                {
+                    stage = "Comic5";
+                }
+
                 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
                 //// ‚Ü‚³‚æ‚µ
                 LS.SetLoadName(stage);
