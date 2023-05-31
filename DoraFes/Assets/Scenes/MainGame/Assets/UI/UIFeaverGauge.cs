@@ -29,7 +29,6 @@ public class UIFeaverGauge : MonoBehaviour
         if(temp <= 10)
         {
             images[temp].enabled = true;
-            Debug.Log(temp.ToString());
         }
     }
 

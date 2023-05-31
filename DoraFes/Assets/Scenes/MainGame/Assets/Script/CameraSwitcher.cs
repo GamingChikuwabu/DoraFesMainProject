@@ -21,15 +21,20 @@ public class CameraSwitcher : MonoBehaviour
     {
         LoadSceneObject = GameObject.Find("LoadScene");
         LS = LoadSceneObject.GetComponent<LoadScene>();
-
     }
     void Update()
     {
-        seconds += Time.deltaTime;
-        if (seconds >= WaitTime && goalfg == true)
+        if (goalfg)
         {
-            LS.SetLoadName("StageSelect");
+            seconds += Time.deltaTime;
+
+            if (seconds >= WaitTime)
+            {
+                LS.SetLoadName("StageSelect");
+            }
         }
+        
+        
     }
     void OnTriggerExit(Collider other)
     {
