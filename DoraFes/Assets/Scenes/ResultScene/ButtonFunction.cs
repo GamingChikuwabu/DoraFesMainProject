@@ -28,10 +28,10 @@ public class ButtonFunction : MonoBehaviour
 
     public void StringArgFunction(string s)
     {
-        //SceneManager.LoadScene(s);
-        //ロード画面後に遷移させるシーン名をセット
         LS.SetLoadName(s);
     }
+
+
     // Start is called before the first frame update
 
     public void RetryFunction()
