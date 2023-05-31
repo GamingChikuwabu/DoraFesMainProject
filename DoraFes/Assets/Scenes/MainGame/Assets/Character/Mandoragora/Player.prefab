@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 1685095104063086056}
   - component: {fileID: 1685095104063086057}
   - component: {fileID: 1320351839758335991}
+  - component: {fileID: -7706944087192333996}
   m_Layer: 3
   m_Name: Player
   m_TagString: MainPlayer
@@ -437,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87731fab73747e9479db325f72050079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  efect: {fileID: 0}
+  efect: {fileID: 7880344633413726300, guid: b14b9ccb190ca8d408da6f7167c50f64, type: 3}
   _FeverGauge: 0
   feverModeGameObject: {fileID: 135137064751644108, guid: 07d3e807a9704234093dd70fbf8b8145,
     type: 3}
@@ -516,6 +517,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound1: {fileID: 0}
   countCoin: 0
+--- !u!114 &-7706944087192333996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991647392489175151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8db2aa3eb6af449b0db30c8ccd3f12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NormalBGM: {fileID: 0}
+  FeaverBGM: {fileID: 0}
 --- !u!1 &2018634562500100153
 GameObject:
   m_ObjectHideFlags: 0

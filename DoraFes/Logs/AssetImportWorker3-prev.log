@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ja' Physical Memory: 16205 MB
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ja' Physical Memory: 16168 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,7 @@ C:/DoraFesMainProject/DoraFes
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-54770
+63915
 Successfully changed project path to: C:/DoraFesMainProject/DoraFes
 C:/DoraFesMainProject/DoraFes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/DoraFesMainProject/DoraFes
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [43476] Host "[IP] 192.168.179.45 [Port] 0 [Flags] 2 [Guid] 1660353561 [EditorId] 1660353561 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28176] Host "[IP] 169.254.242.57 [Port] 0 [Flags] 2 [Guid] 735620937 [EditorId] 735620937 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-VHUCUL3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [43476] Host "[IP] 192.168.179.45 [Port] 0 [Flags] 2 [Guid] 1660353561 [EditorId] 1660353561 [Version] 1048832 [Id] WindowsEditor(7,win10ohs10598) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28176] Host "[IP] 169.254.242.57 [Port] 0 [Flags] 2 [Guid] 735620937 [EditorId] 735620937 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-VHUCUL3I) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 141.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 164.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -59,115 +59,1055 @@ Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1650 Ti with Max-Q Design (ID=0x1f95)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   NVIDIA
-    VRAM:     3962 MB
-    Driver:   27.21.14.6221
+    VRAM:     5980 MB
+    Driver:   30.0.15.1278
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005223 seconds.
+Registered in 0.007787 seconds.
 Native extension for WindowsStandalone target not found
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-[usbmuxd] Send listen message
-Native extension for iOS target not found
-Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 298 ms
-Refreshing native plugins compatible for Editor in 167.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.01 ms.
+Refreshing native plugins compatible for Editor in 140.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.071 seconds
+- Completed reload, in  0.841 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1072ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (842ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (913ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (573ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (101ms)
+			SetupTypeCache (140ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (739ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (348ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (375ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (167ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (130ms)
-				ProcessInitializeOnLoadMethodAttributes (64ms)
+				RefreshPlugins (140ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006927 seconds.
+Registered in 0.007862 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 117.39 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 142.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.279 seconds
+- Completed reload, in  1.550 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1280ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (1551ms)
+		BeginReloadAssembly (132ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1077ms)
-			LoadAssemblies (76ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1270ms)
+			LoadAssemblies (107ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (255ms)
+			SetupTypeCache (331ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (638ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (708ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (117ms)
-				BeforeProcessingInitializeOnLoad (132ms)
-				ProcessInitializeOnLoadAttributes (258ms)
-				ProcessInitializeOnLoadMethodAttributes (104ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				RefreshPlugins (143ms)
+				BeforeProcessingInitializeOnLoad (161ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5492 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 87 unused Assets / (13.4 MB). Loaded Objects now: 5917.
-Memory consumption went from 342.2 MB to 328.7 MB.
-Total: 10.686400 ms (FindLiveObjects: 0.556600 ms CreateObjectMapping: 0.586800 ms MarkObjects: 3.837500 ms  DeleteObjects: 5.703500 ms)
+Unloading 5491 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 94 unused Assets / (13.6 MB). Loaded Objects now: 5893.
+Memory consumption went from 262.3 MB to 248.7 MB.
+Total: 8.423800 ms (FindLiveObjects: 0.448500 ms CreateObjectMapping: 0.482600 ms MarkObjects: 2.648900 ms  DeleteObjects: 4.843000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 694064.675495 seconds.
+  path: Assets/Scenes/titleScene/sound/CasualGameBGM05/BGM_02.wav
+  artifactKey: Guid(90eae78e8ce85a849b5b0ca11b2de641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/titleScene/sound/CasualGameBGM05/BGM_02.wav using Guid(90eae78e8ce85a849b5b0ca11b2de641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4730fc0d152a53ccdce9f63048377776') in 0.143164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scenes/titleScene/sound/Book02-1(Flip).mp3
+  artifactKey: Guid(2b889dd13e213c74cb8b26490eda0d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/titleScene/sound/Book02-1(Flip).mp3 using Guid(2b889dd13e213c74cb8b26490eda0d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d19c6e18c02f22beb95f6af157374b6') in 0.026943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.097950 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bin_A.prefab
+  artifactKey: Guid(a828848d66a826148a9d5c39338d5677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bin_A.prefab using Guid(a828848d66a826148a9d5c39338d5677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be4d45bf2f7079068c1e8a21786f723') in 0.292679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Breeze.prefab
+  artifactKey: Guid(1783c572a229d2444ba126d59c45823f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Breeze.prefab using Guid(1783c572a229d2444ba126d59c45823f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fa015b47e5c8d4f2f3dbf8bbd41f1f') in 0.040496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Scenes/MainGame/World2/Map/block2_jungle.prefab
+  artifactKey: Guid(238330f6801d2cb4baabf65cdb585e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World2/Map/block2_jungle.prefab using Guid(238330f6801d2cb4baabf65cdb585e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3af34b25b7dc069a6e3dd84fe6e7e500') in 0.119020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.916563 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_ConcreteMossCornerIn.prefab
+  artifactKey: Guid(cfa4886881fcde74c8a832dcb083b551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_ConcreteMossCornerIn.prefab using Guid(cfa4886881fcde74c8a832dcb083b551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '916d680a40f9a834f0791cda56fb95e8') in 0.031214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.476253 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Mossy.prefab
+  artifactKey: Guid(46fc72a04ae183a4f9cf13ea9d9471ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Cap_Mossy.prefab using Guid(46fc72a04ae183a4f9cf13ea9d9471ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ee2ff3f2f93c3027ef7ad084c50a03') in 0.037988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.245271 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_LavaBase.prefab
+  artifactKey: Guid(152063eefa107824f8856e126107cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_LavaBase.prefab using Guid(152063eefa107824f8856e126107cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0328ddc178d4fa9c3eb6c0fe778fd55d') in 0.047308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008394 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Rounded_Water.prefab
+  artifactKey: Guid(6a048fa74382335449350a6affefcb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Block_Rounded_Water.prefab using Guid(6a048fa74382335449350a6affefcb57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a24bb89575159f1b1dc404635310b36') in 0.062181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.128578 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Meshes/building1.obj
+  artifactKey: Guid(f7411c08aeaa7c140976312f2924dd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Meshes/building1.obj using Guid(f7411c08aeaa7c140976312f2924dd76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf4c6f6af44ce59f52dd569d7b571cc') in 0.105588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building1 (7).prefab
+  artifactKey: Guid(2089a05277315554da18b671616e2e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building1 (7).prefab using Guid(2089a05277315554da18b671616e2e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4d9a44f269e01d305cc5071c4d36f5') in 0.024557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building1 (4).prefab
+  artifactKey: Guid(626819736d1a3e34c908365ee6bf1142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building1 (4).prefab using Guid(626819736d1a3e34c908365ee6bf1142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea436328cf955f1c36468f10900d9d6c') in 0.016226 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building1 (2) 1.prefab
+  artifactKey: Guid(48b911fa8f212a945b1d878d5437e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building1 (2) 1.prefab using Guid(48b911fa8f212a945b1d878d5437e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6742fbcf5304268484741283839988') in 0.014235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.073021 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building1 (9).prefab
+  artifactKey: Guid(4abfdf4a6da7dd749a68e225827496e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building1 (9).prefab using Guid(4abfdf4a6da7dd749a68e225827496e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53945d92c2ac7817e6cfcb64a23f313') in 0.018667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building1 (18).prefab
+  artifactKey: Guid(e51d3fdddca764641a89303d664b0589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building1 (18).prefab using Guid(e51d3fdddca764641a89303d664b0589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073c3eaf0ce90a30c736597cdc55e4d3') in 0.021980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building1 (14) 1.prefab
+  artifactKey: Guid(d9dfce1edd0b2134f90d543e78dfda78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building1 (14) 1.prefab using Guid(d9dfce1edd0b2134f90d543e78dfda78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae80063703c6c29315d608ab36a09fd8') in 0.021702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building1 (17).prefab
+  artifactKey: Guid(4419d062e69174d459cf9a42ebf90c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building1 (17).prefab using Guid(4419d062e69174d459cf9a42ebf90c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dac1c25d28a93911810e94b4f769c57') in 0.020162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building1 (14).prefab
+  artifactKey: Guid(1a659c0c2a6379649a5307615b44296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building1 (14).prefab using Guid(1a659c0c2a6379649a5307615b44296e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec10e1c5940e13b8ee36cdaf97301fd') in 0.013663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building1 (13).prefab
+  artifactKey: Guid(1cd0ba050686f1b4b940439e93b0af89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building1 (13).prefab using Guid(1cd0ba050686f1b4b940439e93b0af89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306b32804d1599fc9d59e9dca7b68ebc') in 0.020407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building1 (11).prefab
+  artifactKey: Guid(ab5e367b3980a6c4e858b270c3eead46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building1 (11).prefab using Guid(ab5e367b3980a6c4e858b270c3eead46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dccf5a5044f9d741670c137e460e6170') in 0.015001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.130453 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building2.prefab
+  artifactKey: Guid(c80cf9d1f7824aa43b8612c1bf7dacf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building2.prefab using Guid(c80cf9d1f7824aa43b8612c1bf7dacf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c0f691a0ac13d04f2b4630915c813d') in 0.010401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building2_Var1.prefab
+  artifactKey: Guid(bcd415e6ba613ff449b9d0ed03b6ad4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building2_Var1.prefab using Guid(bcd415e6ba613ff449b9d0ed03b6ad4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e7fcff23feaaf077a100ea3a3fbb99') in 0.022177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building3.prefab
+  artifactKey: Guid(f9b2f8e8166d21146bd8fa829f92a477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building3.prefab using Guid(f9b2f8e8166d21146bd8fa829f92a477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5196cb84c57f65691efd5c321e45f75a') in 0.015091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building2_Var2.prefab
+  artifactKey: Guid(e83422d6ff77a4047900bc557603998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building2_Var2.prefab using Guid(e83422d6ff77a4047900bc557603998d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac735b21ebb1cb408ca6d2c5feeff7f') in 0.026328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Meshes/building3.obj
+  artifactKey: Guid(82de4fbb665710e4f8bd208eb9df045c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Meshes/building3.obj using Guid(82de4fbb665710e4f8bd208eb9df045c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc20a4f433691648379332cb5a53db6') in 0.028517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building4_Var2.prefab
+  artifactKey: Guid(3b7bfb560cd0e784fa0b60d32eb2e6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building4_Var2.prefab using Guid(3b7bfb560cd0e784fa0b60d32eb2e6e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6f8e86aaeea5fa1d6c5309f046907e') in 0.026956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building4.prefab
+  artifactKey: Guid(953783c5d96d7784dbd05632f82f68af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building4.prefab using Guid(953783c5d96d7784dbd05632f82f68af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef46be4455b5d0ce0765b702eeefa91') in 0.010375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building3.prefab
+  artifactKey: Guid(96bc27d2b96ba98439e2f8ed9f8d65cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building3.prefab using Guid(96bc27d2b96ba98439e2f8ed9f8d65cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7afda3aeebbfc26aec64cfba83cf49') in 0.012777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.079714 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building5_Var1.prefab
+  artifactKey: Guid(1f729f2d131d43c4b9739418151cfc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building5_Var1.prefab using Guid(1f729f2d131d43c4b9739418151cfc7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cf9def3a767672a70fa8f1bc1f1000') in 0.036722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building6.prefab
+  artifactKey: Guid(00702717753f4fb498fc2e623f8260c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building6.prefab using Guid(00702717753f4fb498fc2e623f8260c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6a5348cfacf61a9aa54b0af4308109') in 0.053901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building6_Var1.prefab
+  artifactKey: Guid(e439ea41af242984d9cc2c6aa2d55af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building6_Var1.prefab using Guid(e439ea41af242984d9cc2c6aa2d55af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772040120e9521642b312b99b08f32d7') in 0.025272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building8_Var1.prefab
+  artifactKey: Guid(0720f725016aa4c498cb81d910702bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building8_Var1.prefab using Guid(0720f725016aa4c498cb81d910702bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c678760ce603585271192472735bf15d') in 0.025808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building6_Var2.prefab
+  artifactKey: Guid(01b308c661be85c428be549d92154129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building6_Var2.prefab using Guid(01b308c661be85c428be549d92154129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac827d977af175c5018e1d1210e69b6') in 0.027465 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building8.prefab
+  artifactKey: Guid(043113460ce1ca542a1aa245a1e3cdfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building8.prefab using Guid(043113460ce1ca542a1aa245a1e3cdfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63546c5ba5d22c2eaa9e024fa40da429') in 0.011958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building6_Var2.prefab
+  artifactKey: Guid(fd02965eada2cd64bb903dd8667c16b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building6_Var2.prefab using Guid(fd02965eada2cd64bb903dd8667c16b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85551b85d7f75ed353bad53ded1f3606') in 0.021604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.050105 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Meshes/building9.obj
+  artifactKey: Guid(8874ee312f50d324db94b3a2a4f30d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Meshes/building9.obj using Guid(8874ee312f50d324db94b3a2a4f30d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7cd74603e491f58945b71346a6ffce') in 0.027174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004163 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building9_Var2.prefab
+  artifactKey: Guid(43b66af4dcdf2824aac086910ebc3f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building9_Var2.prefab using Guid(43b66af4dcdf2824aac086910ebc3f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d15c85847e42cf1ecd8c61a2e6c3cc') in 0.025705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Meshes/building10.obj
+  artifactKey: Guid(e5fc3e60437e93c448fc0b5d75a83fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Meshes/building10.obj using Guid(e5fc3e60437e93c448fc0b5d75a83fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd7266ab9049513373aefeddddd1dd8') in 0.036545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Meshes/building11.obj
+  artifactKey: Guid(75b56ed3ba4e6644d978e45b0acb00eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Meshes/building11.obj using Guid(75b56ed3ba4e6644d978e45b0acb00eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3dd2f6e1e69c51d55c85a8489a614cc') in 0.029087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building12.prefab
+  artifactKey: Guid(7f5fde4624c6bc14582c28e324079583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building12.prefab using Guid(7f5fde4624c6bc14582c28e324079583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8e609ef6941fa6b5e0dbc0d3ed10917') in 0.015844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.068076 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building12.prefab
+  artifactKey: Guid(0c2a009a1b3d491499787d8da01b17e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building12.prefab using Guid(0c2a009a1b3d491499787d8da01b17e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6019e4ab5070319af5433b916559696') in 0.010957 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building12 (4).prefab
+  artifactKey: Guid(00405674ba5a4ae4fbe6ab00ae2a182b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building12 (4).prefab using Guid(00405674ba5a4ae4fbe6ab00ae2a182b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad529bcd23ed4c6674517aa18514b69') in 0.024722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building12 (4).prefab
+  artifactKey: Guid(3d05a11964dae884ab8aa102a02dee32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building12 (4).prefab using Guid(3d05a11964dae884ab8aa102a02dee32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba88dd70c405b0f36b1d1e4b5d08df7') in 0.013651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building12 2.prefab
+  artifactKey: Guid(91fee22cf3f3dda47b21b4b9efd840d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building12 2.prefab using Guid(91fee22cf3f3dda47b21b4b9efd840d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7a77c0a75a2ca8994f6cdd61b440f4') in 0.018595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building12_Var1.prefab
+  artifactKey: Guid(9408d8ca9cad75649bf85c7054b73bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building12_Var1.prefab using Guid(9408d8ca9cad75649bf85c7054b73bdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a8ab6f58ee2dc21887d72132ef482d') in 0.028889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building12_Var1.prefab
+  artifactKey: Guid(1bd990c2fd31807448471f89a33fec25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building12_Var1.prefab using Guid(1bd990c2fd31807448471f89a33fec25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d8fdc05ee8a9822892db1b08b6a1921') in 0.019154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building12 (5).prefab
+  artifactKey: Guid(773e64f6a46eefe48bfe1199c85545ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building12 (5).prefab using Guid(773e64f6a46eefe48bfe1199c85545ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66258f41a867a4f9ecf98915bd03984f') in 0.012421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/MainGame/World5/City/building12 (7).prefab
+  artifactKey: Guid(cec52807f3429c44687825e8fe14e370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/building12 (7).prefab using Guid(cec52807f3429c44687825e8fe14e370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd81b6c6446cb4caedb402e95313b59') in 0.016507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052756 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Meshes/building13.obj
+  artifactKey: Guid(999c20881b737984c96a2e24763570fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Meshes/building13.obj using Guid(999c20881b737984c96a2e24763570fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd2d60beca5298994cbb9c8bc7f42fb') in 0.037311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building14.prefab
+  artifactKey: Guid(219bfaad24009424ba1388645b553d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building14.prefab using Guid(219bfaad24009424ba1388645b553d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0ed43cd4256ff42742f1b1ef2c173a') in 0.018351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/building14.prefab
+  artifactKey: Guid(90f082d6a2c48e04d9a03ab710c2087f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/building14.prefab using Guid(90f082d6a2c48e04d9a03ab710c2087f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6fb91de9a846a308b52ac270f775dc4') in 0.017475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building13_Var1.prefab
+  artifactKey: Guid(818ff9dab394c184fab252c49384be07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/medium/Prefabs/building13_Var1.prefab using Guid(818ff9dab394c184fab252c49384be07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31382866a82773388d13fb5437d98a7d') in 0.023664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/CarSet/bus1.fbx
+  artifactKey: Guid(040dccb28568e9042b13b2e512ff0c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CarSet/bus1.fbx using Guid(040dccb28568e9042b13b2e512ff0c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a9d64672604b727da58a3b47eddef4') in 0.078461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building13_Var1.prefab
+  artifactKey: Guid(2c21b8ab39269e5448b2059cfbc91971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/medium/Prefabs/building13_Var1.prefab using Guid(2c21b8ab39269e5448b2059cfbc91971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c3cbec9cf4f7011d9d2a52e56f409e') in 0.017867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.043907 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bush_Grassy_A.prefab
+  artifactKey: Guid(349ae6d8a7e63294cbd8335c4df51ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Bush_Grassy_A.prefab using Guid(349ae6d8a7e63294cbd8335c4df51ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ede2d5831534c5fb5df8f9f7bc51c21') in 0.043977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Closed.prefab
+  artifactKey: Guid(fec4e40c38b8f5f4eb302dd6e4833c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Closed.prefab using Guid(fec4e40c38b8f5f4eb302dd6e4833c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b1f3650950caa4f8ef200a9ecf40f2') in 0.030313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Bag.prefab
+  artifactKey: Guid(cb0941e4ea5f7724a83a98e5da9f1850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Coin_Bag.prefab using Guid(cb0941e4ea5f7724a83a98e5da9f1850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b79c5c8e94adddbf4a182fc3cd46761b') in 0.032406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/MainGame/World5/CarSet/car4.fbx
+  artifactKey: Guid(da760bca4b6c2e4408a612c1ced1cfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CarSet/car4.fbx using Guid(da760bca4b6c2e4408a612c1ced1cfef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086e4516c6f5507cb7381db872255be1') in 0.052896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x3.prefab
+  artifactKey: Guid(3ec543f52d2ae9642a0e7d4f74531944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x3.prefab using Guid(3ec543f52d2ae9642a0e7d4f74531944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ef596c15d81eb8cefce2d57e81ef43') in 0.013403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Meshes/door1_4x5.obj
+  artifactKey: Guid(9c9eca2a6f4238a4a90a408da4c184c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Meshes/door1_4x5.obj using Guid(9c9eca2a6f4238a4a90a408da4c184c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b437deb7247d5bb1b7a96736928b52') in 0.043383 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_DarkBlue.prefab
+  artifactKey: Guid(e40a8d09e9df55246b58ee2ab4d9f261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_DarkBlue.prefab using Guid(e40a8d09e9df55246b58ee2ab4d9f261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b70c26100e7aee0a648492f283402e') in 0.020511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Purple.prefab
+  artifactKey: Guid(229e8c73b9e95ca45915a81573f32c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Purple.prefab using Guid(229e8c73b9e95ca45915a81573f32c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03ed9364890f0db5dd627819a253f16') in 0.026291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Teal.prefab
+  artifactKey: Guid(7348c39d5ca3ff04cb1d490be634490f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Teal.prefab using Guid(7348c39d5ca3ff04cb1d490be634490f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f58c7df1a15c8fa2d957573549e5451') in 0.023201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x5.prefab
+  artifactKey: Guid(e3290114315271d4d991be24a70fb3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x5.prefab using Guid(e3290114315271d4d991be24a70fb3e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ece77bf3823ec88ec573b4cafb6cc5') in 0.018992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon (1).prefab
+  artifactKey: Guid(da7f1600e00efe244807420a71af05e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon (1).prefab using Guid(da7f1600e00efe244807420a71af05e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2bc9de07e4e8d94cf38e54bc75afa1') in 0.019776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/City/neon_shop.fbx
+  artifactKey: Guid(ff10e9a6cc472b149b222c5559557341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/neon_shop.fbx using Guid(ff10e9a6cc472b149b222c5559557341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07406591840c383ae650c732db7ecc7d') in 0.045107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Meshes/door4_4x3.obj
+  artifactKey: Guid(776255712ed72304bac8c71f63be0c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Meshes/door4_4x3.obj using Guid(776255712ed72304bac8c71f63be0c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c11c09dc5c5a34f70406559e125565') in 0.030529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Meshes/door2_4x5.obj
+  artifactKey: Guid(f8c3dc44a4d140f41a259177126e8eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Meshes/door2_4x5.obj using Guid(f8c3dc44a4d140f41a259177126e8eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa089a0f82c6b7bcde7b31603b78a95') in 0.029516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Mesh/road6.obj
+  artifactKey: Guid(524edb3219a72be459ea1bc39f353749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Mesh/road6.obj using Guid(524edb3219a72be459ea1bc39f353749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321b1f6c99dab6fde0276fb35be7d4c7') in 0.035450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Cauldron 1.prefab
+  artifactKey: Guid(12be1cfbe0b0f624ab9ff654f406729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Cauldron 1.prefab using Guid(12be1cfbe0b0f624ab9ff654f406729a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff812409740bcf88dadfb06455e9dbb') in 0.021803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/tall/Prefabs/road16.prefab
+  artifactKey: Guid(120e2e1e64288e343903625fd9f2f97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/tall/Prefabs/road16.prefab using Guid(120e2e1e64288e343903625fd9f2f97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf28f6cabca975693b8f30817d370f4f') in 0.019735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Boulder_A.prefab
+  artifactKey: Guid(705f4b83479c7a847b0483e6bae08685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Boulder_A.prefab using Guid(705f4b83479c7a847b0483e6bae08685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a86369407da84232a99d10e7c2d062') in 0.021298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World3/Cross_Plains/FBX/Rock_Desert_01_Small_0_1.fbx
+  artifactKey: Guid(15275386ff8940044b102eec2aa2a281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World3/Cross_Plains/FBX/Rock_Desert_01_Small_0_1.fbx using Guid(15275386ff8940044b102eec2aa2a281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b3846c9a4f3c67dd3e110d120e0ded') in 0.030236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Emerald.prefab
+  artifactKey: Guid(0853068034e1c5a43996185e1aba896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Gem_Emerald.prefab using Guid(0853068034e1c5a43996185e1aba896c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a5148b84a767f0d0a6402b6ccbca2e') in 0.021741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey2.prefab
+  artifactKey: Guid(bee7a7386cf1b404395a72552487dd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey2.prefab using Guid(bee7a7386cf1b404395a72552487dd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dfe561087fb9b7316798265c658a53') in 0.020991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_welcom.prefab
+  artifactKey: Guid(f00535bd9515b284091a58499e9fa87d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_welcom.prefab using Guid(f00535bd9515b284091a58499e9fa87d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64207013d493fc43cfda14a3104d074f') in 0.017043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Prefabs/road7bisbis.prefab
+  artifactKey: Guid(12de98d7c6980b0439e891c283293129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Prefabs/road7bisbis.prefab using Guid(12de98d7c6980b0439e891c283293129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2268ef25ccd86dff254e9ab9ab474e') in 0.018080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Stone_FirePit.prefab
+  artifactKey: Guid(264cb3dcceae0364cbeea5af5cd854b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Stone_FirePit.prefab using Guid(264cb3dcceae0364cbeea5af5cd854b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c2279b8de0bb73b38405432a9f88a3f') in 0.023580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (13).prefab
+  artifactKey: Guid(ee252b35476d63749b56fa4eabec458c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (13).prefab using Guid(ee252b35476d63749b56fa4eabec458c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabff88631dbed345aef67934392d1ae') in 0.017999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (10).prefab
+  artifactKey: Guid(8f0380a349f65984f8b5d5f20fa16e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (10).prefab using Guid(8f0380a349f65984f8b5d5f20fa16e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81771424936a1bf840e2938b5674a125') in 0.014698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door3_4x3.prefab
+  artifactKey: Guid(dd4ec5203adc69a46a298c55f5e0f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door3_4x3.prefab using Guid(dd4ec5203adc69a46a298c55f5e0f3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0519a3a59892fd111e260a0a9982e608') in 0.009371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Medium_Winter.prefab
+  artifactKey: Guid(b3bc9a448b1c59b4d90985e7f69c448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Medium_Winter.prefab using Guid(b3bc9a448b1c59b4d90985e7f69c448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c883606b41ecc305504d1888e0a6f310') in 0.024516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey1.prefab
+  artifactKey: Guid(8aa5390f31df8524ab5e28ae2346ba7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/RockPlainGrey1.prefab using Guid(8aa5390f31df8524ab5e28ae2346ba7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c84c12b0b2b6a831648f12c9815a7c') in 0.017882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Summer_Small.prefab
+  artifactKey: Guid(d72c479bab05a5049921f563149c8154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Summer_Small.prefab using Guid(d72c479bab05a5049921f563149c8154) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b456b340011850c309ecd893da6c6a8') in 0.021895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Boulder_B.prefab
+  artifactKey: Guid(a537cd0cd4b46ce42bc9e0e71c600424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Boulder_B.prefab using Guid(a537cd0cd4b46ce42bc9e0e71c600424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42d5403dc0375c7db1a3b24d169f0fe') in 0.023927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x3.prefab
+  artifactKey: Guid(7bfa2b17218d3514e8370f1bbfba6c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door4_4x3.prefab using Guid(7bfa2b17218d3514e8370f1bbfba6c87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a209bb380cb8a75b449f7acfe2bd5dbb') in 0.013132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Meshes/door1_4x3.obj
+  artifactKey: Guid(d69952e8ffe2cb44180f87102151d8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Meshes/door1_4x3.obj using Guid(d69952e8ffe2cb44180f87102151d8f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7f812c3bfa12dd8480ed73c9d30042') in 0.027489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/MainGame/World5/City/neon_welcom.prefab
+  artifactKey: Guid(2b27e96f8b0ea694c822962f062a70e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/neon_welcom.prefab using Guid(2b27e96f8b0ea694c822962f062a70e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8eb9018ea74b0351341fab3ccc7346') in 0.013879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Winter_Small.prefab
+  artifactKey: Guid(0b63a1fb25ce7e5499e1e5d7a76176dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Cube_Winter_Small.prefab using Guid(0b63a1fb25ce7e5499e1e5d7a76176dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6fa6a4dc6282c71a3aa06db506c780') in 0.029924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_bar2 (1).prefab
+  artifactKey: Guid(64cf2fb1ebe9f5e48bbdf6296357e76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_bar2 (1).prefab using Guid(64cf2fb1ebe9f5e48bbdf6296357e76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629d69a34b2148ae606dc2ff73a6ac8d') in 0.020021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (5).prefab
+  artifactKey: Guid(da52b3aa0eeb4874294615f2bed93a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (5).prefab using Guid(da52b3aa0eeb4874294615f2bed93a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070d39913e771c5ac7a8f8efd9f6d78f') in 0.018133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Medium_D.prefab
+  artifactKey: Guid(3a818d2a96c50d4409d706e763887b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Medium_D.prefab using Guid(3a818d2a96c50d4409d706e763887b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30dec7bc2980d8cc5042e7b25d677057') in 0.025701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_welcom 1.prefab
+  artifactKey: Guid(ffb0ba18624203f4089a8eca2c0aa5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_welcom 1.prefab using Guid(ffb0ba18624203f4089a8eca2c0aa5e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb277e2e85a8a2e0c27b2848a5df778') in 0.018074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (6).prefab
+  artifactKey: Guid(8980195fac413b746b4ef28e40590a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (6).prefab using Guid(8980195fac413b746b4ef28e40590a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13382eee3eb5faf20ad6b748160b90c4') in 0.017272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_C.prefab
+  artifactKey: Guid(7ff5400c80f29b741aeb05a1a277b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_C.prefab using Guid(7ff5400c80f29b741aeb05a1a277b8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7e915b0b508114812b9db490c55841') in 0.024714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Wood_Plank_C.prefab
+  artifactKey: Guid(457c42211f7006b49b17e24de60d022c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Wood_Plank_C.prefab using Guid(457c42211f7006b49b17e24de60d022c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d92102b0aa8fdc1d15dcf37d8dc32f3') in 0.021989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x5.prefab
+  artifactKey: Guid(f90fcb50f259452409624949325cd4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x5.prefab using Guid(f90fcb50f259452409624949325cd4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ea18424522de0d898e446ec95a7846') in 0.015893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x5.prefab
+  artifactKey: Guid(49e6532566baa28468e64f4212823f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door2_4x5.prefab using Guid(49e6532566baa28468e64f4212823f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a71ed1f62e2195089b383f94d5bbdd') in 0.011742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_24.fbx
+  artifactKey: Guid(d57b313ee6dd6d3408f43f567da423fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_24.fbx using Guid(d57b313ee6dd6d3408f43f567da423fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1cb338928283c56945437266a7dca06') in 0.056928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Lid.prefab
+  artifactKey: Guid(f26817945c9b0444c9e1ca42c7c22bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Chest_Lid.prefab using Guid(f26817945c9b0444c9e1ca42c7c22bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5e38981cdf155063089937f34e81d4') in 0.030606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Cave_Entry_B.prefab
+  artifactKey: Guid(1c500ba592ff6da499b984c6f47d6db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Rock_Cave_Entry_B.prefab using Guid(1c500ba592ff6da499b984c6f47d6db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942c614ddb233b394ba8a3c7ea697001') in 0.023200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_B.prefab
+  artifactKey: Guid(b03615302e0f5bc4d8910797b58900be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Bit_B.prefab using Guid(b03615302e0f5bc4d8910797b58900be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9ae4282dbad5dbc0fc8e8bd87ff53e6') in 0.023438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (2).prefab
+  artifactKey: Guid(1afa66ea2aeb80142ab9a15d9f7d78eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (2).prefab using Guid(1afa66ea2aeb80142ab9a15d9f7d78eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c860baba1c7db4183ad6701e22da5a') in 0.016312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scenes/MainGame/lilToon/Prefabs/FurCollider (range=x.xx22).prefab
+  artifactKey: Guid(8c80e2aa732631141a1b44d552a96d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/lilToon/Prefabs/FurCollider (range=x.xx22).prefab using Guid(8c80e2aa732631141a1b44d552a96d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0910d025e243a41c54e56f5a6a3e6a77') in 0.012507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/CarSet/car3.fbx
+  artifactKey: Guid(f2ff2f01f21713744a9395cfff865ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CarSet/car3.fbx using Guid(f2ff2f01f21713744a9395cfff865ff5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea86867a421f836f77562041af6dfe9c') in 0.029917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Wood_Plank_D.prefab
+  artifactKey: Guid(0656b2fe8c8ac964895c4974f6470c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Wood_Plank_D.prefab using Guid(0656b2fe8c8ac964895c4974f6470c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c2881528d90a32f23374d2aa17e3a6d') in 0.022622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (4).prefab
+  artifactKey: Guid(ff92c7b207a9e5448820d18e435938db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (4).prefab using Guid(ff92c7b207a9e5448820d18e435938db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c52a641489b3724ce610bd2af5aa811') in 0.016832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Meshes/door1_4x3.obj
+  artifactKey: Guid(6d77634804859f04a93033978cc3e443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Meshes/door1_4x3.obj using Guid(6d77634804859f04a93033978cc3e443) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b23bfeb043d1274b9af2c8f945f11e') in 0.028462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/tall/Prefabs/road16bisbis.prefab
+  artifactKey: Guid(d06046df36b20554da712b2e585e401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/tall/Prefabs/road16bisbis.prefab using Guid(d06046df36b20554da712b2e585e401e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12acc7e243d032841207f6bb32ae7da6') in 0.017345 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/Street_Light (8).prefab
+  artifactKey: Guid(dd6e9fba3603bb743b7fed8ae868b984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/Street_Light (8).prefab using Guid(dd6e9fba3603bb743b7fed8ae868b984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bdc4d3b2619522db33138f565b7fd6b') in 0.015464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_B.prefab
+  artifactKey: Guid(f73e44818dc35be4aa625db089281ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Palm_Leaf_B.prefab using Guid(f73e44818dc35be4aa625db089281ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea5c15f4b31d1a23bfc259036bbf266') in 0.022947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_welcom (1).prefab
+  artifactKey: Guid(0fef13259281a474f95181de75b31dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_welcom (1).prefab using Guid(0fef13259281a474f95181de75b31dc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d35d14a1795460fb877fcfcd4ff936f') in 0.020072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Park_Bench.prefab
+  artifactKey: Guid(1445c4de61ebcf94d838db51eaa136dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Park_Bench.prefab using Guid(1445c4de61ebcf94d838db51eaa136dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c538500e5e7ee8222620955541103e7') in 0.021898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_bar2.fbx
+  artifactKey: Guid(5e7d35db2484f5444a138cb5e8c93f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_bar2.fbx using Guid(5e7d35db2484f5444a138cb5e8c93f71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '357d6f368e309a4b6c71976468471e68') in 0.042492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Prefabs/road6bis.prefab
+  artifactKey: Guid(86e3f703ef449184faa4162711b382b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Prefabs/road6bis.prefab using Guid(86e3f703ef449184faa4162711b382b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656ba3a1bedec4b7888a72ef970cbe4a') in 0.013932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Meshes/door2_4x5.obj
+  artifactKey: Guid(b221ab42cad051b45a88da43bba7e4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/doors/Meshes/door2_4x5.obj using Guid(b221ab42cad051b45a88da43bba7e4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d699bf8123c3b34e2b01fe39898afdc') in 0.027564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door1_4x5.prefab
+  artifactKey: Guid(122b32f6a3f25af41abc538406d2d71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/doors/Prefabs/door1_4x5.prefab using Guid(122b32f6a3f25af41abc538406d2d71e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a443f8dad6edcf1e836ba836ca43e247') in 0.011745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Park_Bench_Corner_In.prefab
+  artifactKey: Guid(4fefa74b26589c64a8b63d125929de66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Park_Bench_Corner_In.prefab using Guid(4fefa74b26589c64a8b63d125929de66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6535820241fe7dd243b562f0d2a19c21') in 0.021896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World3/Cross_Plains/FBX/Gate_Desert_Big_0_1.fbx
+  artifactKey: Guid(9452ace81bbfd944ba9b66e69681de13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World3/Cross_Plains/FBX/Gate_Desert_Big_0_1.fbx using Guid(9452ace81bbfd944ba9b66e69681de13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4526dfeacc2819c9cbcbfe8ac66208ba') in 0.019571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Prefabs/road5.prefab
+  artifactKey: Guid(4b6feb3cb4202be47b3ede6863227ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/roads/medium/Prefabs/road5.prefab using Guid(4b6feb3cb4202be47b3ede6863227ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00bfff7d09cb3e9d0893fe6351453d1a') in 0.015344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Small_SumAut.prefab
+  artifactKey: Guid(f48f9f57056d1b447a2a5941321446f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Fern_Small_SumAut.prefab using Guid(f48f9f57056d1b447a2a5941321446f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c16cebc32712afac84387e6fb6fdc62') in 0.026366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Medium_F.prefab
+  artifactKey: Guid(49f87829b228ff94eab53dc3cd44a914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BlocksAndTrees/Prefabs/Tree_Medium_F.prefab using Guid(49f87829b228ff94eab53dc3cd44a914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68df6a3afaf5a48337b54904a83d659d') in 0.027919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.348642 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window3_2x2.prefab
+  artifactKey: Guid(b7a4229a1895db54cb5f712b60cbd611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window3_2x2.prefab using Guid(b7a4229a1895db54cb5f712b60cbd611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f137e90744a8dc5f228f69bd0086ebe') in 0.025339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/windows/Meshes/window2_2x3.obj
+  artifactKey: Guid(1a1ab287b8d842545bb047769ef6912e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/windows/Meshes/window2_2x3.obj using Guid(1a1ab287b8d842545bb047769ef6912e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6127d1081d2d1c8ccd45ecaf6fb1ae97') in 0.030922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window2_3x2.prefab
+  artifactKey: Guid(b5e5d2e405e350243a30bd9b81ae51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/City/CityVoxelPack/Assets/buildings/props/windows/Prefabs/window2_3x2.prefab using Guid(b5e5d2e405e350243a30bd9b81ae51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b10b93992e7b70d50656b3c476c18b3') in 0.022329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/windows/Meshes/window2_3x2.obj
+  artifactKey: Guid(b32d582fd72647643883f1017549146b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/CityVoxelPack/Assets/buildings/props/windows/Meshes/window2_3x2.obj using Guid(b32d582fd72647643883f1017549146b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b13950cfd10e35b2053556f940fea6c6') in 0.029780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.897426 seconds.
+  path: Assets/Scenes/titleScene/Material/ConfettiParticles.prefab
+  artifactKey: Guid(8172051de0593904986972381c80b7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/titleScene/Material/ConfettiParticles.prefab using Guid(8172051de0593904986972381c80b7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f101c366e0cdece41cab5273b6bb6f8d') in 0.027699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Post_B.prefab
+  artifactKey: Guid(f642831a0d527144781b1053bd00ae99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World1/LowPolyEnviroPack_LITE_builtIn/BeachArea_Set1/Prefabs/Fence_Post_B.prefab using Guid(f642831a0d527144781b1053bd00ae99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c880158c6519ae0aade00b1d92aff771') in 0.041006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scenes/MainGame/World5/Materials/neon_cafe (1).prefab
+  artifactKey: Guid(0424cec42b1aa45478cc2a36d67bd8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainGame/World5/Materials/neon_cafe (1).prefab using Guid(0424cec42b1aa45478cc2a36d67bd8dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6077435c4616fd65dc1ff86abe941dc') in 0.022730 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008898 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1519ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1245ms)
+			LoadAssemblies (97ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (322ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (657ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (177ms)
+				ProcessInitializeOnLoadAttributes (327ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (35ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5297 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (13.8 MB). Loaded Objects now: 5998.
+Memory consumption went from 257.0 MB to 243.2 MB.
+Total: 16.443100 ms (FindLiveObjects: 0.795100 ms CreateObjectMapping: 0.892600 ms MarkObjects: 5.772700 ms  DeleteObjects: 8.981300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007619 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.397 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1398ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (52ms)
+		EndReloadAssembly (1116ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (320ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (543ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (262ms)
+				ProcessInitializeOnLoadMethodAttributes (100ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (13.7 MB). Loaded Objects now: 6001.
+Memory consumption went from 257.0 MB to 243.3 MB.
+Total: 9.929700 ms (FindLiveObjects: 0.540500 ms CreateObjectMapping: 0.433800 ms MarkObjects: 2.762200 ms  DeleteObjects: 6.192000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006968 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\DoraFesMainProject\DoraFes\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.461 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1462ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1180ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (628ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (160ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (119ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 86 unused Assets / (13.6 MB). Loaded Objects now: 6004.
+Memory consumption went from 256.9 MB to 243.3 MB.
+Total: 10.659100 ms (FindLiveObjects: 0.565900 ms CreateObjectMapping: 0.476000 ms MarkObjects: 2.905700 ms  DeleteObjects: 6.710500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
