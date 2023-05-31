@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DethEvent : MonoBehaviour
 {
@@ -26,6 +27,12 @@ public class DethEvent : MonoBehaviour
         {
             rig.AddForce(new Vector3(0.0f, 30.0f, 0.0f), ForceMode.Impulse);
             IsDamage = true;
+            Invoke("ChangeScene", 2.5f);
         }
+    }
+
+    private void ChangeScene()
+    {
+        SceneManager.LoadScene("ResultScene");
     }
 }

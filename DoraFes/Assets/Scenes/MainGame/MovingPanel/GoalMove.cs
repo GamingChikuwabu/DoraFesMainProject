@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class GoalMove : MonoBehaviour
 {
+    private GameObject GoalObject;
+    private CameraSwitcher CS;
+
     private RectTransform panelRectTransform;
 
     //èâä˙ç¿ïWÇäiî[Ç∑ÇÈïœêî
@@ -25,6 +28,10 @@ public class GoalMove : MonoBehaviour
         panelRectTransform = GetComponent<RectTransform>();
         initialPosition = panelRectTransform.anchoredPosition;
 
+        GoalObject = GameObject.Find("goal");
+        CS = GoalObject.GetComponent<CameraSwitcher>();
+        
+
         uiElement.SetActive(false);
 
         isPanel = false;
@@ -35,7 +42,7 @@ public class GoalMove : MonoBehaviour
     void FixedUpdate()
     {
 
-        //isGoal=
+        isGoal = CS.goalfg;
 
         if (isGoal)
         {
