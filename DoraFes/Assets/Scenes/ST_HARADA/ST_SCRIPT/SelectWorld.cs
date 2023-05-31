@@ -186,22 +186,22 @@ public class SelectWorld : MonoBehaviour
                     stage = "Comic1";
                 }
 
-                if (stage == "1-2")
+                if (stage == "2-1")
                 {
                     stage = "Comic2";
                 }
 
-                if (stage == "1-3")
+                if (stage == "3-1")
                 {
                     stage = "Comic3";
                 }
 
-                if (stage == "1-4")
+                if (stage == "4-1")
                 {
                     stage = "Comic4";
                 }
 
-                if (stage == "1-5")
+                if (stage == "5-1")
                 {
                     stage = "Comic5";
                 }
