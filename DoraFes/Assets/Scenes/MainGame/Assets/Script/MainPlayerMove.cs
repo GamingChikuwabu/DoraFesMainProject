@@ -24,6 +24,10 @@ public class MainPlayerMove : MonoBehaviour
 
     private Vector3 _NewPlayerPosition;
 
+            public AudioClip sound1;
+            public AudioSource audioSource;
+
+
     public Vector3 NewPlayerPos
     {
         get { return _NewPlayerPosition; }
@@ -82,8 +86,10 @@ public class MainPlayerMove : MonoBehaviour
         //ÉWÉÉÉìÉvÇÃèàóù
         if(Input.GetButtonDown("Jump") && _Islanding == true)
         {
+            
             rig.AddForce(0.0f, JumpPower, 0.0f,ForceMode.Impulse);
             _Islanding = false;
+            audioSource.PlayOneShot(sound1);
         }
 
         if(dethEvent.IsDamage == false)

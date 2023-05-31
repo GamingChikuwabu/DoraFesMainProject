@@ -8,7 +8,9 @@ public class GlobalStatusManager : MonoBehaviour
     [Header("フィーバーゲージ")]
     [SerializeField]
     private float _FeverGauge = 0;
+    public GameObject feverModeGameObject;　//FeverSystemをアタッチ
 
+  
     [Header("フィーバーゲージの上がり具合")]
     [SerializeField]
     private float _FeverGaugeUpSpeed = 1;
@@ -34,11 +36,15 @@ public class GlobalStatusManager : MonoBehaviour
             if (_FeverGauge > 100) 
             {
                 efect.SetActive(true);
+                // イベントが発生した場合にゲームオブジェクトを有効化
+                feverModeGameObject.SetActive(true);
                 return true; 
             } 
             else 
             {
                 efect.SetActive(false);
+                // イベントが終了した場合にゲームオブジェクトを無効化
+                feverModeGameObject.SetActive(false);
                 return false; 
             } 
         }
