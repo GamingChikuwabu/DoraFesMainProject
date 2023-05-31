@@ -10,11 +10,19 @@ public class ButtonFunction : MonoBehaviour
     private GameObject LoadSceneObject;
     private LoadScene LS;
 
+    //リトライするシーン名を取ってくる
+    private GameObject RetrySceneObject;
+    private SetSceneName SNS;
+
     void Start()
     {
         //LoadSceneスクリプトの変数を取ってくる
         LoadSceneObject = GameObject.Find("LoadScene");
         LS = LoadSceneObject.GetComponent<LoadScene>();
+
+        //リトライするシーン名を取ってくる
+        RetrySceneObject = GameObject.Find("RetryScene");
+        SNS = RetrySceneObject.GetComponent<SetSceneName>();
 
     }
 
@@ -25,6 +33,11 @@ public class ButtonFunction : MonoBehaviour
         LS.SetLoadName(s);
     }
     // Start is called before the first frame update
+
+    public void RetryFunction()
+    {
+        LS.SetLoadName(SNS.GetRetrySceneName());
+    }
    
 
     // Update is called once per frame
