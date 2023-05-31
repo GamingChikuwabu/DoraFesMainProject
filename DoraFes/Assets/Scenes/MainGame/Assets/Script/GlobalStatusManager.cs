@@ -85,6 +85,8 @@ public class GlobalStatusManager : MonoBehaviour
         Cm = GetComponent<CoinManager>();
         UIGuage = GameObject.Find("GaugeFrame").GetComponent<UIFeaverGauge>();
         BgmManager = GetComponent<BGMManager>();
+        feverModeGameObject = transform.GetChild(6).gameObject;
+        feverModeGameObject.SetActive(false);
     }
 
     // Update is called once per frame

@@ -38,11 +38,6 @@ public class SaveData : ScriptableObject
         // シーンの名前をlastCompletedSceneとPlayerPrefsに保存
         lastCompletedScene = sceneName;
         PlayerPrefs.SetString("LastCompletedScene", lastCompletedScene);
-        // シーンが5-4の場合、保存する値を"5-3"とする
-        if (sceneName == "5-4")
-        {
-            sceneName = "5-3";
-        }
         PlayerPrefs.Save();  // PlayerPrefsにデータを保存
     }
 

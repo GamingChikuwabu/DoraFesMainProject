@@ -31,6 +31,24 @@ public class DethEvent : MonoBehaviour
             Invoke("ChangeScene", 2.0f);
            
         }
+        if(other.gameObject.CompareTag("dedwol"))
+        {
+            rig.AddForce(new Vector3(0.0f, 30.0f, 0.0f), ForceMode.Impulse);
+            IsDamage = true;
+
+            Invoke("ChangeScene", 2.0f);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("enemy") && GS.IsFever == false)
+        {
+            rig.AddForce(new Vector3(0.0f, 30.0f, 0.0f), ForceMode.Impulse);
+            IsDamage = true;
+
+            Invoke("ChangeScene", 2.0f);
+        }
     }
 
     private void ChangeScene()

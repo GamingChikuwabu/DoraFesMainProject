@@ -13,7 +13,7 @@ public class SelectWorld : MonoBehaviour
 
     // リトライするシーン名を取ってくる
     private GameObject RetrySceneObject;
-    //private SetSceneName SNS;
+    private SetSceneName SNS;
     // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
 
     [Header("フェード用UIを渡す")]
@@ -87,7 +87,7 @@ public class SelectWorld : MonoBehaviour
     [Header("アイコン関連")]
     public float moveSpeed = 0.5f;
     public float movePow = 2;
-    int stageNum = 4;        // ステージ数;
+    int stageNum = 3;        // ステージ数;
 
     void Start()
     {
@@ -97,7 +97,7 @@ public class SelectWorld : MonoBehaviour
         //LoadSceneObject = GameObject.Find("LoadScene");
         //LS = LoadSceneObject.GetComponent<LoadScene>();
 
-        //// リトライするシーン名を取ってくる
+        ////// リトライするシーン名を取ってくる
         //RetrySceneObject = GameObject.Find("RetryScene");
         //SNS = RetrySceneObject.GetComponent<SetSceneName>();
         // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
@@ -110,7 +110,7 @@ public class SelectWorld : MonoBehaviour
         stickMove = gameObject.GetComponent<StickNaturalMove>();
 
         // stringデータを受け取る
-        string sClearData = "";/* = saveData.GetString()*/
+        string sClearData ="5-2" /*saveData.GetString()*/;
 
         // NULLの場合
         if (sClearData == "")
@@ -180,14 +180,12 @@ public class SelectWorld : MonoBehaviour
             {
                 // ココに入れる
                 string stage = nowSelectWorld + "-" + nowSelectStage;
-
+                Debug.Log(stage);
                 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
                 // まさよし
-                //LS.SetLoadName(stage);
-                //SNS.SetRetrySceneName(stage);
+                LS.SetLoadName(stage);
+                SNS.SetRetrySceneName(stage);
                 // =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
-
-
             }
         }
 

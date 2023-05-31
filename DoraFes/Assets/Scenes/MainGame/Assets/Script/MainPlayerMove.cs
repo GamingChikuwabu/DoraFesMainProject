@@ -24,8 +24,8 @@ public class MainPlayerMove : MonoBehaviour
 
     private Vector3 _NewPlayerPosition;
 
-            public AudioClip sound1;
-            public AudioSource audioSource;
+    public AudioClip sound1;
+    private AudioSource audioSource;
 
 
     public Vector3 NewPlayerPos
@@ -64,6 +64,7 @@ public class MainPlayerMove : MonoBehaviour
         rig = GetComponent<Rigidbody>();
         coinMane = GetComponent<CoinManager>();
         dethEvent = GetComponent<DethEvent>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
