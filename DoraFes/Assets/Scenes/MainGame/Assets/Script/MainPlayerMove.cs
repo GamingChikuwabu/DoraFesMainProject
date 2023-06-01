@@ -25,7 +25,6 @@ public class MainPlayerMove : MonoBehaviour
     [SerializeReference]
     private float MaxSpeed = 30.0f;
 
-
     private Vector3 _NewPlayerPosition;
 
     public AudioClip sound1;
@@ -39,7 +38,14 @@ public class MainPlayerMove : MonoBehaviour
 
     public float Fowardvelocity
     {
-        get { return _Forwardvelocity + coinMane.countCoin * CoinMagnification; }
+        get 
+        {
+            if(_Forwardvelocity + coinMane.countCoin * CoinMagnification > MaxSpeed)
+            {
+                return MaxSpeed;
+            }
+            return _Forwardvelocity + coinMane.countCoin * CoinMagnification; 
+        }
     }
 
     //‹^—d—Í‚ğÀ‘•‚·‚é‚½‚ß‚Ì•Ï”
